@@ -11,6 +11,9 @@
 ## Abel Rodriguez Molina : 
 ● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar, artista creativo, promesa a desarrollador o artista de videojuegos.
 
+## Jose Luis Contreras : 
+● 25 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar. Estudiante de ingles LED'S Intitute.
+
 ![SUGOI SUSHI](/images/Logo%20Sugoi.jpg "SUGOI SUSHI")
 
 ># ** ` NOSOTROS : ` **
