@@ -8,6 +8,9 @@
 ## Alen Long : 
 ● 38 años, Itamae, Producer, y estudiante de programación en Digital House y Codo a Codo. 
 
+## Abel Rodriguez Molina : 
+● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar, artista creativo, promesa a desarrollador o artista de videojuegos.
+
 ![SUGOI SUSHI](/images/Logo%20Sugoi.jpg "SUGOI SUSHI")
 
 ># ** ` NOSOTROS : ` **
