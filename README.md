@@ -6,7 +6,7 @@
 ● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar. 
 
 ## Alen Long : 
-● 38 años, Itamae y estudiante de programación en Digital House y Codo a Codo. 
+● 38 años, Itamae, Producer, y estudiante de programación en Digital House y Codo a Codo. 
 
 ![SUGOI SUSHI](/images/Logo%20Sugoi.jpg "SUGOI SUSHI")
 
