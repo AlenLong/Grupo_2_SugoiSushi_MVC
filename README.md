@@ -1,22 +1,28 @@
-# grupo_2_SugoiSushi 
-
+# Grupo_2_SugoiSushi 
+# Proyecto Integrador Digital House - Formar
+###
 ## **`INTEGRANTES :`**
 
-## Joaquin Leguizamón : 
+ ## Joaquin Leguizamón : 
+ 
 ● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar. 
-
-## Alen Long : 
-● 38 años, Itamae, Producer, y estudiante de programación en Digital House y Codo a Codo. 
-
+ ## Alen Long : 
+ 
+● 38 años, Itamae, Producer, estudiante de programación en Digital House, Fundación Formar. Y Codo a Codo.
 ## Abel Rodriguez Molina : 
+
 ● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar, artista creativo, promesa a desarrollador o artista de videojuegos.
-
 ## Jose Luis Contreras : 
+
 ● 25 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar. Estudiante de ingles LED'S Intitute.
+##
 
-![SUGOI SUSHI](/images/Logo%20Sugoi.jpg "SUGOI SUSHI")
+## **` TEMA :`** 
+## ● E-COMMERCE DE SUSHI 
 
-># ** ` NOSOTROS : ` **
+## [*DOCUMENTACION*](https://github.com/AlenLong/Prueba_Privado_DG/tree/master/Documentacion%20de%20Proyecto "Enlace")
+
+# **` NOSOTROS : `**
 *En **Sugoi Sushi** buscamos constantemente la más precisa fusión entre tradición y modernidad, respetando los métodos milenarios de China y de Japón; y explorando las más innovadoras tendencias culinarias de Europa y América. 
 **Sugoi Sushi** ofrece de manera profesional un producto buscado y perfeccionando durante mucho tiempo por medio de cursos y degustaciones. Con mucho trabajo, pasión y amor por lo que se hace. Porque la Gastronomía también es arte.* 
 
@@ -43,3 +49,4 @@
 >[*MIHANA*](https://pedidos.masdelivery.com/mihana-sushi?utm_source=ENLACE&utm_medium=DESDE&utm_campaign=WEB "Enlace") 
 
 *El supercarrito de compras. *
+##
