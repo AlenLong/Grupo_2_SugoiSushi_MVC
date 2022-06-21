@@ -26,3 +26,15 @@
 ### **` TABLERO DE TRABAJO :`**
 >[*TRELLO*](https://trello.com/b/CgjlIcHH/grupo2sugoisushi "Enlace")
 ##
+
+### **` OTRAS HERRAMIENTAS :`**
+>[*FIGMA*](https://www.figma.com/ "Enlace")
+##
+>[*APP.DIAGRAMS*](https://app.diagrams.net/ "Enlace")
+##
+>[*DISCORD*](https://discord.com/ "Enlace")
+>##
+>[*ADOBE ILL & PS*](https://www.adobe.com/) "Enlace")
+##
+
+
