@@ -28,13 +28,7 @@
 ##
 
 ### **` OTRAS HERRAMIENTAS :`**
->[*FIGMA*](https://www.figma.com/ "Enlace")
-##
->[*APP.DIAGRAMS*](https://app.diagrams.net/ "Enlace")
-##
->[*DISCORD*](https://discord.com/ "Enlace")
->##
->[*ADOBE ILL & PS*](https://www.adobe.com/) "Enlace")
+>[*FIGMA*](https://www.figma.com/ "Enlace") >[*APP.DIAGRAMS*](https://app.diagrams.net/ "Enlace") >[*DISCORD*](https://discord.com/ "Enlace") >[*ADOBE ILL & PS*](https://www.adobe.com/ "Enlace")
 ##
 
 
