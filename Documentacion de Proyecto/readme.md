@@ -18,6 +18,11 @@
 ![SUGOI SUSHI](/images/SugoiSushiDiagram.png "SUGOI SUSHI")
 ##
 
+## Fotografias de Producto (Nikon 5100)
+![SUGOI SUSHI](/images/HOT-ROLL.jpeg "SUGOI SUSHI")
+![SUGOI SUSHI](/images/combinado.jpeg "SUGOI SUSHI")
+##
+
 ### **` TABLERO DE TRABAJO :`**
 >[*TRELLO*](https://trello.com/b/CgjlIcHH/grupo2sugoisushi "Enlace")
 ##
