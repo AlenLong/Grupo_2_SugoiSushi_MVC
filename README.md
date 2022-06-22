@@ -8,7 +8,7 @@
 ● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar. 
  ## Alen Long : 
  
-● 38 años, Itamae, Producer, estudiante de programación en Digital House, Fundación Formar. Y Codo a Codo.
+●  Itamae, Producer, estudiante de programación en Digital House, Fundación Formar. Y Codo a Codo.
 ## Abel Rodriguez Molina : 
 
 ● 19 años, estudiante de programación Web Full Stack en Digital House y Fundación Formar, artista creativo, promesa a desarrollador o artista de videojuegos.
