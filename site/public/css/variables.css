@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --negro: #000;
+    --rojo: #c1030f;
+    --blanco: #ffff;
+
+    --fuente: 'Raleway', sans-serif;
+    
+/* medidas de texto */
+    --cuerpo_texto: ;
+    --titulares: ;
+    --precios: ;
+    --descripciones: ;
+    
+}
