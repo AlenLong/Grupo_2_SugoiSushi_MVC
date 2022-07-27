@@ -1,0 +1,60 @@
+.home header{
+    text-align: center;
+}
+.home header .logo{
+    padding: 20px 0 40px;
+}
+.home header .logo img{
+    width: 20vw;
+    border: 1px solid var(--colorGris);
+    animation: rotarLogo 10s normal linear infinite;
+}
+.home header button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: var(--colorRojo);
+    border-radius: 25%;
+    border: 1px solid var(--colorGris);
+}
+
+.home header ul li{
+    background-color: var(--colorGris);
+    padding: 10px;
+    margin: 2px 0;
+}
+
+.home header ul li a {
+    color: var(--colorBlanco);
+    text-transform: uppercase;
+}
+/* Tablet */
+@media (min-width:460px) {
+    .home header{
+        padding-bottom: 20px;
+    }
+    .home header button{
+        display: none;
+    }
+    .home header ul{
+        z-index: 50;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .home header ul li{
+        width: 16%;
+        font-size: 0.5rem;
+        transition: background-color .5s;
+    }
+    .home header ul li:hover{
+        background-color: var(--colorRojo);
+    }
+}
+@media (min-width:560px) {
+    .home header ul li{
+        font-size: 68%;
+    }
+}
