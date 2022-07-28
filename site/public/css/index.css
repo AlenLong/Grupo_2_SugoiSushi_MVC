@@ -1,4 +1,4 @@
-.home main{
+/*.home main{
     width: 90vw;
     margin: 0%;
 }
@@ -46,8 +46,12 @@
     display: inline-block;
     margin: 20px 0 0;
     background-color: var(--colorGris);
-    /* max-width: 75px; */
-    /* text-align: center; */
+
+
+     max-width: 75px; 
+     text-align: center;
+
+
     padding: 10px;
     color: var(--colorBlanco);
     transition: background-color .5s;
@@ -59,18 +63,28 @@
 .home main section .ampliar{
     display: block;
     text-align: center;
-    /* opacity: 70%; */
+
+
+     opacity: 70%;
+
+
     position: absolute;
     top: 40%;
     margin: 0;
-    /* padding: 10px 165px; */
+
+
+    padding: 10px 165px;
+
+
     width: 100%;
     background-color: var(--colorTransparente);
     text-transform: uppercase;
     font-weight: bold;
 }
 
-/* Tablet */
+ Tablet 
+
+
 
 @media (min-width:460px) {
     .home main .banner{
@@ -103,4 +117,4 @@
         width: 30vw;
         height: 150px;
     }
-}
+}*/
