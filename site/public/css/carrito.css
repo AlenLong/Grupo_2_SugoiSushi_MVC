@@ -1,0 +1,151 @@
+.Carrito{
+    height: 100%;
+background-repeat: no-repeat;
+background-size: auto;
+background: linear-gradient(206deg, var(--colorRojo), var(--colorNegro));
+
+}
+.Carrito .ProductCard {
+    font-family: 'Raleway', sans-serif;
+}
+.Carrito .ProductCard .banner{
+    display: none;
+    width: 100%;
+    background-color: #000000;
+}
+.Carrito .ProductCard section article{
+    margin: 20px 0;
+    background-color: var(--colorNegro);
+    padding: 10 16;
+    
+}
+.Carrito .ProductCard section article .container{
+    padding: 20px 16px;
+}
+.Carrito .ProductCard section .image{
+    position: relative;
+}
+.Carrito main section .image:hover .producto{
+    transform: scale(1.2);
+    position: relative;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.Carrito .ProductCard section .producto{
+    background-color: var(--colorNegro);
+    width: 100%;
+}
+.Carrito .ProductCard section h3{
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: 2px solid var(--colorRojo);
+    position: relative;
+    transition: .5s;
+    color: #ffffff;
+    outline: 0;
+    padding: 12px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.Carrito .ProductCard section h3::before,
+.Carrito .ProductCard section h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: .5s;
+}
+.Carrito .ProductCard section h3::before {
+    top: -10px;
+    left: -10px;
+    border-width: 2px 0 0 2px;
+}
+.Carrito .ProductCard section h3::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 2px 2px 0;
+}
+
+.Carrito .ProductCard section h3:hover::before,
+.Carrito .ProductCard section h3:hover::after {
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+}
+
+.Carrito .ProductCard section p{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.Carrito .ProductCard section .price {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Carrito .ProductCard section a{
+    
+    display: inline-block;
+    background-color: white;
+    bottom: 0;
+    /* max-width: 75px; */
+    /* text-align: center; */
+    text-decoration: none;
+    padding: 10px;
+    transition: var(--colorRojo) .5s; 
+}
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+.ProductCard button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--colorRojo);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    overflow: hidden;
+    transition: color 1s;
+  }
+  
+  .ProductCard button:hover {
+    opacity: 0.7;
+  }
+/* tablet*/
+@media (min-width:425px) {
+    .Carrito .ProductCard .banner{
+        display: block;
+        
+    }
+    .Carrito .ProductCard .banner img{
+        width: 100%;
+    }
+    .Carrito .ProductCard section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Carrito .ProductCard section article{
+        width: 48%;
+    }
+}
+
+@media (min-width:768px){
+    .Carrito{
+        max-width: 2540px;
+    }
+    .Carrito .ProductCard section article{
+        width: 32%;
+    }
+}
