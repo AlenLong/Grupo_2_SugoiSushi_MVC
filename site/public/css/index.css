@@ -1,0 +1,110 @@
+.home{
+    background: linear-gradient(10deg, #c1030f, #000);
+}
+
+.home main{
+    width: 90vw;
+    margin: 0%;
+}
+.home main .banner{
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    text-align: center;
+}
+.home main section article{
+    margin: 20px 0;
+    
+}
+.home main section .image{
+    position: relative;
+}
+.home main section .image:hover .producto{
+    transform: scale(1.2);
+    position: relative;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.home main section .image:hover .etiqueta{
+    z-index: 10;
+    transform: translateX(30px) translateY(-20px) scale(1.1);
+    transition: all 0.5s;
+}
+.home main section .producto{
+    width: 100%;
+}
+.home main section .etiqueta{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+.home main section h3{
+    margin: 15px 0;
+}
+
+.home main section p{
+    color: white;
+}
+
+.home main section a{
+    display: inline-block;
+    margin: 20px 0 0;
+    background-color: var(--colorGris);
+    /* max-width: 75px; */
+    /* text-align: center; */
+    padding: 10px;
+    color: white;
+    transition: background-color .5s;
+}
+.home main section a.link:hover{
+    background-color: var(--colorRojo);
+}
+
+.home main section .ampliar{
+    display: block;
+    text-align: center;
+    /* opacity: 70%; */
+    position: absolute;
+    top: 40%;
+    margin: 0;
+    /* padding: 10px 165px; */
+    width: 100%;
+    background-color: var(--colorTransparente);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Tablet */
+
+@media (min-width:460px) {
+    .home main .banner{
+        display: block;
+        
+    }
+    .home main .banner img{
+        width: 100%;
+    }
+    .home main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .home main section article{
+        width: 30%;
+    }
+}
+
+@media (min-width:768px){
+    .home main section article{
+        width: 32%;
+    }
+    .home main section {
+        width: 96vw;
+        margin-left: 2vw;
+    }
+    .home main section article .image img.producto {
+        width: 30vw;
+        height: 150px;
+    }
+}
