@@ -1,4 +1,4 @@
-.Carrito{
+ .Carrito{
     height: 100%;
 background-repeat: no-repeat;
 background-size: auto;
@@ -148,4 +148,4 @@ background: linear-gradient(206deg, var(--colorRojo), var(--colorNegro));
     .Carrito .ProductCard section article{
         width: 32%;
     }
-}
+} 
