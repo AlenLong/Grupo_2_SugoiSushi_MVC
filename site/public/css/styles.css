@@ -1,10 +1,10 @@
 @import url('normalize.css');
-@import url('variables.css');
 @import url('general.css');
+@import url('variables.css');
 @import url('header.css');
 @import url('footer.css');
 @import url('index.css');
 @import url('detail.css');
 @import url('carrito.css');
-@import url('login.css');
+@import url('login-register.css');
 @import url('register.css');

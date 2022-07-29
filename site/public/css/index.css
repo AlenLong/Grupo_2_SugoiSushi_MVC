@@ -1,0 +1,68 @@
+body.index{
+    background-image: url("/img/combi.jpg");
+    background-position: top;
+    background-size: contain;
+    font-family: var(--fuente);
+    margin: 0 auto;
+}
+main section article .image{
+    display: flex;
+    align-content: center;
+    
+}
+
+main section article{
+width: 200px;
+}
+
+    main section .image{
+        position: relative;
+    
+}
+
+main section .producto{
+    border: 5px solid var(--colorBlanco);
+    width: 200px;
+    position: relative;
+    margin: 30px 0 0 10px;
+
+}
+
+main section .producto{
+    width: 100%;
+}
+main section .etiqueta{
+    position: absolute;
+    top: 35px;
+    right: 2px;
+    width: 60px;
+
+}
+main section .image:hover .producto{
+    transform: scale(1.2);
+    position: relative;
+    transition: all 0.5s;
+    z-index: 10;
+}
+main section .image:hover .etiqueta{
+    z-index: 10;
+    transform: translateX(30px) translateY(-20px) scale(1.1);
+    transition: all 0.5s;
+}
+footer{
+    margin-bottom: 0px;
+}
+
+/* 
+@media (min-width:769px) {
+
+}
+
+@media (min-width:1024px){
+
+}
+ */
+
+
+
+

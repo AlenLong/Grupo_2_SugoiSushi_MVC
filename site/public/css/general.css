@@ -1,6 +1,20 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fuente);
+    font-family: var(--Fuente);
 }
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto; 
+    
+}
+
