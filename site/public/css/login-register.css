@@ -1,0 +1,175 @@
+
+.logReg{
+height: 100%;
+font-family: var(--fuente);
+background-repeat: no-repeat;
+background-size: auto;
+background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+}
+.login-box{
+    margin-top: 10px;
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--colorBlanco);
+    text-align: center;
+}
+.login-box .user-box{
+    position: relative;
+}
+.login-box .user-box:nth-child(1) {
+    margin-bottom: 20px;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:var(--colorBlanco);
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid var(--colorBlanco);
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: var(--colorBlanco);
+    pointer-events: none;
+    transition: .5s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+.login-box form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color:var(--colorBlanco);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+.login-box a:hover{
+    background:var(--colorRojo);
+    color: var(--colorBlanco);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--colorRojo),
+                0 0 25px var(--colorRojo),
+                0 0 50px var(--colorRojo),
+                0 0 100px var(--colorRojo);
+}
+.login-box a span{
+    position: absolute;
+display: block;
+}
+.login-box a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--colorRojo));
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100%{
+        left:100%;
+    }
+}
+.login-box a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--colorRojo));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s ;
+}
+ @keyframes btn-anim2 {
+    0%{
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.login-box small {
+    color: var(--colorBlanco);
+    display: block;
+    text-align: center;
+}
+
+.newsletter-checkbox{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#newscheck{
+    width: auto;
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+
+
+/* Ya tienes una cuenta? */
+.signup_link{
+    margin: 30px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+.signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+    font-size: 20px;
+}
+.signup_link a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    background: none;
+    color: #fff;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.homeAbout{
+    width: 100vw;
+    height: 25vh;
+}
+.logReg .logReg2 .login-container .login-box .signup_link .cuenta{
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: var(--colorBlanco);
+    
+}
