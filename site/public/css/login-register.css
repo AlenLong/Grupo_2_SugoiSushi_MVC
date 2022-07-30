@@ -1,15 +1,13 @@
 
-body.logReg{
+.logReg{
 height: 100%;
 font-family: var(--fuente);
 background-repeat: no-repeat;
 background-size: auto;
 background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
-/* DESHABILITA SCROLL 
-overflow: hidden; */
 }
 
-/*contenedor para el login, centrado vertical y horizontalmente con flexbox. Height depende del tamaño que usemos para el header y footer */
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -18,13 +16,8 @@ overflow: hidden; */
 }
 .login-box{
     margin-top: 10px;
-    /*position: relative;
-    top: 62%;
-    left: 212px;
-    right: auto;*/
     width: 400px;
     padding: 40px;
-    /*transform: translate(-50%, -50%);*/
     background: rgba(0, 0, 0,.5);
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -138,7 +131,17 @@ display: block;
     text-align: center;
 }
 
+.newsletter-checkbox{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
 
+#newscheck{
+    width: auto;
+    margin-right: 1em;
+    margin-bottom: 0;
+}
 
 
 /* Ya tienes una cuenta? */
@@ -165,155 +168,8 @@ display: block;
     height: 25vh;
 }
 .logReg .logReg2 .login-container .login-box .signup_link .cuenta{
-
     font-size: 18px;
     padding-bottom: 20px;
     color: var(--colorBlanco);
     
 }
-
-
--------------
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: #585858;
-}
-body .logReg{
-    max-width: 1440px;
-    margin: 0 auto; 
-
-}
-header{
-    background-color: #000;
-    position: relative;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    
-}
-header .top{
-    max-height:80px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-header .logo{
-    display: flex;
-    align-items: center;
-    width: 50%;
-}
-header img{
-    top: 15px;
-    padding: 10px;
-    width: 150px;
-    border-radius: 25px;
-}
-header .burger label{
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    font-size: 30px;
-    padding: 20px 30px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    display: inline-block;
-}
-header .burger input{
-    display: none;
-}
-header .burger input:checked ~ nav{
-    display: none;
-}
-header .burger nav{
-    width: 100%;
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-}
-header .burger nav ul{
-    padding-bottom: 20px;
-}
-header .burger nav ul li{
-    margin: 20px 0;
-}
-header .burger nav a{
-    color: white;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-
-
-
------------
-
-
-
-/* 
-footer{
-    
-    
-    margin-top: 0px;
-    background-color: black; 
-    margin-bottom: 0px;
-}
-
-
-.social-icon{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    height: fit-content;
-    padding: 0;
-    overflow: hidden;
-}
-.social-icon li{
-    margin: 10px 10px;
-}
-.social-icon li a{
-    font-size: 30px;
-    height: 80px;
-    width: 80px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    transition: 0.5s ease;
-    text-shadow: 0 0 30px;
-}
-.social-icon li a::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(1px) saturate(180%);
-    -webkit-backdrop-filter: blur(6px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0);
-    border-radius: 50%;
-}
-.social-icon li a:hover{
-    text-shadow: 0 0 0px;
-}
-
-footer .goTop{
-    font-size: 2rem;
-    display: block;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    
-}
-footer .goTop a{
-    color: var(--colorGris);
-    transition: all 1s;
-    opacity: 10%;
-} */
