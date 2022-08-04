@@ -20,9 +20,7 @@
 ## **` TEMA :`** 
 ## ● E-COMMERCE DE SUSHI 
 
-## [*DOCUMENTACION*](https://github.com/AlenLong/Grupo_2_SugoiSushi/tree/master/Documentacion%20de%20Proyecto "Enlace")
-
-# **` NOSOTROS : `**
+## **`NOSOTROS :`**
 *En **Sugoi Sushi** buscamos constantemente la más precisa fusión entre tradición y modernidad, respetando los métodos milenarios de China y de Japón; y explorando las más innovadoras tendencias culinarias de Europa y América. 
 **Sugoi Sushi** ofrece de manera profesional un producto buscado y perfeccionando durante mucho tiempo por medio de cursos y degustaciones. Con mucho trabajo, pasión y amor por lo que se hace. Porque la Gastronomía también es arte.* 
 
