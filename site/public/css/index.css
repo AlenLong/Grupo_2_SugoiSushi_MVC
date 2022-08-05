@@ -1,24 +1,55 @@
-/* Archivo aun en desarrollo
 .home{
     background: linear-gradient(10deg, #c1030f, #000);
 }
-
 .home main{
     width: 90vw;
     margin: 0%;
+
 }
 .home main .banner{
     display: flex;
     width: 100vw;
-    height: 300px;
-    text-align: center;
+    height: 100px;
+    text-align: end;
 }
 .home main section article{
     margin: 20px 0;
     
 }
 .home main section .image{
-    position: relative;
+    flex: 0 0 100%;
+    width: 150%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    justify-content: center;
+    flex-grow:2 ;
+    
+}
+.home main section .carta{
+    margin: 5px;
+    float: left;
+    width: 180px;
+
+}
+.home main section .carta menu{
+    background-color: aliceblue;
+    flex: auto;
+    scroll-snap-align: center;
+    justify-content: center;
+
+}
+.home main section .link{
+    background-color: #e73f36;
+    border: none;
+    color: rgb(47, 27, 27);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 45%;
+    border: 2px solid #320d0d;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
 .home main section .image:hover .producto{
     transform: scale(1.2);
@@ -26,6 +57,7 @@
     transition: all 0.5s;
     z-index: 10;
 }
+
 .home main section .image:hover .etiqueta{
     z-index: 10;
     transform: translateX(30px) translateY(-20px) scale(1.1);
@@ -44,15 +76,21 @@
 }
 
 .home main section p{
-    color: white;
+    color: var(--colorGris);
 }
 
 .home main section a{
     display: inline-block;
     margin: 20px 0 0;
     background-color: var(--colorGris);
+
+
+     max-width: 75px; 
+     text-align: center;
+
+
     padding: 10px;
-    color: white;
+    color: var(--colorBlanco);
     transition: background-color .5s;
 }
 .home main section a.link:hover{
@@ -62,14 +100,36 @@
 .home main section .ampliar{
     display: block;
     text-align: center;
+
+
+     opacity: 70%;
+
+
     position: absolute;
     top: 40%;
     margin: 0;
+
+
+    padding: 10px 165px;
+
+
     width: 100%;
     background-color: var(--colorTransparente);
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.contenedor-sobre-nosotro{
+    text-decoration: none;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ /*Tablet */
+
+
 
 @media (min-width:460px) {
     .home main .banner{
@@ -103,4 +163,3 @@
         height: 150px;
     }
 }
-/*
