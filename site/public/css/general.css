@@ -1,9 +1,9 @@
 *{
     margin: 0;
-    background-color: black;
+    /*background-color: black;*/
     background-size: cover;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     font-family: var(--fuente);
     color: white;
 }
