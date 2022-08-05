@@ -1,8 +1,7 @@
  header{
     
     position: relative;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: 0;
     background-color: var(--colorNegro);
 }
 header .top{
@@ -48,6 +47,9 @@ header .burger nav{
 }
 header .burger nav ul{
     padding-bottom: 20px;
+}
+header .burger nav ul .none{
+    display: none;
 }
 header .burger nav ul li{
     margin: 20px 0;
@@ -101,7 +103,7 @@ header .burger nav a{
     header .burger nav ul li a{
         font-size: 16px;
     }
-}
+
 
 @media (min-width:1024px) {
     header .burger nav ul li{
@@ -110,7 +112,23 @@ header .burger nav a{
     header .burger nav ul li a{
         font-size: 20px;
     }
-} 
+    header .burger nav ul .none{
+        display: block;
+    }
+    header .burger nav ul{
+        display: flex;
+        flex-wrap:nowrap;
+    }
+    header .burger .menu li{
+        padding-right: 3%;
+        /* letter-spacing: 0.5em; */
+    }
+    } 
 
-
- 
+@media (min-width:1600px) {
+    header .burger .menu li{
+        padding-right: 6%;
+        letter-spacing: 0.5em;
+    }
+}
+}

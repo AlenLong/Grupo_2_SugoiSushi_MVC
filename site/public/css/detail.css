@@ -190,7 +190,7 @@
     font-size: 40px;
 }
 /* Tablet */
-@media (min-width:426px){
+@media (min-width:769px){
     .detail main .related article{
         width: 30%;
         max-width:205px;
@@ -199,7 +199,7 @@
 
 
 /* Desktop */
-@media (min-width:769px){
+@media (min-width:1024px){
     .detail main{
         display: flex;
         flex-wrap: wrap;
