@@ -1,3 +1,4 @@
+/*
 .home{
     background: linear-gradient(10deg, #c1030f, #000);
 }
@@ -129,7 +130,7 @@
 
  /*Tablet */
 
-
+/*
 
 @media (min-width:460px) {
     .home main .banner{
