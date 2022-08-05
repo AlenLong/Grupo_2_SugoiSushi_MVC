@@ -1,11 +1,7 @@
-
-/*
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
 .home{
     background: linear-gradient(10deg, #c1030f, #000);
 }
 .home main{
-<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
@@ -20,11 +16,7 @@
 }
 .home main section{
     max-width: 100%;
-    max-height: 100%
-
-    
-    
-    
+    max-height: 100% 
 }
 .home main section article{
     width: 25vw;
@@ -42,51 +34,15 @@
     object-fit: cover;
     scroll-snap-align: center;
     justify-content: center;
-=======
-    width: 90vw;
-    margin: 0%;
-
-}
-.home main .banner{
-    display: flex;
-    width: 100vw;
-    height: 100px;
-    text-align: end;
-}
-.home main section article{
-    margin: 20px 0;
-    
-}
-.home main section .image{
-    flex: 0 0 100%;
-    width: 150%;
-    object-fit: cover;
-    scroll-snap-align: center;
-    justify-content: center;
-    flex-grow:2 ;
-    
-}
-.home main section .carta{
-    margin: 5px;
-    float: left;
-    width: 180px;
-
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
 }
 .home main section .carta menu{
     background-color: aliceblue;
     flex: auto;
     scroll-snap-align: center;
     justify-content: center;
-<<<<<<< HEAD
     
 }
 /*.home main section .link{
-=======
-
-}
-.home main section .link{
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
     background-color: #e73f36;
     border: none;
     color: rgb(47, 27, 27);
@@ -98,11 +54,7 @@
     border-radius: 45%;
     border: 2px solid #320d0d;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
+}*/
 .home main section .image:hover .producto{
     transform: scale(1.2);
     position: relative;
@@ -132,7 +84,6 @@
 }
 
 .home main section a{
-<<<<<<< HEAD
     width: 100%;
     margin-bottom: 25px;
 }
@@ -177,18 +128,6 @@
     margin: 20px;
     background-color: var(--colorGris);
     text-align: center;
-=======
-    display: inline-block;
-    margin: 20px 0 0;
-    background-color: var(--colorGris);
-
-
-     max-width: 75px; 
-     text-align: center;
-
-
-    padding: 10px;
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
     color: var(--colorBlanco);
     transition: background-color .5s;
 }
@@ -199,19 +138,11 @@
 .home main section .ampliar{
     display: block;
     text-align: center;
-
-
-     opacity: 70%;
-
-
+    opacity: 70%;
     position: absolute;
     top: 40%;
     margin: 0;
-
-
     padding: 10px 165px;
-
-
     width: 100%;
     background-color: var(--colorTransparente);
     text-transform: uppercase;
@@ -220,43 +151,27 @@
 
 .contenedor-sobre-nosotro{
     text-decoration: none;
-<<<<<<< HEAD
     color: #000;
-=======
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
 }
 .contenedor-sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
-<<<<<<< HEAD
     text-transform: uppercase
-=======
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
 }
 
  /*Tablet */
 
 
 
-
-
-
-
-/*@media (min-width:460px) {
+@media (min-width:460px) {
     .home main .banner{
         display: block;
         
     }
-<<<<<<< HEAD
    /*  .home main .banner img{
         width: 100%;
         height: 200px;
     } */
-/*=======
-    .home main .banner img{
-        width: 100%;
-    }
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
     .home main section{
         display: flex;
         flex-direction: row;
@@ -270,19 +185,14 @@
 
 @media (min-width:768px){
     .home main section article{
-<<<<<<< HEAD
         width: 25vw;
         margin: 10px;
-=======
-        width: 32%;
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
     }
     .home main section {
         width: 96vw;
         margin-left: 2vw;
     }
     .home main section article .image img.producto {
-<<<<<<< HEAD
         width: 80px;
         height: 200px;
     }
@@ -310,9 +220,4 @@
     }
 
 
-=======
-        width: 30vw;
-        height: 150px;
-    }
->>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
-*/
+}
