@@ -65,7 +65,22 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     display: flex;
     justify-content: center;
 }
-.login-box form a{
+#olvido {
+    
+    color: #2691d9;
+    font-size: 16px;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    padding: 0%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+#olvido:hover{
+    background: none;
+    box-shadow: none;
+}
+.login-box form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -89,7 +104,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 }
 .login-box a span{
     position: absolute;
-display: block;
+    display: block;
 }
 .login-box a span:nth-child(1){
     top: 0;
