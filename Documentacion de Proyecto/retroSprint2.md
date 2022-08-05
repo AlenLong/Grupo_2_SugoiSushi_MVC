@@ -9,7 +9,7 @@
 ###
 
  ## Hacer más : 
-### ● Acudir a los profes o compañeros cuando algo no nos sale.
+### ● Acudir a los profesores o compañeros cuando algo no sale.
 ### ● Realizar una introspección personal semanal. (no es necesario compartirla) con respecto a que tan comprometido estoy con el curso, si le dedico el tiempo necesario por día. Esto no solo por nosotros mismo. si no también, por empatía hacia nuestros compañeros de grupo.
 
 ###
