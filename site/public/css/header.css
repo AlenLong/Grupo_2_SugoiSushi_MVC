@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .home header{
     text-align: center;
 }
@@ -58,3 +59,139 @@
         font-size: 68%;
     }
 }
+=======
+ header{
+    
+    position: relative;
+    padding: 0;
+    background-color: var(--colorNegro);
+}
+header .top{
+    height:100px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+header img{
+    margin-left: 15px;
+    padding: 10px;
+    width: 150px;
+}
+header .burger label{
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 20px;
+    padding: 15px 10px;
+    color: var(--colorBlanco);
+    border: 1px solid var(--colorBlanco);
+    border-radius: 10px;
+    display: inline-block;
+}
+header .burger input{
+    display: none;
+}
+
+
+header .burger input:checked ~ nav{
+    display: none;
+}
+header .burger nav{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+header .burger nav ul{
+    padding-bottom: 20px;
+}
+header .burger nav ul .none{
+    display: none;
+}
+header .burger nav ul li{
+    margin: 20px 0;
+}
+header .burger nav a{
+    color: var(--colorBlanco);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+@media (min-width:769px) {
+    header{
+        padding-right: 20px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .top{
+        width: 10%;
+    }
+    header .burger input:checked ~ nav{
+        display: flex;
+    }
+    header .burger label{
+        display: none;
+    }
+    header .burger{
+        width: 80%;
+    }
+    header .burger nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header .burger nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 49%;
+    }
+    header .burger nav ul.menu{
+        width: 65%;
+        justify-content: flex-start;
+    }
+    header .burger nav ul.user{
+        width: 32%;
+        justify-content: flex-end;
+    }
+    header .burger nav ul li{
+        padding: 0 5px;
+    }
+    header .burger nav ul li a{
+        font-size: 16px;
+    }
+
+
+@media (min-width:1024px) {
+    header .burger nav ul li{
+        padding: 0 10px;
+    }
+    header .burger nav ul li a{
+        font-size: 20px;
+    }
+    header .burger nav ul .none{
+        display: block;
+    }
+    header .burger nav ul{
+        display: flex;
+        flex-wrap:nowrap;
+    }
+    header .burger .menu li{
+        padding-right: 3%;
+        /* letter-spacing: 0.5em; */
+    }
+    } 
+
+@media (min-width:1600px) {
+    header .burger .menu li{
+        padding-right: 6%;
+        letter-spacing: 0.5em;
+    }
+}
+}
+>>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768

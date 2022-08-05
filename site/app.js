@@ -23,12 +23,13 @@ app.get('/login',(req,res) => res.sendFile(path.resolve(__dirname,'views','login
 app.get('/register',(req,res) => res.sendFile(path.resolve(__dirname,'views','register.html')))
 app.get('/detail',(req,res) => res.sendFile(path.resolve(__dirname,'views','detail.html')))
 app.get('/carrito',(req,res) => res.sendFile(path.resolve(__dirname,'views','carrito.html')))
+app.get('/nosotros',(req,res) => res.sendFile(path.resolve(__dirname,'views','nosotros.html')))
 
 /* Funcion de actualizacion del servidor */
 liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
       liveReloadServer.refresh("/");
-    }, 100);
+    }, 75);
   });
 
 /* Levantamos el servidor con app listen */

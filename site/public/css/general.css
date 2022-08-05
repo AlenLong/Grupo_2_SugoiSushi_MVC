@@ -3,7 +3,22 @@
     /*background-color: black;*/
     background-size: cover;
     padding: 0;
+<<<<<<< HEAD
     /*box-sizing: border-box;*/
     font-family: var(--fuente);
     color: white;
 }
+=======
+    box-sizing: border-box;
+    font-family: var(--Fuente);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+>>>>>>> bb4ad8efb45fcc3b3868a65c5a8878e3ba73f768
