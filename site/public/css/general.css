@@ -4,8 +4,12 @@
     background-size: cover;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: var(--fuente);
     color: white;
+=======
+    font-family: var(--Fuente);
+>>>>>>> develop
 }
 
 li{
