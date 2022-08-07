@@ -2,7 +2,7 @@
 
 ###
 
-##Comenzar a hacer:
+## Comenzar a hacer:
 
 ### ● 
 ### ● 
@@ -10,14 +10,7 @@
 
 ###
 
-##Hacer más :
-
-### ● 
-### ● 
-### ●
-
-###
-hacer menos:
+## Hacer más :
 
 ### ● 
 ### ● 
@@ -25,7 +18,23 @@ hacer menos:
 
 ###
 
-Dejar de hacer:
+## Continuar haciendo:
+
+### ● 
+### ● 
+### ●
+
+###
+
+## Hacer menos:
+
+### ● 
+### ● 
+### ●
+
+###
+
+## Dejar de hacer:
 
 ### ● 
 ### ● 
