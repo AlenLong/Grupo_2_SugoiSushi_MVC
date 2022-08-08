@@ -1,0 +1,156 @@
+.productDetail{
+    height: 100%;
+background-repeat: no-repeat;
+background-size: auto;
+background: linear-gradient(206deg, var(--colorRojo), var(--colorNegro));
+
+}
+.productDetail .ProductCard {
+    font-family: 'Raleway', sans-serif;
+}
+.productDetail .ProductCard .banner{
+    display: none;
+    width: 100%;
+    background-color: #000000;
+}
+.productDetail .ProductCard section article{
+    margin: 20px 0;
+    background-color: var(--colorNegro);
+    padding: 10 16;
+    
+}
+.productDetail .ProductCard section article .container{
+    padding: 20px 16px;
+}
+.productDetail .ProductCard section .image{
+    position: relative;
+}
+.productDetail main section .image:hover .producto{
+    transform: scale(1.2);
+    position: relative;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.productDetail .ProductCard section .producto{
+    background-color: var(--colorNegro);
+    width: 100%;
+}
+.productDetail .ProductCard section h3{
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: 2px solid var(--colorRojo);
+    position: relative;
+    transition: .5s;
+    color: #ffffff;
+    outline: 0;
+    padding: 12px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.productDetail .ProductCard section h3::before,
+.productDetail .ProductCard section h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: .5s;
+}
+.productDetail .ProductCard section h3::before {
+    top: -10px;
+    left: -10px;
+    border-width: 2px 0 0 2px;
+}
+.productDetail .ProductCard section h3::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 2px 2px 0;
+}
+
+.productDetail .ProductCard section h3:hover::before,
+.productDetail .ProductCard section h3:hover::after {
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+}
+
+.productDetail .ProductCard section p{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+.productDetail .ProductCard section .price {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.productDetail .ProductCard section a{
+    
+    display: inline-block;
+    bottom: 0;
+    text-decoration: none;
+    padding: 10px;
+    transition: var(--colorRojo) .5s; 
+}
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+.ProductCard a {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--colorRojo);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    overflow: hidden;
+    transition: color 1s;
+  }
+  .ProductCard a:hover{
+    background-color: var(--colorBlanco);
+        color: var(--colorNegro);
+        font-weight: 600;
+    }
+  
+  .ProductCard button:hover {
+    opacity: 0.7;
+  } 
+/* tablet*/
+@media (min-width:425px) {
+    .productDetail .ProductCard .banner{
+        display: block;
+        
+    }
+    .productDetail .ProductCard .banner img{
+        width: 100%;
+    }
+    .productDetail .ProductCard section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .productDetail .ProductCard section article{
+        width: 48%;
+    }
+}
+
+@media (min-width:768px){
+    .productDetail{
+        max-width: 2540px;
+    }
+    .productDetail .ProductCard section article{
+        width: 32%;
+    }
+}
+
+ 
