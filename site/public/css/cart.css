@@ -62,7 +62,6 @@
     justify-content: center;
 }
 .Carrito section article .detail{
-    width: 66%;
     text-align: center;
 }
 .Carrito section article .precio-descuento{
@@ -102,6 +101,7 @@
 }
 .Carrito .unit{
     margin: 18px;
+	display: flex;
 }
 .Carrito .unit input {
 	width: 40px;
@@ -152,37 +152,21 @@
 .Carrito .totalidad a:hover {
 	background-color: var(--colorRojo);
 }
+ /* Tablet */
 
-
-@media screen and (max-width: 700px) {
-	.Carrito .content h3 {
-		margin-bottom: 15px;
+ @media (min-width: 320px){
+	.Carrito .project{
+		margin: 13px;
+		display: flex;
+		flex-wrap: wrap;
 	}
-	.Carrito .content h4 {
-		margin-bottom: 20px;
-	}
-	.Carrito .btn2 {
-		display: none;
-	}
-	.Carrito .card {
-		height: 150px;
-	}
-	.Carrito .card img {
-		height: 150px;
-		width: 200px;
+	.Carrito .totalidad{
+		margin: 15px;
 	}
 }
-@media screen and (max-width: 900px) {
-	.Carrito .project {
-		flex-direction: column;
-	}
-	.Carrito .totalidad {
-		margin-left: 0;
-		margin-bottom: 20px;
-	}
-}
-@media screen and (max-width: 1250px) {
-	.Carrito .card {
-		max-width: 95%;
+
+@media(min-width: 768px){
+	.Carrito .project{
+       display: flex;
 	}
 }
