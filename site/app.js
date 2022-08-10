@@ -10,27 +10,41 @@ const path = require('path')
 const app = express()
 const port = 3030
 
-/* Archivos estaticos */
-app.use(express.static(path.resolve(__dirname,'public')))
+/* Archivos estaticos 
+app.use(express.static(path.resolve(__dirname,'public')))*/
 
 /* Archivos estaticos monitoreados */
 liveReloadServer.watch(path.join(__dirname, 'public'));
 app.use(connectLivereload());
 
-/* Rutas */
-app.get('/',(req,res) => res.sendFile(path.resolve(__dirname,'views','index.html')))
-app.get('/login',(req,res) => res.sendFile(path.resolve(__dirname,'views','login.html')))
-app.get('/register',(req,res) => res.sendFile(path.resolve(__dirname,'views','register.html')))
-app.get('/detail',(req,res) => res.sendFile(path.resolve(__dirname,'views','detail.html')))
-app.get('/carrito',(req,res) => res.sendFile(path.resolve(__dirname,'views','carrito.html')))
-app.get('/nosotros',(req,res) => res.sendFile(path.resolve(__dirname,'views','nosotros.html')))
+/* Requerir rutas*/
+let indexRouter = require('./routes/index')
+let adminRouter = require('./routes/admin')
+let productsRouter = require('./routes/products')
+let usersRouter = require('./routes/users')
 
-/* Funcion de actualizacion del servidor */
+/* View engine setup*/
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+/* Middlewares*/
+app.use(express.json());
+app.use(express.static(path.resolve(__dirname,'public')));
+
+/*Rutas*/
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/products', productsRouter);
+app.use('/admin',adminRouter);
+
+/* Funcion de actualizacion del servidor 
 liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
       liveReloadServer.refresh("/");
     }, 75);
   });
+*/
+
 
 /* Levantamos el servidor con app listen */
 app.listen(port,function(){
