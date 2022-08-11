@@ -1,5 +1,21 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Fuente);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* *{
+    margin: 0;
     
     background-size: cover;
     padding: 0;
@@ -20,3 +36,4 @@ a{
     text-decoration: none;
 }
 
+ */
