@@ -1,0 +1,139 @@
+.ProdCreate-Edit{
+    height: 100%;
+    font-family: var(--fuente);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
+    }
+    .create-edit-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50em;
+    }
+    .create-edit-box{
+        margin-top: 10px;
+        width: 400px;
+        padding: 40px;
+        background: rgba(0, 0, 0,.5);
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+    }
+    .create-edit-box h2{
+        margin: 0 0 30px;
+        padding: 0;
+        color: var(--colorBlanco);
+        text-align: center;
+    }
+    .create-edit-box .product-box{
+        position: relative;
+    }
+    .create-edit-box .product-box .form-select{
+        margin: 7px 25px 12px 81px;
+    }
+    .create-edit-box .product-box:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .create-edit-box .product-box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color:var(--colorBlanco);
+        margin-bottom: 5px;
+        border: none;
+        border-bottom: 1px solid var(--colorBlanco);
+        outline: none;
+        background: transparent;
+    }
+    .create-edit-box .product-box label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        color: var(--colorBlanco);
+        pointer-events: none;
+        transition: .5s;
+    }
+    .create-edit-box .product-box input:focus ~ label,
+    .create-edit-box .product-box input:valid ~ label{
+        top: -20px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 12px;
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+    .create-edit-box form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color:var(--colorBlanco);
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
+    .create-edit-box a:hover{
+        background:var(--colorRojo);
+        color: var(--colorBlanco);
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--colorRojo),
+                    0 0 25px var(--colorRojo),
+                    0 0 50px var(--colorRojo),
+                    0 0 100px var(--colorRojo);
+    }
+    .create-edit-box a span{
+        position: absolute;
+        display: block;
+    }
+    .create-edit-box a span:nth-child(1){
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--colorRojo));
+        animation: btn-anim1 1s linear infinite;
+    }
+    @keyframes btn-anim1 {
+        0% {
+            left: -100%;
+        }
+        50%, 100%{
+            left:100%;
+        }
+    }
+    .create-edit-box a span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, var(--colorRojo));
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: .25s ;
+    }
+     @keyframes btn-anim2 {
+        0%{
+            top: -100%;
+        }
+        50%, 100% {
+            top: 100%;
+        }
+    }
+    
+    .create-edit-box small {
+        color: var(--colorBlanco);
+        display: block;
+        text-align: center;
+    }
+    
+ .ProdCreate-Edit .create-edit-container .create-edit-box .signup_link .cuenta{
+        font-size: 18px;
+        padding-bottom: 20px;
+        color: var(--colorBlanco);
+        
+    }

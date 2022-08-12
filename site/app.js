@@ -1,21 +1,21 @@
 /* Livereload */
-const livereload = require('livereload');
-const liveReloadServer = livereload.createServer();
+/* const livereload = require('livereload');
+const liveReloadServer = livereload.createServer(); */
 
 /* Entry point */
 const express = require('express')
-const connectLivereload = require('connect-livereload')
+/* const connectLivereload = require('connect-livereload') */
 const path = require('path')
 
 const app = express()
-const port = 3030
+const port = 3090
 
 /* Archivos estaticos 
 app.use(express.static(path.resolve(__dirname,'public')))*/
 
 /* Archivos estaticos monitoreados */
-liveReloadServer.watch(path.join(__dirname, 'public'));
-app.use(connectLivereload());
+/* liveReloadServer.watch(path.join(__dirname, 'public'));
+app.use(connectLivereload()); */
 
 /* Requerir rutas*/
 let indexRouter = require('./routes/index')

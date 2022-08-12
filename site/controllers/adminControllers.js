@@ -1,17 +1,15 @@
-
-module.exports = {
-    list: (req,res) => {
-        return res.render('admin/listaProductos')
+module.exports={
+    list: (req,res) =>{
+        return res.render('admin/listarProducts')
     },
-    create: (req,res) => {
-        return res.render('admin/crearProductos')
+    create: (req,res) =>{
+        return res.render('admin/crearProducts')
     },
-    edit: (req,res) => {
-        return res.render('admin/editarProductos')
-    },
+    edit: (req,res) =>{
+        /* id = +req.params.id
+        let producto = productos.find((elemento)=>{
+            return elemento.id == id
+        }) */
+        return res.render('admin/editarProducts')
+    }
 }
-
-/* id = +req.params.id
-let producto = productos.find((elemento)=>{
-    return elemento.id == id
-})*/

@@ -3,8 +3,8 @@ const router = express.Router()
 
 let {create,edit,list} = require('../controllers/adminControllers')
 
-router.get('/listar',list)
-router.get('/editar',edit)
-router.get('/crear',create)
+router.get('/listarProducts',list)
+router.get('/editarProducts',edit)
+router.get('/crearProducts',create)
 
 module.exports = router
