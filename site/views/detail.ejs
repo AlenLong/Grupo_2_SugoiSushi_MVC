@@ -1,40 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/1a451b1708.js" crossorigin="anonymous"></script>
-    <title>Carta</title>
-</head>
+    <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
 <body class="detail">
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="/">
-                    <img src="/img/logo_blanco_png.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="burger">
-            <input type="checkbox" name="burger" id="burger" checked>
-            <label for="burger"><i class="fas fa-ellipsis-v"></i></label>
-            <nav>
-                <ul class="menu">
-                    <li><a href="/detail">Carta</a></li>
-                    <li><a href="/">Promociones</a></li>
-                    <li><a href="/">Eventos</a></li>
-                    <li><a href="/nosotros">Conocenos</a></li>
-                </ul>
-                <ul class="user">
-                    <li><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/register">Registrate</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include('./partials/header') %>
     <main>
         <section class="imagenes">
             <div class="img-principal">
@@ -96,46 +64,7 @@
             </article>
         </section>
     </main>
-    <footer class="footer">
-        <div class="cont">
-            <div class="info">
-                <div class="Nosotros">
-                    <h3>Sugoi Sushi</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam et est id sunt iusto earum molestiae praesentium.</p>
-                </div>
-                <div >
-                    <h4>Redes</h4>
-                    <div class="socialButton">
-                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
-                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.discord.com/"><i class='bx bxl-discord-alt'></i></a>
-                    </div> 
-                </div>
-                <div>
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Preguntas Frecuentes </a></li>
-                        <li><a href="#">Formá parte de Nosotros</a></li>
-                        <li><a href="#">Donde está mi pedido</a></li>
-                        <li><a href="#">Formas de pago</a></li>
-                    </ul>    
-                </div>
-                <div>
-                    <h4>Paginas</h4>
-                    <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Que ofrecemos</a></li>
-                        <li><a href="#">Recursos Humanos</a></li>
-                        <li><a href="#">Area de cobertura</a></li>
-                    </ul>  
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © 2022-2022 SugoiSushi - Todos los derechos Reservados - Términos y Condiciones - Politica de Privacidad - Legales   info@sugoi-sushi.com.ar</p>
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>
 <!--     <footer class="redes">
         <div class="goTop">
             <a href="#">

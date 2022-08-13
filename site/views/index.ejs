@@ -1,15 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <script src="https://kit.fontawesome.com/1a451b1708.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body class="home">
+    <html lang="en">
+        <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
+    <body class="home">
+        <%- include('./partials/header') %>
     <main>
         <div class="banner">
             <img src="/img-banner.jpg" alt="">
@@ -82,20 +77,6 @@
             
         </section>
     </main>
-    <footer>
-        <div class="goTop">
-            <a href="#">
-                <i class="fas fa-arrow-circle-up"></i>
-            </a>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Quienes</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Porfolio</a></li>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </footer>
+    <%- include('./partials/footer') %>
 </body>
 </html>
