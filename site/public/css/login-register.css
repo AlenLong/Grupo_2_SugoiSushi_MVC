@@ -31,9 +31,6 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 .login-box .user-box{
     position: relative;
 }
-.login-box .user-box:nth-child(1) {
-    margin-bottom: 20px;
-}
 .login-box .user-box input{
     width: 100%;
     padding: 10px 0;
@@ -49,7 +46,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px 0;
+    padding:  0;
     color: var(--colorBlanco);
     pointer-events: none;
     transition: .5s;
