@@ -8,10 +8,10 @@ const connectLivereload = require('connect-livereload')
 const path = require('path')
 
 const app = express()
-const port = 3090
+const port = 3030
 
-/* Archivos estaticos 
-app.use(express.static(path.resolve(__dirname,'public')))*/
+/* Archivos estaticos  */
+app.use(express.static(path.resolve(__dirname,'public')))
 
 /* Archivos estaticos monitoreados */
 liveReloadServer.watch(path.join(__dirname, 'public'));
@@ -37,13 +37,13 @@ app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/admin',adminRouter);
 
-/* Funcion de actualizacion del servidor 
+/* Funcion de actualizacion del servidor  */
 liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
       liveReloadServer.refresh("/");
-    }, 75);
+    }, 100);
   });
-*/
+
 
 
 /* Levantamos el servidor con app listen */
