@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "nombreDeProducto": "Sunshine",
+        "categoria": "Clásico",
+        "altaDeProducto": "06-07-2022",
+        "disponibilidad": true,
+        "imagen": "foto3.jpg",
+        "descripcion": "curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi",
+        "precio": 4930.3,
+        "descuento": 12
+    },
+    null,
+    {
+        "id": 2,
+        "nombreDeProducto": "California",
+        "categoria": "Veggie",
+        "altaDeProducto": "20-08-2022",
+        "disponibilidad": true,
+        "imagen": "foto1.jpg",
+        "descripcion": "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices",
+        "precio": 6409.34,
+        "descuento": 19
+    },
+    {
+        "id": 26,
+        "imagen": "foto3.jpg"
+    },
+    {
+        "id": 26,
+        "imagen": "foto3.jpg"
+    }
+]
