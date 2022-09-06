@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
+    <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
 <body class="listarProduct">
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main class="cartProduct">
 		<h1>Administrador de Productos</h1>
 		<section class="projectProduct">
@@ -15,8 +15,8 @@
                             <h3>Sugoi Sushi Product Admin</h3>
                             <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post">
                                 <button type="submit" class="btnn"><i class="fas fa-trash"></i></button>
-                              </form>
-                            <p class="btn"><a href="/admin/editarProducts"></i>Editar</a>
+                                </form>
+                            <p class="btn"><a href="/admin/editarProducts/<%= producto.id%>"></i>Editar / Detalle </a>
                         </div>
                     </article>
                 <% }) %>

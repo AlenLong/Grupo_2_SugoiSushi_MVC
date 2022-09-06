@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "roll": "Admin",
         "nombre": "Teodoro",
         "apellido": "Phoebe",
         "fechaDeIngreso": "04.05.2022",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "roll": "User",
         "nombre": "Alexio",
         "apellido": "McCarver",
         "fechaDeIngreso": "02.08.2022",
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "roll": "User",
         "nombre": "Tiffanie",
         "apellido": "Glavias",
         "fechaDeIngreso": "16.08.2022",
@@ -25,6 +28,7 @@
     },
     {
         "id": 4,
+        "roll": "User",
         "nombre": "Philis",
         "apellido": "Pennone",
         "fechaDeIngreso": "14.03.2022",
@@ -33,6 +37,7 @@
     },
     {
         "id": 5,
+        "roll": "User",
         "nombre": "Warde",
         "apellido": "Culvey",
         "fechaDeIngreso": "15.12.2021",
@@ -41,6 +46,7 @@
     },
     {
         "id": 6,
+        "roll": "User",
         "nombre": "Vernen",
         "apellido": "Bagby",
         "fechaDeIngreso": "11.04.2022",

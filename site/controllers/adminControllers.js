@@ -21,7 +21,6 @@ module.exports={
     },
     store:(req,res) => {
         let{Categoria,nombre,Descripcion,precio,descuento,stock} = (req.body)
-      
         let productoNuevo = {
         id: productos[productos.length - 1].id + 1,
         Categoria: Categoria,
@@ -31,19 +30,48 @@ module.exports={
         descuento: descuento, 
         stock: stock,
         imagen: 'foto3.jpg',
-      }
-       productos.push(productoNuevo)
-       guardar(productos)
+    }
+    productos.push(productoNuevo)
+    guardar(productos)
 
-       res.redirect('/admin/listarProducts')
+    res.redirect('/admin/listarProducts')
     },
+
+
     edit: (req,res) =>{
-        /* id = +req.params.id
+        id = +req.params.id
+        console.log(id)
         let producto = productos.find((elemento)=>{
             return elemento.id == id
-        }) */
-        return res.render('admin/editarProducts')
+        })
+        console.log(producto)
+        return res.render('admin/editarProducts', {producto})
     },
+    storeEdit: (req,res) =>{
+        console.log('editando')
+        console.log(req.body)
+        id = +req.params.id
+        let { nombreDeProducto, categoria, altaDeProducto, disponible, imagen, descripcion, precio, descuento } = req.body
+        /* console.log(id) */
+        console.log(disponible)
+
+        productos.forEach(producto => {
+            if (producto.id === id) {
+                producto.nombreDeProducto = nombreDeProducto
+                producto.categoria = categoria
+                producto.altaDeProducto = altaDeProducto
+                producto.disponible = disponible
+                producto.imagen = imagen
+                producto.descripcion = descripcion
+                producto.precio = precio
+                producto.descuento = descuento
+            }
+        }) 
+        guardar(productos)
+        res.redirect('../listarProducts')
+    },
+
+
     destroy: (req,res) => {
 idParams = +req.params.id
     

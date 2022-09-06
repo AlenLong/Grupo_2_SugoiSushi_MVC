@@ -29,5 +29,38 @@
     {
         "id": 26,
         "imagen": "foto3.jpg"
+    },
+    {
+        "id": 3,
+        "nombreDeProducto": "Bubba",
+        "categoria": "Veggie",
+        "altaDeProducto": "09-05-2022",
+        "disponibilidad": true,
+        "imagen": "foto2.png",
+        "descripcion": "sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo",
+        "precio": 3343.45,
+        "descuento": 4
+    },
+    {
+        "id": 3,
+        "nombreDeProducto": "Bubba",
+        "categoria": "Veggie",
+        "altaDeProducto": "09-05-2022",
+        "disponibilidad": true,
+        "imagen": "foto2.png",
+        "descripcion": "sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo",
+        "precio": 3343.45,
+        "descuento": 4
+    },
+    {
+        "id": 3,
+        "nombreDeProducto": "Bubba",
+        "categoria": "Veggie",
+        "altaDeProducto": "09-05-2022",
+        "disponibilidad": true,
+        "imagen": "foto2.png",
+        "descripcion": "sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo",
+        "precio": 3343.45,
+        "descuento": 4
     }
 ]

@@ -65,11 +65,11 @@
         display: flex;
         justify-content: center;
     }
-    .create-edit-box form a {
+    .create-edit-box form button {
         position: relative;
         display: inline-block;
         padding: 10px 20px;
-        color:var(--colorBlanco);
+        /* color:var(--colorBlanco); */
         font-size: 16px;
         text-decoration: none;
         text-transform: uppercase;
@@ -78,20 +78,20 @@
         margin-top: 40px;
         letter-spacing: 4px;
     }
-    .create-edit-box a:hover{
+    .create-edit-box button:hover{
         background:var(--colorRojo);
-        color: var(--colorBlanco);
+        /* color: var(--colorBlanco); */
         border-radius: 5px;
         box-shadow: 0 0 5px var(--colorRojo),
                     0 0 25px var(--colorRojo),
                     0 0 50px var(--colorRojo),
                     0 0 100px var(--colorRojo);
     }
-    .create-edit-box a span{
+    .create-edit-box button span{
         position: absolute;
         display: block;
     }
-    .create-edit-box a span:nth-child(1){
+    .create-edit-box button span:nth-child(1){
         top: 0;
         left: -100%;
         width: 100%;
@@ -107,7 +107,7 @@
             left:100%;
         }
     }
-    .create-edit-box a span:nth-child(2){
+    .create-edit-box button span:nth-child(2){
         top: -100%;
         right: 0;
         width: 2px;

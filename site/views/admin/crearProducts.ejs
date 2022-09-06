@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
+    <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main class="ProdCreate-Edit">
         <div class="create-edit-container">
             <div class="create-edit-box">
@@ -19,7 +19,7 @@
                       <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="text" name="" required="">
+                        <input type="text" name="nombre" required="">
                         <label>Nombre del plato</label>
                         <small>Obligatorio</small>
                     </div>
@@ -46,7 +46,7 @@
                     </div>
                    
                         <div class="btn-container">
-                            <button type="submit">Crear Product</button>
+                            <button type="submit">Crear Producto</button>
                         </div>
     
                 </form>

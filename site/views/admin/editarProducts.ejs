@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('/partials/head',{title: 'Sugoi Sushi'}) %>
+    <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
 <body>
-    <%- include('
-    /partials/header') %>
+    <%- include('../partials/header') %>
     <main class="ProdCreate-Edit">
         <div class="create-edit-container">
             <div class="create-edit-box">
-                <h2>Edición de Producto</h2>
-                <form>
+                <h2>Edición y Detalle de Producto</h2>
+                <form action="/admin/editarProducts/<%= producto.id %>?_method=PUT" method="POST">
                     <div class="product-box">
-                        <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected hidden>Selecciona una opción</option>
-                        <option value="Entradas">Entradas</option>
-                        <option value="Salsas">Salsas</option>
-                        <option value="Platos">Platos</option>
+                        <select class="form-select" name="categoria" id="categoria" aria-label="Floating label select example">
+                        <option selected hidden value="<%= producto.categoria %>"><%= producto.categoria %></option>
+                        <option value="Especiales">Especial</option>
+                        <option value="Clásicos">Clásicos</option>
+                        <option value="Combinados">Combinado</option>
+                        <option value="Adicional">Adicional</option>
+                        <option value="Hot">Hot</option>
+                        <option value="Nigiri">Nigiri</option>
+                        <option value="Veggie">Veggie</option>
                       </select>
-                      <label for="floatingSelect">Categoria</label>
+                      <label for="categoria">Categoria</label>
                       <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Nombre del plato</label>
+                        <input type="date" name="altaDeProducto" id="altaDeProducto" value="<%= producto.altaDeProducto %>">
+                        <label for="altaDeProducto">Alta de Producto</label>
                         <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Descripcion del plato</label>
+                        <input type="text" name="nombreDeProducto" id="nombreDeProducto" value="<%= producto.nombreDeProducto %>">
+                        <label for="nombreDeProducto">Nombre</label>
+                        <small>Obligatorio</small>
+                    </div>
+                    <div class="product-box">
+                        <input type="text" name="descripcion" id="descripcion" value="<%= producto.descripcion %>">
+                        <label for="descripcion">Descripcion</label>
                         <small> Obligatorio </small>
                     </div>
 
                     <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Precio</label>
+                        <input type="number" name="precio" id="precio" value="<%= producto.precio %>" >
+                        <label for="precio">Precio</label>
                         <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Descuento</label>
-                        <small>Opcional</small>
+                        <input type="number" name="descuento" id="descuento" value="<%= producto.descuento %>">
+                        <label for="descuento">Descuento</label><br> <br>
                     </div>
                     <div class="product-box">
-                        <input type="number" name="" class="form-control" id="Stock" placeholder="Stock">
-                    
-                    <small>Obligatorio</small>
+                        <input type="checkbox" name="disponible" id="disponible" value="<%= producto.disponible %>" <%= producto.disponible === undefined ? null : "checked" %>>
+                        <label for="disponible">disponible</label>
+                    <small>Obligatorio</small> <br>
+                    </div>
+                    <!-- consultar como manipular img -->
+                    <div class="product-box">      
+                    <label for="imagen">imagen</label> <br> <br>
+                    <input type="file" id="imagen" name="imagen" src="/site/img/<%= producto.imagen %>">
                     </div>
                     <div class="btn-container">
-                        <a href="#">
+                        <button type="submit">Modificar Producto</button>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Modificar Producto
-                        </a>
+                        
                     </div>
-                </form>
+                </form>             
                 <div class="signup_link">
                     <p class="cuenta">¿ Queres crear un Producto ?</p>                 
                     <a href="/admin/listarProducts">Clickeá acá</a>
