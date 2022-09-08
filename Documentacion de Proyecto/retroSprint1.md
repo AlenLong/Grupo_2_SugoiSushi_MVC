@@ -25,6 +25,6 @@
 
 ## Dejar de hacer:
 
-### ● Dejar las cosas para el final.
+### ● No dejar las cosas para el final.
 
 ###
