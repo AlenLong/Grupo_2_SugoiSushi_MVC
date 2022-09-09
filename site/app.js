@@ -6,6 +6,8 @@ const liveReloadServer = livereload.createServer();
 const express = require('express')
 const connectLivereload = require('connect-livereload')
 const path = require('path')
+const methodOverride = require('method-override')
+const morgan = require('morgan')
 
 const app = express()
 const port = 3030
@@ -29,7 +31,13 @@ app.set('view engine', 'ejs');
 
 /* Middlewares*/
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname,'public')));
+app.use(morgan('dev'));
+
+
+/* Trabajar con PUT y DELETE */
+app.use(methodOverride('_method'))
 
 /*Rutas*/
 app.use('/', indexRouter);

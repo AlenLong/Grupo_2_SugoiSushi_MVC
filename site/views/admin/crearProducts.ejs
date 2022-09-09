@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
+    <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main class="ProdCreate-Edit">
         <div class="create-edit-container">
             <div class="create-edit-box">
                 <h2>Creación de Producto</h2>
-                <form>
+                <form action="/admin/crearProducts" method="post">
                     <div class="product-box">
                         <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
                         <option selected hidden>Selecciona una opción</option>
@@ -19,7 +19,7 @@
                       <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="text" name="" required="">
+                        <input type="text" name="nombre" required="">
                         <label>Nombre del plato</label>
                         <small>Obligatorio</small>
                     </div>
@@ -44,14 +44,11 @@
                     
                     <small>Obligatorio</small>
                     </div>
-                    <div class="btn-container">
-                        <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Crear Producto
-                        </a>
-                    </div>
+                   
+                        <div class="btn-container">
+                            <button type="submit">Crear Producto</button>
+                        </div>
+    
                 </form>
                 <div class="signup_link">
                     <p class="cuenta">¿ Queres editar un Producto ?</p>                 
