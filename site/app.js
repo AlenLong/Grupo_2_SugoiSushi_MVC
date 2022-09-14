@@ -23,7 +23,7 @@ app.use(connectLivereload());
 let indexRouter = require('./routes/index')
 let adminRouter = require('./routes/admin')
 let productsRouter = require('./routes/products')
-let usersRouter = require('./routes/users')
+let usersRouter = require('./routes/usersRoutes')
 
 /* View engine setup*/
 app.set('views', path.join(__dirname, 'views'));

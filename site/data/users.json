@@ -1,56 +1,57 @@
 [
     {
         "id": 1,
-        "roll": "Admin",
         "nombre": "Teodoro",
         "apellido": "Phoebe",
-        "fechaDeIngreso": "04.05.2022",
         "email": "tphoebe0@google.com.hk",
-        "password": "7jOUlX0Vc"
+        "password": "7jOUlX0Vc",
+        "imagen": "",
+        "roll": "admin"
     },
     {
         "id": 2,
-        "roll": "User",
         "nombre": "Alexio",
         "apellido": "McCarver",
-        "fechaDeIngreso": "02.08.2022",
         "email": "amccarver1@latimes.com",
-        "password": "lVGTVtvt8Ert"
+        "password": "lVGTVtvt8Ert",
+        "imagen": "",
+        "roll": "user"
     },
     {
         "id": 3,
-        "roll": "User",
         "nombre": "Tiffanie",
         "apellido": "Glavias",
-        "fechaDeIngreso": "16.08.2022",
         "email": "tglavias2@microsoft.com",
-        "password": "UZVMuL3"
+        "password": "UZVMuL3",
+        "imagen": "",
+        "roll": "user"
     },
     {
         "id": 4,
-        "roll": "User",
         "nombre": "Philis",
         "apellido": "Pennone",
-        "fechaDeIngreso": "14.03.2022",
         "email": "ppennone3@zdnet.com",
-        "password": "fPlyaZeFIW00"
+        "password": "fPlyaZeFIW00",
+        "imagen": "",
+        "roll": "user"
     },
     {
         "id": 5,
-        "roll": "User",
+
         "nombre": "Warde",
         "apellido": "Culvey",
-        "fechaDeIngreso": "15.12.2021",
         "email": "wculvey4@pcworld.com",
-        "password": "BK867Gptv0T"
+        "password": "BK867Gptv0T",
+        "imagen": "",
+        "roll": "user"
     },
     {
         "id": 6,
-        "roll": "User",
         "nombre": "Vernen",
         "apellido": "Bagby",
-        "fechaDeIngreso": "11.04.2022",
         "email": "vbagby5@cpanel.net",
-        "password": "JNRHoe39cSz"
+        "password": "JNRHoe39cSz",
+        "imagen": "",
+        "roll": "user"
     }
 ]

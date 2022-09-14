@@ -7,7 +7,7 @@ router.get('/',index)
 router.get('/nosotros',nosotros)
 router.get('/detail',detail)
 router.get('/carrito',carrito)
-router.get('/register',register)
-router.get('/login',login)
+/* router.get('/register',register)
+router.get('/login',login) */
 
 module.exports = router

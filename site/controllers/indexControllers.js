@@ -12,15 +12,15 @@ module.exports = {
         return res.render('carrito')
     },
 
-    register: (req,res)=>{
+/*     register: (req,res)=>{
         return res.render('register')
     },
 
     login: (req,res)=>{
         return res.render('login')
-    },
+    }, */
 
     nosotros: (req,res)=>{
         return res.render('nosotros')
-    },
+    }
 }
