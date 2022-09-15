@@ -4,7 +4,7 @@
         "nombre": "Teodoro",
         "apellido": "Phoebe",
         "email": "tphoebe0@google.com.hk",
-        "password": "7jOUlX0Vc",
+        "password": "123",
         "imagen": "",
         "roll": "admin"
     },
@@ -13,7 +13,7 @@
         "nombre": "Alexio",
         "apellido": "McCarver",
         "email": "amccarver1@latimes.com",
-        "password": "lVGTVtvt8Ert",
+        "password": "321",
         "imagen": "",
         "roll": "user"
     },
