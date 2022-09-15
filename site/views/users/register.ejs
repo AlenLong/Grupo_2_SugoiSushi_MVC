@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
+
         <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
+
     <body class="logReg">
+
         <%- include('../partials/header') %>
+
     <main class="logReg2">
         <div class="login-container">
             <div class="login-box">
                 <h2>Regístrate</h2>
-                <form>
+                <form method="post">
                     <div class="user-box">
-                        <input type="text" name="" required="">
+                        <input type="text" name="nombre" >
                         <label>Nombre</label>
                         <small>Debe ingresar su nombre</small>
                     </div>
                     <div class="user-box">
-                        <input type="email" name="" required="">
-                        <label>Email</label>
+                        <input type="email" name="apellido" >
+                        <label>Apellido</label>
                         <small>Debe ingresar un email valido</small>
                     </div>
-
                     <div class="user-box">
-                        <input type="password" name="" required="">
-                        <label>Contraseña</label>
+                        <input type="email" name="email" >
+                        <label>Email</label>
+                        <small>Debe ingresar un email</small>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="password" >
+                        <label>password</label>
                         <small>Debe ingresar una contraseña</small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="" required="">
+                        <input type="password" name="" >
                         <label>Confirmar</label>
                         <small>Ambas contraseñas deben coincidir</small>
+                    </div>
+                    <div class="user-box">
+                        <input type="file" name="imagen" > 
+                        <!-- <label>Subí una imagen</label>  -->
+                        <small>Subí una imagen</small>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit">Crear Producto</button>
                     </div>
                     <div class="submit-container">
                         <a href="#">
@@ -39,7 +55,7 @@
                         </a>
                     </div>
                     <div class="user-box newsletter-checkbox">
-                        <input id="newscheck" type="checkbox" name="" required="">
+                        <input id="newscheck" type="checkbox" name="" >
                         <small>Deseo recibir ofertas y promociones a mi correo.</small>
                     </div>
                 </form>
