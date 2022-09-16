@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
+    <body class="logReg">
+        <%- include('../partials/header') %>
+    <main class="logReg2">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Nombre de Usuario</label>
+                        <small>Debe ingresar su email</small></a>
+                    </div>
+
+                    <div class="user-box">
+                        <input type="password" name="" required="">
+                        <label>Contraseña</label>
+                        
+                        <a id="olvido" href=""><small id="olvido">¿ Has olvidado la contraseña ?</small></a>
+                        <small>Debe ingresar su contraseña</small>
+                    </div><br>
+                    <div class="user-box newsletter-checkbox">
+                        <input id="newscheck" type="checkbox" checked name="" required="">
+                        <small>Recordarme</small>
+                    </div>
+                    <div class="submit-container">
+                        <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        ingresar
+                        </a>
+                    </div>
+                <small visibility="hidden">Los datos ingresados no son validos</small>
+                </form>
+                <div class="signup_link">
+                    <p class="cuenta">¿ Todavía no tienes una cuenta ?</p>                 
+                    <a href="/register">Regístrate Aquí</a>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <%- include('../partials/footer') %>
+
+</body>
+</html>
