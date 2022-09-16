@@ -8,38 +8,43 @@
         <div class="login-container">
             <div class="login-box">
                 <h2>Regístrate</h2>
-                <form>
+                <form method="post" action="/users/register" enctype="multipart/form-data">
                     <div class="user-box">
-                        <input type="text" name="" required="">
+                        <input type="text" name="" >
                         <label>Nombre</label>
                         <small>Debe ingresar su nombre</small>
                     </div>
                     <div class="user-box">
-                        <input type="email" name="" required="">
+                        <input type="email" name="" >
                         <label>Email</label>
                         <small>Debe ingresar un email valido</small>
                     </div>
 
                     <div class="user-box">
-                        <input type="password" name="" required="">
+                        <input type="password" name="" >
                         <label>Contraseña</label>
                         <small>Debe ingresar una contraseña</small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="" required="">
+                        <input type="password" name="" >
                         <label>Confirmar</label>
                         <small>Ambas contraseñas deben coincidir</small>
                     </div>
+                    <div class="user-box">
+                        <input type="file" name="imagen" >
+                        <label>Subir Imagen</label>
+                        <small>Ambas contraseñas deben coincidir</small>
+                    </div>
                     <div class="submit-container">
+                        <button type="submit"> Registrarse</button>
                         <a href="#">
                         <span></span>
                         <span></span>
                         <span></span>
-                        Registrarse
                         </a>
                     </div>
                     <div class="user-box newsletter-checkbox">
-                        <input id="newscheck" type="checkbox" name="" required="">
+                        <input id="newscheck" type="checkbox" name="" >
                         <small>Deseo recibir ofertas y promociones a mi correo.</small>
                     </div>
                 </form>
