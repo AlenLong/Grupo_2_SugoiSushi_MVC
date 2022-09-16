@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const {create,edit,storeEdit,list,store,destroy,history} = require('../controllers/adminControllers')
+/* const multer = require('multer') */
 
 /* Creación de producto */
 router.get('/crearProducts',create)

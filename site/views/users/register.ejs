@@ -12,7 +12,9 @@
         <div class="login-container">
             <div class="login-box">
                 <h2>Regístrate</h2>
-                <form method="post">
+
+                        <!-- form method post y multer -->
+                <form method="post" enctype="multipart/form-data"> 
                     <div class="user-box">
                         <input type="text" name="nombre" >
                         <label>Nombre</label>
@@ -39,7 +41,7 @@
                         <small>Ambas contraseñas deben coincidir</small>
                     </div>
                     <div class="user-box">
-                        <input type="file" name="imagen" > 
+                        <input type="file" name="imagen" >  <!-- multer -->
                         <!-- <label>Subí una imagen</label>  -->
                         <small>Subí una imagen</small>
                     </div>

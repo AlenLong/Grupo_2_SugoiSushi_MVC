@@ -10,6 +10,8 @@ module.exports = {
     },
 
     registerPost: (req,res)=>{
+        //return res.send(req.file)
+
         let {nombre,apellido,email,password,imagen = ''} = req.body
         let NewUser = {
             id: users[users.length - 1].id + 1,
@@ -17,7 +19,7 @@ module.exports = {
             apellido: apellido,
             email: email,
             password: password,
-            imagen: imagen
+            imagen: req.file ? req.file.filename : 'Logo Sugoi.jpg',
         }
         users.push(NewUser)
         guardar(users)
