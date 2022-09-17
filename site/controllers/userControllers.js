@@ -34,7 +34,10 @@ module.exports = {
     
         res.redirect('/users/login')
     }else{
-        return res.send(errors.mapped())
+        return res.render('./users/register',{
+            errors : errors.mapped(),
+            old: req.body
+        })
     }
     },
 

@@ -18,27 +18,37 @@
                     <div class="user-box">
                         <input type="text" name="nombre" >
                         <label>Nombre</label>
-                        <small>Debe ingresar su nombre</small>
+                        <small>
+                            <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
+                        </small>
                     </div>
                     <div class="user-box">
                         <input type="text" name="apellido" >
                         <label>Apellido</label>
-                        <small>Debe ingresar un email valido</small>
+                        <small>
+                            <%= locals.errors && errors.apellido ? errors.apellido.msg : null %> 
+                        </small>
                     </div>
                     <div class="user-box">
                         <input type="email" name="email" >
                         <label>Email</label>
-                        <small>Debe ingresar un email</small>
+                        <small>
+                            <%= locals.errors && errors.email ? errors.email.msg : null %> 
+                        </small>
                     </div>
                     <div class="user-box">
                         <input type="password" name="password" >
                         <label>password</label>
-                        <small>Debe ingresar una contraseña</small>
+                        <small>
+                            <%= locals.errors && errors.password ? errors.password.msg : null %> 
+                        </small>
                     </div>
                     <div class="user-box">
                         <input type="password" name="confirma" >  <!-- mismo nombre para la validacion ? -->
                         <label>Confirmar</label>
-                        <small>Ambas contraseñas deben coincidir</small>
+                        <small>
+                            <%= locals.errors && errors.confirma ? errors.confirma.msg : null %> 
+                        </small>
                     </div>
                     <div class="user-box">
                         <input type="file" name="imagen" >  <!-- multer -->
