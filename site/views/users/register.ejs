@@ -16,35 +16,35 @@
                         <!-- form method post y multer -->
                 <form method="post" enctype="multipart/form-data"> 
                     <div class="user-box">
-                        <input type="text" name="nombre" >
+                        <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" >
                         <label>Nombre</label>
                         <small>
                             <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="text" name="apellido" >
+                        <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" >
                         <label>Apellido</label>
                         <small>
                             <%= locals.errors && errors.apellido ? errors.apellido.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="email" name="email" >
+                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>">
                         <label>Email</label>
                         <small>
                             <%= locals.errors && errors.email ? errors.email.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="password" >
+                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>">
                         <label>password</label>
                         <small>
                             <%= locals.errors && errors.password ? errors.password.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="confirma" >  <!-- mismo nombre para la validacion ? -->
+                        <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>" >  <!-- mismo nombre para la validacion ? -->
                         <label>Confirmar</label>
                         <small>
                             <%= locals.errors && errors.confirma ? errors.confirma.msg : null %> 
