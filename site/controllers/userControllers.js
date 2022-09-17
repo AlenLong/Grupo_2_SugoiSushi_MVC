@@ -3,6 +3,8 @@ const path = require('path')
 const users = require('../data/users.json')
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/users.json')
 ,JSON.stringify(dato,null,4),'utf-8')
+// const {validationResult} = require('express-validator')
+const {validationResult} = require('express-validator')
 
 module.exports = {
     register: (req,res)=>{
@@ -10,9 +12,15 @@ module.exports = {
     },
 
     registerPost: (req,res)=>{
+        
         //return res.send(req.file)
-
-        let {nombre,apellido,email,password,imagen = ''} = req.body
+        console.log(req.body)
+        let errors = validationResult(req)
+        console.log(errors.mapped())
+        if (errors.isEmpty()) {
+            
+        
+        let {nombre,apellido,email,password } = req.body
         let NewUser = {
             id: users[users.length - 1].id + 1,
             nombre: nombre,
@@ -25,7 +33,9 @@ module.exports = {
         guardar(users)
     
         res.redirect('/users/login')
-
+    }else{
+        return res.send(errors.mapped())
+    }
     },
 
     
