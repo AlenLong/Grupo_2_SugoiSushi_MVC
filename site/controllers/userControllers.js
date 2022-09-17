@@ -16,7 +16,14 @@ module.exports = {
         //return res.send(req.file)
         console.log(req.body)
         let errors = validationResult(req)
-        console.log(errors.mapped())
+        if(req.fileValidationError){
+            let imagen = {
+                param : 'imagen',
+                msg : req.fileValidationError,
+            }
+            errors.errors.push(imagen)
+        }
+
         if (errors.isEmpty()) {
             
         
@@ -40,6 +47,13 @@ module.exports = {
         })
     }
     },
+
+
+
+
+
+
+
 
     
     login: (req,res)=>{

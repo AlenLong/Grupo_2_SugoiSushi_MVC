@@ -44,16 +44,18 @@
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>" >  <!-- mismo nombre para la validacion ? -->
+                        <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>">  <!-- mismo nombre para la validacion ? -->
                         <label>Confirmar</label>
                         <small>
                             <%= locals.errors && errors.confirma ? errors.confirma.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="file" name="imagen" >  <!-- multer -->
+                        <input type="file" name="imagen" id="imagen" value="<%= locals.old && old.imagen ? old.imagen : null%>">  <!-- multer -->
                         <!-- <label>Subí una imagen</label>  -->
-                        <small>Subí una imagen</small>
+                        <small>
+                            <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
+                        </small>
                     </div>
                     <div class="btn-container">
                         <button type="submit">Crear usuario</button>
