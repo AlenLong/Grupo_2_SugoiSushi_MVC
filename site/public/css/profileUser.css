@@ -1,0 +1,15 @@
+.profile main {
+    height: 70vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile main .imgProfile{
+    height: 400px;
+
+}
+
+.profile main h1{
+    text-transform: capitalize;
+}

@@ -6,7 +6,7 @@
         "email": "ms@dos.com",
         "password": "12345678",
         "imagen": "TimPaterson.jpg",
-        "roll": "admin"
+        "roll": "Admin"
     },
     {
         "id": 2,
@@ -14,8 +14,8 @@
         "apellido": "McCarver",
         "email": "amccarver1@latimes.com",
         "password": "321",
-        "imagen": "",
-        "roll": "user"
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 3,
@@ -23,8 +23,8 @@
         "apellido": "Glavias",
         "email": "tglavias2@microsoft.com",
         "password": "UZVMuL3",
-        "imagen": "",
-        "roll": "user"
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 4,
@@ -32,8 +32,8 @@
         "apellido": "Pennone",
         "email": "ppennone3@zdnet.com",
         "password": "fPlyaZeFIW00",
-        "imagen": "",
-        "roll": "user"
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 5,
@@ -41,8 +41,8 @@
         "apellido": "Culvey",
         "email": "wculvey4@pcworld.com",
         "password": "BK867Gptv0T",
-        "imagen": "",
-        "roll": "user"
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 6,
@@ -50,7 +50,7 @@
         "apellido": "Bagby",
         "email": "vbagby5@cpanel.net",
         "password": "JNRHoe39cSz",
-        "imagen": "",
-        "roll": "user"
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     }
 ]

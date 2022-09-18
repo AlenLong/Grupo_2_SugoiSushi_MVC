@@ -32,7 +32,8 @@ module.exports = {
             apellido: apellido,
             email: email,
             password: password,
-            imagen: req.file ? req.file.filename : 'Logo Sugoi.jpg',
+            imagen: req.file ? req.file.filename : 'Avatar_por_Defecto.jpg',
+            rol: 'user'
         }
         users.push(NewUser)
         guardar(users)
@@ -61,9 +62,10 @@ module.exports = {
             req.session.userLogin = {
                 id : user.id,
                 nombre : user.nombre,
+                imagen : user.imagen,
                 roll : user.roll
             }
-            return res.redirect('/')
+            return res.redirect('/users/profileUser')
             /* return res.send(req.body) */
         } else {
             /* return res.send(errors.mapped()) */
@@ -72,5 +74,13 @@ module.exports = {
                 old: req.body
             })
         }
+    },
+    profileUser : (req,res) =>{
+        return res.render('./users/profileUser')
+    },
+    logout : (req,res) => {
+        req.session.destroy();
+
+        return res.redirect('/')
     }
 }
