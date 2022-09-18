@@ -14,23 +14,26 @@
                 <h2>Iniciar Sesión</h2>
                 <form method="post">
                     <div class="user-box">
-                        <input type="email" name="email" required="">
-                        <label>Email</label>
-                        <small>Debe ingresar su email</small></a>
+                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Ingrese su Email">
+                        <small>
+                            <%= locals.errors && errors.email ? errors.email.msg : null %> 
+                        </small>
                     </div>
+
                     <div class="user-box">
-                        <input type="password" name="password" required="">
-                        <label>Contraseña</label>
-                        
-                        <a id="olvido" href=""><small id="olvido">¿ Has olvidado la contraseña ?</small></a>
-                        <small>Debe ingresar su contraseña</small>
+                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Ingrese su contraseña">
+                        <small>
+                            <%= locals.errors && errors.password ? errors.password.msg : null %> 
+                        </small>
+                        <!-- <a id="olvido" href=""><small id="olvido">¿ Has olvidado la contraseña ?</small></a> -->
                     </div><br>
+
                     <div class="user-box newsletter-checkbox">
-                        <input id="newscheck" type="checkbox" checked name="" required="">
+                        <input type="checkbox" checked name="recordarme" id="recordarme" >
                         <small>Recordarme</small>
                     </div>
                     <div class="btn-container">
-                        <button type="submit">Crear usuario</button>
+                        <button type="submit">I N G R E S A R</button>
                     </div>
                     <div class="submit-container">
                         <a href="#">
