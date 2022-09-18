@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "nombre": "Teodoro",
-        "apellido": "Phoebe",
-        "email": "tphoebe0@google.com.hk",
-        "password": "123",
-        "imagen": "",
+        "nombre": "Tim",
+        "apellido": "Paterson",
+        "email": "ms@dos.com",
+        "password": "12345678",
+        "imagen": "TimPaterson.jpg",
         "roll": "admin"
     },
     {

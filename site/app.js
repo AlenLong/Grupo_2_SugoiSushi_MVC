@@ -8,6 +8,7 @@ const connectLivereload = require('connect-livereload')
 const path = require('path')
 const methodOverride = require('method-override')
 const morgan = require('morgan')
+const session = require('express-session')
 
 const app = express()
 const port = 3030
@@ -39,6 +40,9 @@ app.use(morgan('dev'));
 /* Trabajar con PUT y DELETE */
 app.use(methodOverride('_method'))
 
+/* Login e inicio de sesion */
+app.use(session({secret:"mensaje ultra mega archi super re secreto SUGOI SUSHI"}))
+
 /*Rutas*/
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -51,24 +55,7 @@ liveReloadServer.server.once("connection", () => {
       liveReloadServer.refresh("/");
     }, 100);
   });
-/* 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
- */
-/* Levantamos el servidor con app listen */
 app.listen(port,function(){
     return console.log(`Se levanta el servidor en http://localhost:${port}`)
 })

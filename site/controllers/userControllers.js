@@ -46,21 +46,25 @@ module.exports = {
     }
     },
 
+ // ===========L O G I N===========
 
-
-
-
-
-
-
-    
     login: (req,res)=>{
         return res.render('./users/login')
     },
     loginPost: (req,res)=>{
         let errors = validationResult(req)
         if (errors.isEmpty()){
-            return res.send(req.body)
+
+            const {email} = req.body
+            let user = users.find(usuario => usuario.email === email)
+
+            req.session.userLogin = {
+                id : user.id,
+                nombre : user.nombre,
+                roll : user.roll
+            }
+            return res.redirect('/')
+            /* return res.send(req.body) */
         } else {
             /* return res.send(errors.mapped()) */
             return res.render('./users/login',{
