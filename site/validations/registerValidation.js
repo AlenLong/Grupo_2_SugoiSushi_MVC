@@ -1,4 +1,4 @@
-const {check} = require('express-validator');
+const {check, body} = require('express-validator');
 
 module.exports = [
     check('nombre').trim().notEmpty().withMessage("Debe ingresar su nombre")
@@ -12,6 +12,10 @@ module.exports = [
 
     check('password').isLength({min:8}).withMessage('Debe contener al menos 8 caracteres'),
     
-    check('confirma').isLength({min:8}).withMessage('Las contraseñas no coinciden')
-    /* check('imagen').notEmpty().withMessage("Campo obligatorio") */ // express solo valida strings, crear custom validator y enlazarlo con el de multer
+    check('confirma').isLength({min:8}).withMessage('Las contraseñas no coinciden').bail(),
+
+    // falta terminos y condicines 
+
+    body('confirma').custom((value,{req}) => value !== req.body.password ? false : true)
+    .withMessage('Las contraseñas no coinciden')
 ]
