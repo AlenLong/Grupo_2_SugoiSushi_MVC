@@ -10,11 +10,11 @@
     },
     {
         "id": 2,
-        "nombre": "Alexio",
-        "apellido": "McCarver",
-        "email": "amccarver1@latimes.com",
-        "password": "321",
-        "imagen": "Avatar_por_Defecto.jpg",
+        "nombre": "Ellen",
+        "apellido": "Ripley",
+        "email": "last@survivor.com",
+        "password": "987654321",
+        "imagen": "Ellen_Ripley.jpg",
         "roll": "User"
     },
     {

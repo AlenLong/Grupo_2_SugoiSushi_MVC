@@ -13,7 +13,11 @@
             <ul class="menu">
                 <li><a href="/detail">Carta</a></li>
                 <li><a href="/">Promociones</a></li>
+                
+            <% if (locals.userLogin && locals.userLogin.roll === 'Admin') { %>
                 <li><a href="/admin/listarProducts">Admin</a></li>
+                <% } %>
+
                 <li><a href="/nosotros">Conocenos</a></li>
             </ul>
             <ul class="user">
