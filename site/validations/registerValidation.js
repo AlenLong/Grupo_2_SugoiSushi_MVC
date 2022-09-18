@@ -12,6 +12,6 @@ module.exports = [
 
     check('password').isLength({min:8}).withMessage('Debe contener al menos 8 caracteres'),
     
-    check('confirma').isLength({min:8}).withMessage('Debe contener al menos 8 caracteres')
+    check('confirma').isLength({min:8}).withMessage('Las contraseñas no coinciden')
     /* check('imagen').notEmpty().withMessage("Campo obligatorio") */ // express solo valida strings, crear custom validator y enlazarlo con el de multer
 ]

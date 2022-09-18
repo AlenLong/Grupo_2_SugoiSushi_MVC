@@ -16,28 +16,28 @@
                         <!-- form method post y multer -->
                 <form method="post" enctype="multipart/form-data"> 
                     <div class="user-box">
-                        <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" placeholder="Ingrese su nombre">
+                        <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" placeholder="Nombre">
                         <!-- <label>Nombre</label> -->
                         <small>
                             <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" placeholder="Ingrese su apellido">
+                        <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" placeholder="Apellido">
                         <!-- <label>Apellido</label> -->
                         <small>
                             <%= locals.errors && errors.apellido ? errors.apellido.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Ingrese su email">
+                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Email">
                         <!-- <label>Email</label> -->
                         <small>
                             <%= locals.errors && errors.email ? errors.email.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Ingrese su contraseña">
+                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Contraseña">
                         <!-- <label>password</label> -->
                         <small>
                             <%= locals.errors && errors.password ? errors.password.msg : null %> 
