@@ -16,36 +16,36 @@
                         <!-- form method post y multer -->
                 <form method="post" enctype="multipart/form-data"> 
                     <div class="user-box">
-                        <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" >
-                        <label>Nombre</label>
+                        <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" placeholder="Ingrese su nombre">
+                        <!-- <label>Nombre</label> -->
                         <small>
                             <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" >
-                        <label>Apellido</label>
+                        <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" placeholder="Ingrese su apellido">
+                        <!-- <label>Apellido</label> -->
                         <small>
                             <%= locals.errors && errors.apellido ? errors.apellido.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>">
-                        <label>Email</label>
+                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Ingrese su email">
+                        <!-- <label>Email</label> -->
                         <small>
                             <%= locals.errors && errors.email ? errors.email.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>">
-                        <label>password</label>
+                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Ingrese su contraseña">
+                        <!-- <label>password</label> -->
                         <small>
                             <%= locals.errors && errors.password ? errors.password.msg : null %> 
                         </small>
                     </div>
                     <div class="user-box">
-                        <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>">  <!-- mismo nombre para la validacion ? -->
-                        <label>Confirmar</label>
+                        <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>" placeholder="Confirmar contraseña">  <!-- mismo nombre para la validacion ? -->
+                        <!-- <label>Confirmar</label> -->
                         <small>
                             <%= locals.errors && errors.confirma ? errors.confirma.msg : null %> 
                         </small>
@@ -58,7 +58,11 @@
                         </small>
                     </div>
                     <div class="btn-container">
-                        <button type="submit">Crear usuario</button>
+                        <button type="submit">R E G I S T R A R S E</button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
                     </div>
                     <div class="submit-container">
                         <a href="#">
