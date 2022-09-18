@@ -10,6 +10,10 @@ const methodOverride = require('method-override')
 const morgan = require('morgan')
 const session = require('express-session')
 
+/* Implementamos locals dentro de la app */
+const userLogin = require('./middlewares/userLoginCheck')
+
+
 const app = express()
 const port = 3030
 
@@ -42,6 +46,7 @@ app.use(methodOverride('_method'))
 
 /* Login e inicio de sesion */
 app.use(session({secret:"mensaje ultra mega archi super re secreto SUGOI SUSHI"}))
+app.use(userLogin)
 
 /*Rutas*/
 app.use('/', indexRouter);
