@@ -1,10 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const users = require('../data/users.json')
-const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/users.json')
-,JSON.stringify(dato,null,4),'utf-8')
-// const {validationResult} = require('express-validator')
+const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/users.json'),JSON.stringify(dato,null,4),'utf-8')
 const {validationResult} = require('express-validator')
+const bcrypt = require('bcryptjs')
 
 module.exports = {
     register: (req,res)=>{
@@ -28,12 +27,12 @@ module.exports = {
         let {nombre,apellido,email,password } = req.body
         let NewUser = {
             id: users[users.length - 1].id + 1,
-            nombre: nombre,
-            apellido: apellido,
-            email: email,
-            password: password,
-            imagen: req.file ? req.file.filename : 'Avatar_por_Defecto.jpg',
-            rol: 'user'
+            nombre :nombre,
+            apellido :apellido,
+            email : email,
+            password : bcrypt.hashSync(password,10),
+            imagen : req.file ? req.file.filename : 'Avatar_por_Defecto.jpg',
+            roll: 'User'
         }
         users.push(NewUser)
         guardar(users)

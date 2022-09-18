@@ -52,5 +52,14 @@
         "password": "JNRHoe39cSz",
         "imagen": "Avatar_por_Defecto.jpg",
         "roll": "User"
+    },
+    {
+        "id": 7,
+        "nombre": "Arnold",
+        "apellido": "schwarzenegger",
+        "email": "terminator@1000.com",
+        "password": "$2a$10$rqaOxQ/CC9W.LMcVQAAeIenqfg7/InFLpPaPCFQ.rqRQlQjQPOtSW",
+        "imagen": "1663543485821_img_perfil.jpg",
+        "roll": "User"
     }
 ]
