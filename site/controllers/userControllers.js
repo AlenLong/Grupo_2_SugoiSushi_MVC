@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+
 const users = require('../data/users.json')
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/users.json'),JSON.stringify(dato,null,4),'utf-8')
 const {validationResult} = require('express-validator')
@@ -37,8 +38,9 @@ module.exports = {
         users.push(NewUser)
         guardar(users)
     
-        res.redirect('/users/login')
+        res.redirect('/users/profileUser')
     }else{
+        
         return res.render('./users/register',{
             errors : errors.mapped(),
             old: req.body
@@ -46,7 +48,9 @@ module.exports = {
     }
     },
 
+
  // ===========L O G I N===========
+
 
     login: (req,res)=>{
         return res.render('./users/login')
@@ -55,7 +59,7 @@ module.exports = {
         let errors = validationResult(req)
         if (errors.isEmpty()){
 
-            const {email} = req.body
+            const {email, recordarme} = req.body
             let user = users.find(usuario => usuario.email === email)
 
             req.session.userLogin = {
@@ -64,6 +68,10 @@ module.exports = {
                 imagen : user.imagen,
                 roll : user.roll
             }
+            if(recordarme){
+                res.cookie('SugoiCookie',req.session.userLogin,{maxAge: 1000 * 30 * 60 * 24 *256})
+            }
+
             return res.redirect('/users/profileUser')
             /* return res.send(req.body) */
         } else {

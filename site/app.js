@@ -6,9 +6,12 @@ const liveReloadServer = livereload.createServer();
 const express = require('express')
 const connectLivereload = require('connect-livereload')
 const path = require('path')
+const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override')
 const morgan = require('morgan')
+
 const session = require('express-session')
+
 
 /* Implementamos locals dentro de la app */
 const userLogin = require('./middlewares/userLoginCheck')
@@ -47,7 +50,8 @@ app.use(methodOverride('_method'))
 /* Login e inicio de sesion */
 app.use(session({secret:"mensaje ultra mega archi super re secreto SUGOI SUSHI"}))
 app.use(userLogin)
-
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname,'..', 'public')));
 /*Rutas*/
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
