@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-        <%- include('../partials/head',{title: locals.userLogin.nombre }) %>
+        <%- include('../partials/head') %>
 
     <body class="profile">
 
-        <%- include('../partials/header') %>
+        <%- include('../partials/header',{title: locals.userLogin.nombre }) %>
     <main>
         <img class="imgProfile" src="/img/users/<%= locals.userLogin.imagen %>" alt="">
         <h1> Hola <%= locals.userLogin.roll %> <%= locals.userLogin.nombre %></h1>

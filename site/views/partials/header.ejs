@@ -13,12 +13,12 @@
             <ul class="menu">
                 <li><a href="/detail">Carta</a></li>
                 <li><a href="/">Promociones</a></li>
-                
+                <li><a href="/nosotros">Conocenos</a></li>
+                                
             <% if (locals.userLogin && locals.userLogin.roll === 'Admin') { %>
-                <li><a href="/admin/listarProducts">Admin</a></li>
+                <li><a id="admin" href="/admin/listarProducts">Admin</a></li>
                 <% } %>
 
-                <li><a href="/nosotros">Conocenos</a></li>
             </ul>
             <ul class="user">
                 <li><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></li>

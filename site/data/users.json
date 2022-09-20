@@ -4,7 +4,7 @@
         "nombre": "Tim",
         "apellido": "Paterson",
         "email": "ms@dos.com",
-        "password": "12345678",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
         "imagen": "TimPaterson.jpg",
         "roll": "Admin"
     },
@@ -13,7 +13,7 @@
         "nombre": "Ellen",
         "apellido": "Ripley",
         "email": "last@survivor.com",
-        "password": "987654321",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
         "imagen": "Ellen_Ripley.jpg",
         "roll": "User"
     },
@@ -22,7 +22,7 @@
         "nombre": "Tiffanie",
         "apellido": "Glavias",
         "email": "tglavias2@microsoft.com",
-        "password": "UZVMuL3",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
         "imagen": "Avatar_por_Defecto.jpg",
         "roll": "User"
     },
@@ -31,7 +31,7 @@
         "nombre": "Philis",
         "apellido": "Pennone",
         "email": "ppennone3@zdnet.com",
-        "password": "fPlyaZeFIW00",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
         "imagen": "Avatar_por_Defecto.jpg",
         "roll": "User"
     },
@@ -40,7 +40,7 @@
         "nombre": "Warde",
         "apellido": "Culvey",
         "email": "wculvey4@pcworld.com",
-        "password": "BK867Gptv0T",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
         "imagen": "Avatar_por_Defecto.jpg",
         "roll": "User"
     },
@@ -49,8 +49,17 @@
         "nombre": "Vernen",
         "apellido": "Bagby",
         "email": "vbagby5@cpanel.net",
-        "password": "JNRHoe39cSz",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
         "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
+    },
+    {
+        "id": 7,
+        "nombre": "Arnold",
+        "apellido": "Terminator",
+        "email": "T@1000.com",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "1663692257165_img_perfil.jpg",
         "roll": "User"
     }
 ]
