@@ -1,19 +1,22 @@
 const fs = require('fs')
 const path = require('path')
-
 const users = require('../data/users.json')
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/users.json'),JSON.stringify(dato,null,4),'utf-8')
 const {validationResult} = require('express-validator')
 const bcrypt = require('bcryptjs')
 
+
 module.exports = {
+    // ----RENDERIZA LA VISTA 
     register: (req,res)=>{
         return res.render('./users/register')
     },
 
+    // ---- INICIO DE LA EJECUCION DE REGISTRO
     registerPost: (req,res)=>{
         
-        let errors = validationResult(req)
+        // ---VALIDACION DE ERRORES AL REGISTRARSE
+            let errors = validationResult(req)
         if(req.fileValidationError){
             let imagen = {
                 param : 'imagen',
@@ -21,12 +24,11 @@ module.exports = {
             }
             errors.errors.push(imagen)
         }
-
         if (errors.isEmpty()) {
             
-        
-        let {nombre,apellido,email,password } = req.body
-        let NewUser = {
+        // --- SI NO HAY ERRORES CREA EL REGISTRO CON EL LOS DATOS DEL REQ.BODY
+            let {nombre,apellido,email,password } = req.body
+            let NewUser = {
             id: users[users.length - 1].id + 1,
             nombre :nombre,
             apellido :apellido,
@@ -37,9 +39,16 @@ module.exports = {
         }
         users.push(NewUser)
         guardar(users)
-    
+        
         res.redirect('/users/profileUser')
-    }else{
+
+        }else{ 
+        // elimina la img de un registro mal creado
+            
+            let ruta = (dato) => fs.existsSync(path.join(__dirname, '..', 'public', 'img','users', dato))
+            if (ruta(req.file.filename) && (req.file.filename !== 'Avatar_por_Defecto.jpg')) {
+                fs.unlinkSync(path.join(__dirname, '..', 'public', 'img','users', req.file.filename))
+            }
         
         return res.render('./users/register',{
             errors : errors.mapped(),
