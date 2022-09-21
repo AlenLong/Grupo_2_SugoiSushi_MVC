@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
+<body class="detail">
+    <%- include('./partials/header') %>
+    <main>
+        <section class="imagenes">
+            <div class="img-principal">
+                <img src="/img/productos/<%= product.imagen %>" alt="">
+            </div>
+        </section>
+        <section class="product-detail">
+            <h2><%= product.nombreDeProducto %> </h2>
+            <div class="bloque-completo">
+                <article class="price">
+                    <small><%= product.descuento %>%</small>
+                    <span>$<%= product.precio %></span>
+                    <p class="precio">$<%= Math.round(product.precio - ( product.precio * product.descuento / 100)) %></p>
+                </article>
+                <article>
+                    <div class="sumar-carrito">
+                        <div class="restar">-</div>
+                        <input type="number">
+                        <div class="agregar">+</div>
+                    </div>
+                    <button>Comprar producto</button>
+                </article>
+            </div>
+        </section>
+        <section class="text-detail">
+            <br>
+            <h2>Descripción</h2>
+            <h5><%= product.descripcion %></h5>
+        </section>
+        <section class="related">
+            <h2>Tambien puede interesarte</h2>
+            <% productosRelacionado.forEach(element => { %>
+                <article>
+                    <a href="/products/detail/<%= element.id %> "><div class="related-img-0"></div></a>
+                    <p>$<%= element.precio %></p>
+                    <h4><%= element.nombreDeProducto %></h4>
+                    <button>añadir al carrito</button>
+                </article>
+            <% }) %>
+        </section>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+</html>

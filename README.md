@@ -63,6 +63,7 @@
 ##
 
 ### **` RETROSPECTIVA :`**
+<<<<<<< HEAD
 >[*SPRINT_1*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint1.md "Enlace")
 
 >[*SPRINT_2*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint2.md "Enlace")
@@ -76,3 +77,9 @@
 
 
 
+=======
+>[*SPRINT1*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint1.md "Enlace")
+
+>[*SPRINT2*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint2.md "Enlace")
+##
+>>>>>>> long

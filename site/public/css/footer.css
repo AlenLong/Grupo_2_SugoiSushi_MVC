@@ -1,0 +1,139 @@
+.footer * {
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+.footer {
+    padding: 70px 0 0;
+    background-color: var(--colorNegro);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1em;
+}
+.footer .cont {
+    max-width: 1170px;
+    margin: auto;
+}
+.footer .info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(255, 255, 255, 1);
+}
+.footer .info  div:nth-child(1) {
+    width: 35%;
+}
+.footer .info  div {
+    width: 20%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.footer .info h3{
+background-color: var(--colorRojo);
+color: var(--colorBlanco);
+border-radius: 7px;
+padding: 5px 10px;
+display: flex;
+    justify-content: center;
+}
+.footer .info p {
+    margin: 20px 0;
+    color: rgb(255, 255, 255, .8);
+    font-size: .9em;
+    line-height: 1.8em;
+}
+
+.footer .info h4 {
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    border-radius: 7px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.footer .info ul,
+.footer .info li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.footer .info li {
+    transform: translateX(-15px);
+}
+.footer .info li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 8px solid var(--colorRojo);
+	border-bottom: 5px solid transparent;
+}
+.footer .info li:hover {
+    transform: translateX(0);
+}
+.footer .info ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, .8);
+    margin-left: 15px;
+}
+
+.footer .info .social {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 30px;
+}
+.footer .info .social i {
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    opacity: .6;
+    transform: translateY(0);
+}
+.footer .info .social i:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 80px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255, .7);
+    font-size: .8em;
+}
+
+/* Tablet */
+
+@media (max-width: 1170px) {
+
+    .footer .info div {
+        width: 50% ;
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width: 425px) {
+    
+    .footer .info div {
+        width: 100% ;
+    }
+
+}

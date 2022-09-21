@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+
+        <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
+
+    <body class="logReg">
+
+        <%- include('../partials/header') %>
+
+    <main class="logReg2">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Regístrate</h2>
+
+                        <!-- form method post y multer -->
+                <form method="post" enctype="multipart/form-data"> 
+                    <div class="user-box">
+                        <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" placeholder="Nombre">
+                        <!-- <label>Nombre</label> -->
+                        <small>
+                            <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
+                        </small>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" placeholder="Apellido">
+                        <!-- <label>Apellido</label> -->
+                        <small>
+                            <%= locals.errors && errors.apellido ? errors.apellido.msg : null %> 
+                        </small>
+                    </div>
+                    <div class="user-box">
+                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Email">
+                        <!-- <label>Email</label> -->
+                        <small>
+                            <%= locals.errors && errors.email ? errors.email.msg : null %> 
+                        </small>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Contraseña">
+                        <!-- <label>password</label> -->
+                        <small>
+                            <%= locals.errors && errors.password ? errors.password.msg : null %> 
+                        </small>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>" placeholder="Confirmar contraseña">  <!-- mismo nombre para la validacion ? -->
+                        <!-- <label>Confirmar</label> -->
+                        <small>
+                            <%= locals.errors && errors.confirma ? errors.confirma.msg : null %> 
+                        </small>
+                    </div>
+                    <div class="user-box">
+                        <input type="file" name="imagen" id="imagen" value="<%= locals.old && old.imagen ? old.imagen : null%>">  <!-- multer -->
+                        <!-- <label>Subí una imagen</label>  -->
+                        <small>
+                            <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
+                        </small>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit">R E G I S T R A R S E</button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                    </div>
+                    <div class="submit-container">
+                        <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Registrarse
+                        </a>
+                    </div>
+                    <div class="user-box newsletter-checkbox">
+                        <input id="newscheck" type="checkbox" name="" >
+                        <small>Deseo recibir ofertas y promociones a mi correo.</small>
+                    </div>
+                </form>
+                <div class="signup_link">
+                    <p class="cuenta">¿ Ya tienes una cuenta ?</p>                 
+                    <a href="/login">Ingresa Aquí</a>
+                    </div>
+        </div>
+
+        </div>
+    
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>

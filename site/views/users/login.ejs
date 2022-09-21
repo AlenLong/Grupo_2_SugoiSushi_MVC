@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+
+        <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
+        
+    <body class="logReg">
+
+        <%- include('../partials/header') %>
+
+    <main class="logReg2">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Iniciar Sesión</h2>
+                <form method="post">
+                    <div class="user-box">
+                        <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Ingrese su Email">
+                        <small>
+                            <%= locals.errors && errors.email ? errors.email.msg : null %> 
+                        </small>
+                    </div>
+
+                    <div class="user-box">
+                        <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Ingrese su contraseña">
+                        <small>
+                            <%= locals.errors && errors.password ? errors.password.msg : null %> 
+                        </small>
+                        <!-- <a id="olvido" href=""><small id="olvido">¿ Has olvidado la contraseña ?</small></a> -->
+                    </div><br>
+
+                    <div class="user-box newsletter-checkbox">
+                        <input type="checkbox" checked name="recordarme" id="recordarme" >
+                        <label class="recordarme" for="recordarme">recordarme</label>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit">I N G R E S A R</button>
+                    </div>
+<!--                     <div class="submit-container">
+                        <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        ingresar
+                        </a>
+                    </div>
+                <small visibility="hidden">Los datos ingresados no son validos</small> -->
+                </form>
+                <div class="signup_link">
+                    <p class="cuenta">¿ Todavía no tienes una cuenta ?</p>                 
+                    <a href="/register">Regístrate Aquí</a>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <%- include('../partials/footer') %>
+
+</body>
+</html>
