@@ -40,16 +40,16 @@ module.exports = {
         users.push(NewUser)
         guardar(users)
         
-        res.redirect('/users/profileUser')
+        res.redirect('/user/login')
 
         }else{ 
         // elimina la img de un registro mal creado
-            
+            if (req.file) {
+                
             let ruta = (dato) => fs.existsSync(path.join(__dirname, '..', 'public', 'img','users', dato))
             if (ruta(req.file.filename) && (req.file.filename !== 'Avatar_por_Defecto.jpg')) {
                 fs.unlinkSync(path.join(__dirname, '..', 'public', 'img','users', req.file.filename))
-            }
-        
+            }}
         return res.render('./users/register',{
             errors : errors.mapped(),
             old: req.body
@@ -95,6 +95,11 @@ module.exports = {
         return res.render('./users/profileUser')
     },
     logout : (req,res) => {
+        if (req.cookies.SugoiCookie) {
+            res.cookie('SugoiCookie','',{maxAge: -1})
+
+        }
+        
         req.session.destroy();
 
         return res.redirect('/')
