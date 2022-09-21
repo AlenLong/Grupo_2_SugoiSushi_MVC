@@ -40,7 +40,7 @@ module.exports = {
         users.push(NewUser)
         guardar(users)
         
-        res.redirect('/user/login')
+        res.redirect('/users/login')
 
         }else{ 
         // elimina la img de un registro mal creado
