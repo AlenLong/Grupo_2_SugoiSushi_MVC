@@ -2,6 +2,8 @@ const fs = require('fs')
 const path = require('path')
 const productos = require('../data/products.json')
 const historial = require('../data/historial.json')
+const {validationResult} = require('express-validator');
+
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/products.json')
 ,JSON.stringify(dato,null,4),'utf-8')
 const guardarHistorial = (dato) => fs.writeFileSync(path.join(__dirname, '../data/historial.json')
@@ -20,21 +22,39 @@ module.exports={
         return res.render('admin/crearProducts')
     },
     store:(req,res) => {
-        let{Categoria,nombre,Descripcion,precio,descuento,stock} = (req.body)
+         let errors = validationResult(req)
+         if (req.fileValidationError) {
+            let imagen={
+                param : 'imagen',
+                msg: req.fileValidationError
+            }
+            errors.errors.push(imagen)
+         }
+
+         if (errors.isEmpty()) {
+
+         
+            return res.send(req.file)
+         }
+
+        let{Categoria,nombreDeProducto,descripcion,precio,descuento,altaDeProducto} = (req.body)
+        
         let productoNuevo = {
         id: productos[productos.length - 1].id + 1,
         Categoria: Categoria,
-        nombre: nombre, 
-        Descripcion: Descripcion,
+        nombreDeProducto: nombreDeProducto, 
+        descripcion: descripcion,
         precio: precio ,
         descuento: descuento, 
-        stock: stock,
-        imagen: 'foto3.jpg',
+        altaDeProducto : altaDeProducto,
+        imagen: req.file ? req.file.filename :'default-products.jpg',
     }
     productos.push(productoNuevo)
     guardar(productos)
-
-    res.redirect('/admin/listarProducts')
+    return res.render('admin/crearProducto',{
+        errors: errors.mapped(),
+        old: req.body
+    })
     },
 
 
