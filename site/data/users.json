@@ -1,39 +1,39 @@
 [
     {
         "id": 1,
-        "nombre": "Teodoro",
-        "apellido": "Phoebe",
-        "email": "tphoebe0@google.com.hk",
-        "password": "7jOUlX0Vc",
-        "imagen": "",
-        "roll": "admin"
+        "nombre": "Tim",
+        "apellido": "Paterson",
+        "email": "ms@dos.com",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "TimPaterson.jpg",
+        "roll": "Admin"
     },
     {
         "id": 2,
-        "nombre": "Alexio",
-        "apellido": "McCarver",
-        "email": "amccarver1@latimes.com",
-        "password": "lVGTVtvt8Ert",
-        "imagen": "",
-        "roll": "user"
+        "nombre": "Ellen",
+        "apellido": "Ripley",
+        "email": "last@survivor.com",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "Ellen_Ripley.jpg",
+        "roll": "User"
     },
     {
         "id": 3,
         "nombre": "Tiffanie",
         "apellido": "Glavias",
         "email": "tglavias2@microsoft.com",
-        "password": "UZVMuL3",
-        "imagen": "",
-        "roll": "user"
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 4,
         "nombre": "Philis",
         "apellido": "Pennone",
         "email": "ppennone3@zdnet.com",
-        "password": "fPlyaZeFIW00",
-        "imagen": "",
-        "roll": "user"
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 5,
@@ -41,17 +41,26 @@
         "nombre": "Warde",
         "apellido": "Culvey",
         "email": "wculvey4@pcworld.com",
-        "password": "BK867Gptv0T",
-        "imagen": "",
-        "roll": "user"
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
     },
     {
         "id": 6,
         "nombre": "Vernen",
         "apellido": "Bagby",
         "email": "vbagby5@cpanel.net",
-        "password": "JNRHoe39cSz",
-        "imagen": "",
-        "roll": "user"
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "Avatar_por_Defecto.jpg",
+        "roll": "User"
+    },
+    {
+        "id": 7,
+        "nombre": "Arnold",
+        "apellido": "Terminator",
+        "email": "T@1000.com",
+        "password": "$2a$10$0EJZlEYTZVPMR8wQaACLme8ZbyrDGoGUHeofqsTApw5DbuUX2w79W",
+        "imagen": "1663692257165_img_perfil.jpg",
+        "roll": "User"
     }
 ]

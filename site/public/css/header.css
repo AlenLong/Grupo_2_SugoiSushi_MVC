@@ -26,6 +26,10 @@
     margin: 2px 0;
 }
 
+#admin{
+    color: var(--colorRojo);
+}
+
 .home header ul li a {
     color: var(--colorBlanco);
     text-transform: uppercase;

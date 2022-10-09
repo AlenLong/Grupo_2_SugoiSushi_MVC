@@ -6,8 +6,16 @@ const liveReloadServer = livereload.createServer();
 const express = require('express')
 const connectLivereload = require('connect-livereload')
 const path = require('path')
+const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override')
 const morgan = require('morgan')
+
+const session = require('express-session')
+
+
+/* Implementamos locals dentro de la app */
+const userLogin = require('./middlewares/userLoginCheck')
+
 
 const app = express()
 const port = 3030
@@ -39,6 +47,11 @@ app.use(morgan('dev'));
 /* Trabajar con PUT y DELETE */
 app.use(methodOverride('_method'))
 
+/* Login e inicio de sesion */
+app.use(session({secret:"mensaje ultra mega archi super re secreto SUGOI SUSHI"}))
+app.use(userLogin)
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname,'..', 'public')));
 /*Rutas*/
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -52,9 +65,6 @@ liveReloadServer.server.once("connection", () => {
     }, 100);
   });
 
-
-
-/* Levantamos el servidor con app listen */
 app.listen(port,function(){
     return console.log(`Se levanta el servidor en http://localhost:${port}`)
 })
