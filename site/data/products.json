@@ -272,5 +272,33 @@
         "descripcion": "porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in",
         "precio": 3365,
         "descuento": 16
+    },
+    {
+        "id": 26,
+        "imagen": "default-products.jpg",
+        "descripcion": "sds",
+        "precio": "s",
+        "descuento": "dsd"
+    },
+    {
+        "id": 27,
+        "imagen": "default-products.jpg",
+        "descripcion": "",
+        "precio": "",
+        "descuento": ""
+    },
+    {
+        "id": 28,
+        "imagen": "default-products.jpg",
+        "descripcion": "",
+        "precio": "",
+        "descuento": ""
+    },
+    {
+        "id": 29,
+        "imagen": "default-products.jpg",
+        "descripcion": "",
+        "precio": "",
+        "descuento": ""
     }
 ]
