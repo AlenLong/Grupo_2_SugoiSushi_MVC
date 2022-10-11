@@ -1,27 +1,84 @@
 .index{
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(206deg, var(--colorRojo), var(--colorNegro));
+}
+.index .cartilla{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    background-image: 
+    url(/img/02.jpg);
+}
+
+.index .cartilla button{ 
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 3px solid rgba(0,0,0,3);
+    box-shadow: 2px 2 px 10px rgba(0,0, 0, 6);
+    color: rgb(199, 62, 38);
+    background-color: rgb(75, 10, 10);
+}
+
+.index .cartilla button:hover{
+    background-color: rgb(40, 5, 5);
+}
+
+.index .Datos{
+    background-color: rgb(73, 68, 68);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url(/img/10917-marmol.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.index .Datos img {
+    width: 60px;
+    height: 60px;
+    
+}
+.index .index-main .inicio{
     background-image: url("/img/combi.jpg");
     background-position: top;
     background-size: contain;
-    font-family: var(--fuente);
+    font-family: var(--colorBlanco);
     margin: 0 auto;
+    color: red;
+    -webkit-text-stroke: 5px rgb(63, 57, 57);
+    font-size: 35px;
 }
 .index .index-main .inicio{
     justify-content: center;
     
 }
 
-.index .index-main section article .image{
+.index .index-main .inicio section article .image{
     display: flex;
     align-content: center;
     
 }
 
 .index .index-main .inicio article{
-margin: 40px auto;
+    margin: 40px auto;
 }
 
 .index .index-main section .image{
-        position: relative;
+    position: relative;
     
 }
 
@@ -56,7 +113,6 @@ margin: 40px auto;
     transition: all 0.5s;
 }
 
-
 @media (max-width:769px) {
 
     .index .index-main .inicio article{
@@ -68,8 +124,9 @@ margin: 40px auto;
         height: 100%;
     }
     .index .index-main .inicio {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1em;
         
     }
     .index .index-main .inicio article{
@@ -81,11 +138,64 @@ margin: 40px auto;
 @media (min-width:1024px){
 
     }
-.index .index-main{
+    /*.index .index-main{
     margin: 200px;
       
-<<<<<<< HEAD
+    }*/
+
+
+.index .index-main .red-social .instagram{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.index .index-main .red-social a{
+    color: aliceblue;
+    font-size: 25px;
+}
+.index .index-main .red-social .imagenes-insta{
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.index .index-main .red-social .imagenes-insta img{
+    width: 290px;
+    height: 290px;
+    padding: 10px;
+}
+
+/*boton flotante*/
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
     }
-=======
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
     }
->>>>>>> develop
+}

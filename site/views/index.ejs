@@ -2,11 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
+        <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
         <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
     <body class="index">
         <%- include('./partials/header') %>
         <main class="index-main">
+
+            <section class="carruel">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a class="grad" href="/detail"><img class="d-block w-100" src="/img/banner1.jpg" alt="carrusel 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="grad" href="/detail"><img class="d-block w-100" src="/img/banner2.jpg" alt="carrusel 2"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="grad" href="/detail"><img class="d-block w-100" src="/img/banner5.png" alt="carrusel 3"></a>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="cartilla">
+                <h1><strong>Carta hecha por y para ti</strong></h1>
+                <h2><i>Disfruta de las mejores especialidades de la cocina japonesa en tu ciudad</i></h2>
+                <button>VER CARTA!</button>
+            </section>
+
+            <section class="Datos">
+                <div class="filas">
+                    <div class="Reservacion">
+                      <h3 class="titulo">Reservas</h3>
+                        <img alt="Logo" src="/img/sushi_icono.png">
+                        <p class="texto">
+                         Para reservas llamar el mismo día a partir de las 18hs. 
+                         Horario de atención Lun a Sab de 20hs a 23hs.	
+                          <br/>llamando al 2942-802242 / 2942-686210			
+                       </p>
+                     </div>
+            
+                     <div class="envios">
+                      <h3 class="titulo">Delivery</h3>
+                       <img alt="Logo" src="/img/delivery_icono.png">
+                       <p class="texto">
+                           Lun a Sab de 19:00 a 23:00
+                          <br/>Se entrega a partir de las 20hs
+                          <br/>llamando al 2942-802242 / 2942-686210        
+                       </p>
+                     </div>
+            
+                     <div class="ubicacion">
+                      <h3 class="titulo">Dirección</h3>
+                       <img alt="Logo" src="/img/ubicacion_icono.png">
+                       <p class="texto">
+                           Cabello 3370<br/>
+                           Neuquen, Cultra co<br/>
+                          Argentina 
+                       </p>
+                     </div>
+                  </div>
+              </section>
+              
             <section class="inicio">
+                <h1><strong><u>PROMOS!!</u></strong></h1>
                 <article>
                     <div class="image">
                         <a class="grad" href="/detail"><img class="producto" src="/img/nyphot.jpg" alt=""></a>
@@ -25,8 +92,88 @@
                         <img class="etiqueta" src="/img/img-tablas1.png" alt="">
                     </div>
                 </article>
+                <article>
+                    <div class="image">
+                        <a class="grad" href="/detail"><img class="producto" src="/img/nyphot.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-descuento.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a href="/detail"><img class="producto" src="/img/malibu.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-nuevo.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a href="/detail"><img class="producto" src="/img/combi3.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a class="grad" href="/detail"><img class="producto" src="/img/nyphot.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-descuento.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a href="/detail"><img class="producto" src="/img/malibu.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-nuevo.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a href="/detail"><img class="producto" src="/img/combi3.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a class="grad" href="/detail"><img class="producto" src="/img/nyphot.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-descuento.png" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                        <a href="/detail"><img class="producto" src="/img/malibu.jpg" alt=""></a>
+                        <img class="etiqueta" src="/img/img-nuevo.png" alt="">
+                    </div>
+                </article>
             </section>
+
+            <section class="red-social">
+                <article>
+                    <div class="instagram">
+                        <h1>Imagenes de nuestro instagram:</h1>
+                        <a href="https://www.instagram.com/sugoi_sushi_cco_2017/">@sugoi_sushi_cco_2017</a>
+                    </div>
+                    <div class="imagenes-insta">
+                        <div>
+                            <a href="https://www.instagram.com/p/CeJMdogLcNX/" target="_blank" class="img-inst">
+                            <img src="/img/Logo Sugoi.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/p/CeJMcpjLEZA/" target="_blank" class="img-inst">
+                            <img src="/img/Logo Sugoi.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/p/CeJMacJrGCL/" target="_blank" class="img-inst">
+                            <img src="/img/Logo Sugoi.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <div class="container-boton">
+                <a href="https://wa.me/2942580357?text=Quiero%20realizar%20una%20compra" target="_blank">
+                    <img class="boton" src="/img/icono-wpp.png" alt="">
+                </a>
+            </div>
         </main>
     <%- include('./partials/footer') %>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
