@@ -4,7 +4,6 @@
         "nombreDeProducto": "Bubba",
         "categoria": "Especiales",
         "altaDeProducto": "2019-03-22",
-        "imagen": "sushi2.jpg",
         "descripcion": "neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
         "precio": "3595",
         "descuento": "24"
@@ -300,5 +299,221 @@
         "descripcion": "",
         "precio": "",
         "descuento": ""
+    },
+    {
+        "id": 30,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 31,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 32,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjk,n",
+        "precio": "1235",
+        "descuento": "12",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 33,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 34,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "12154654",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 35,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "1215465412",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 36,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "12154654122112",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 37,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "12154654122112",
+        "descuento": "10",
+        "imagen": "img-1664370739452.png"
+    },
+    {
+        "id": 38,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "jhygjhubgby",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 39,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "13254",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 40,
+        "Categoria": "Platos",
+        "descripcion": "gbfb",
+        "precio": "13254",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 41,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "13254",
+        "descuento": "10",
+        "imagen": "img-1664370768257.png"
+    },
+    {
+        "id": 42,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "1325454687",
+        "descuento": "10",
+        "imagen": "img-1664370783526.png"
+    },
+    {
+        "id": 43,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "gbfb",
+        "precio": "1325454687",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 44,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 45,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 46,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 47,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 48,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjhb",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 49,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjhb",
+        "precio": "kuh",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 50,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjhb",
+        "precio": "kuh",
+        "descuento": "12",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 51,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjhb",
+        "precio": "12",
+        "descuento": "12",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 52,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjhbhgjfvjhgvjhgv",
+        "precio": "12",
+        "descuento": "12",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 53,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "jhbjhbhgjfvjhgvjhgv",
+        "precio": "12",
+        "descuento": "12",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 54,
+        "Categoria": "Selecciona una opción",
+        "descripcion": ",nhgbjbkjuygbj",
+        "precio": "4154",
+        "descuento": "10",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 55,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "",
+        "descuento": "",
+        "imagen": "default-products.jpg"
+    },
+    {
+        "id": 56,
+        "Categoria": "Selecciona una opción",
+        "descripcion": "",
+        "precio": "hgfhgvy",
+        "descuento": "",
+        "imagen": "default-products.jpg"
     }
 ]

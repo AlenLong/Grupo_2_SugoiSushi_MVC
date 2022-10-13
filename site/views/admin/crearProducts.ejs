@@ -18,13 +18,18 @@
                                     <option value="Platos">Platos</option>
                                 </select>
                                 <label for="floatingSelect">Categoria</label>
+                                <!-- <small>Obligatorio</small> -->
+                            </div>
+                            <div class="product-box">
+                                <input type="date" name="altaDeProducto" id="altaDeProducto" value="<%= locals.old && old.altaDeProducto ? old.altaDeProducto : null %>">
+                                <label for="altaDeProducto">Alta de Producto</label>
                                 <small>Obligatorio</small>
                             </div>
                             <div class="product-box">
                                 <input type="text" name="nombre" required=""
                                     value="<%= locals.old && old.nombre ? old.nombre : null %> ">
                                 <label>Nombre del plato</label>
-                                <small>Obligatorio</small>
+                                <!-- <small>Obligatorio</small> -->
                                 <p class="span text-danger">
                                     <%= locals.errors && errors.nombre ? errors.nombre.msg : null %>
                                 </p>
@@ -34,7 +39,7 @@
                                 <input type="text" name="descripcion" required=""
                                     value="<%= locals.old && old.descripcion ? old.descripcion : null %> ">
                                 <label>Descripcion del plato</label>
-                                <small> Obligatorio </small>
+                                <!-- <small> Obligatorio </small> -->
                                 <% if (locals.errors && errors.descripcion) { %>
                                     <p class="span text-danger">
                                         <%= errors.descripcion.msg %>
@@ -46,7 +51,7 @@
                                 <input type="text" name="precio" required=""
                                     value="<%= locals.old && old.precio ? old.precio : null %> ">
                                 <label>Precio</label>
-                                <small>Obligatorio</small>
+                                <!-- <small>Obligatorio</small> -->
                                 <p class="span text-danger">
                                     <%= locals.errors && errors.precio ? errors.precio.msg : null %>
                                 </p>
@@ -55,28 +60,27 @@
                                 <input type="text" name="descuento" required=""
                                     value="<%= locals.old && old.descuento ? old.descuento : null %> ">
                                 <label>Descuento</label>
-                                <small>Opcional</small>
+                               <!--  <small>Opcional</small> -->
                                 <p class="span text-danger">
                                     <%= locals.errors && errors.descuento ? errors.descuento.msg : null %>
                                 </p>
                             </div>
-                            <div class="product-box">
-                                <input type="number" name="stock" class="form-control" id="Stock" placeholder="Stock"
-                                    value="<%= locals.old && old.stock ? old.stock : null %> ">
+                           
 
-                                <small>Obligatorio</small>
-                                <p class="span text-danger">
-                                    <%= locals.errors && errors.stock ? errors.stock.msg : null %>
-                                </p>
-                            </div>
-
-                            <div class="product-box">
+                               <!--  <small>Obligatorio</small> -->
+                               <div class="product-box">
 
                                 <input type="file" name="imagen" id="image" accept="image/*">
                             </div>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
-                            </p>
+                            </p> 
+                               
+                            <div class="product-box">
+                                <input type="checkbox" name="disponible" id="disponible" value="<%= locals.errors && errors.disponible ? errors.discponible.msg : null %>>
+                                <label for="disponible">disponible</label>
+                            <small>Obligatorio</small> <br>
+                            </div>
 
                             <div class="btn-container">
                                 <button type="submit">Crear Producto</button>

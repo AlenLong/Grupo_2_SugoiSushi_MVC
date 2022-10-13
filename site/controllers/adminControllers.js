@@ -51,7 +51,7 @@ module.exports={
     }
     productos.push(productoNuevo)
     guardar(productos)
-    return res.render('admin/crearProducto',{
+    return res.render('admin/crearProducts',{
         errors: errors.mapped(),
         old: req.body
     })
