@@ -1,3 +1,4 @@
+require('dotenv').config();
 /* Livereload */
 const livereload = require('livereload');
 const liveReloadServer = livereload.createServer();
@@ -15,6 +16,7 @@ const session = require('express-session')
 
 /* Implementamos locals dentro de la app */
 const userLogin = require('./middlewares/userLoginCheck')
+const dbConnectionTest = require('./middlewares/dbConnectionTest')
 
 
 const app = express()
@@ -43,6 +45,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname,'public')));
 app.use(morgan('dev'));
 
+dbConnectionTest()
 
 /* Trabajar con PUT y DELETE */
 app.use(methodOverride('_method'))
