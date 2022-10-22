@@ -10,35 +10,30 @@
                         <h2>Creación de Producto</h2>
                         <form action="/admin/crearProducts" method="post" enctype="multipart/form-data">
                             <div class="product-box">
-                                <select class="form-select" name="Categoria" id="floatingSelect"
+                                <select class="form-select" name="categoriasId" id="categoriasId"
                                     aria-label="Floating label select example">
-                                    <option selected hidden>Selecciona una opción</option>
-                                    <option value="Entradas">Entradas</option>
-                                    <option value="Salsas">Salsas</option>
-                                    <option value="Platos">Platos</option>
+                                    <option selected hidden value="" >Selecciona una opción</option>
+                                    <option value="1">combinados</option>
+                                    <option value="2">Salsas</option>
+                                    <option value="3">Platos</option>
                                 </select>
-                                <label for="floatingSelect">Categoria</label>
+                                <label for="categoriasId">Categoria</label>
                                 <!-- <small>Obligatorio</small> -->
                             </div>
                             <div class="product-box">
-                                <input type="date" name="altaDeProducto" id="altaDeProducto" value="<%= locals.old && old.altaDeProducto ? old.altaDeProducto : null %>">
-                                <label for="altaDeProducto">Alta de Producto</label>
-                                <small>Obligatorio</small>
-                            </div>
-                            <div class="product-box">
-                                <input type="text" name="nombre" required=""
-                                    value="<%= locals.old && old.nombre ? old.nombre : null %> ">
-                                <label>Nombre del plato</label>
+                                <input type="text" id="nombreProducto" name="nombreProducto" required
+                                    value="<%= locals.old && old.nombreProducto ? old.nombreProducto : null %> ">
+                                <label for="nombreProducto">Nombre del plato</label>
                                 <!-- <small>Obligatorio</small> -->
                                 <p class="span text-danger">
-                                    <%= locals.errors && errors.nombre ? errors.nombre.msg : null %>
+                                    <%= locals.errors && errors.nombreProducto ? errors.nombreProducto.msg : null %>
                                 </p>
 
                             </div>
                             <div class="product-box">
-                                <input type="text" name="descripcion" required=""
+                                <input type="text" id="descripcion" name="descripcion" required=""
                                     value="<%= locals.old && old.descripcion ? old.descripcion : null %> ">
-                                <label>Descripcion del plato</label>
+                                <label for="descripcion" >Descripcion del plato</label>
                                 <!-- <small> Obligatorio </small> -->
                                 <% if (locals.errors && errors.descripcion) { %>
                                     <p class="span text-danger">
@@ -77,9 +72,9 @@
                             </p> 
                                
                             <div class="product-box">
-                                <input type="checkbox" name="disponible" id="disponible" value="<%= locals.errors && errors.disponible ? errors.discponible.msg : null %>>
+                                <input type="checkbox" name="disponible" id="disponible" value="1"/>
                                 <label for="disponible">disponible</label>
-                            <small>Obligatorio</small> <br>
+                            <small>Obligatorio</small>
                             </div>
 
                             <div class="btn-container">
@@ -96,48 +91,7 @@
                 </div>
 
             </main>
-            <footer class="footer">
-                <div class="cont">
-                    <div class="info">
-                        <div class="Nosotros">
-                            <h3>Sugoi Sushi</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam et est id sunt iusto
-                                earum molestiae praesentium.</p>
-                        </div>
-                        <div>
-                            <h4>Redes</h4>
-                            <div class="socialButton">
-                                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
-                                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                                <a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a>
-                                <a href="https://www.discord.com/"><i class='bx bxl-discord-alt'></i></a>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Ayuda</h4>
-                            <ul>
-                                <li><a href="#">Preguntas Frecuentes </a></li>
-                                <li><a href="#">Formá parte de Nosotros</a></li>
-                                <li><a href="#">Donde está mi pedido</a></li>
-                                <li><a href="#">Formas de pago</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Paginas</h4>
-                            <ul>
-                                <li><a href="#">Sobre Nosotros</a></li>
-                                <li><a href="#">Que ofrecemos</a></li>
-                                <li><a href="#">Recursos Humanos</a></li>
-                                <li><a href="#">Area de cobertura</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>Copyright © 2022-2022 SugoiSushi - Todos los derechos Reservados - Términos y Condiciones -
-                        Politica de Privacidad - Legales info@sugoi-sushi.com.ar</p>
-                </div>
-            </footer>
+            <%- include('../partials/footer') %>
     </body>
 
 </html>
