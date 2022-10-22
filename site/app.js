@@ -10,9 +10,9 @@ const path = require('path')
 const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override')
 const morgan = require('morgan')
-
+const cookieCheck = require('./middlewares/cookieCheck')
 const session = require('express-session')
-
+const userLoginCheck = require('./middlewares/userLoginCheck')
 
 /* Implementamos locals dentro de la app */
 const userLogin = require('./middlewares/userLoginCheck')
@@ -44,7 +44,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname,'public')));
 app.use(morgan('dev'));
-
 dbConnectionTest()
 
 /* Trabajar con PUT y DELETE */
@@ -54,6 +53,8 @@ app.use(methodOverride('_method'))
 app.use(session({secret:"mensaje ultra mega archi super re secreto SUGOI SUSHI"}))
 app.use(userLogin)
 app.use(cookieParser());
+app.use(cookieCheck)
+app.use(userLoginCheck)
 app.use(express.static(path.join(__dirname,'..', 'public')));
 /*Rutas*/
 app.use('/', indexRouter);
