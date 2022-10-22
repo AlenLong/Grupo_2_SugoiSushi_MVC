@@ -61,5 +61,15 @@
         "descripcion": "sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo",
         "precio": 3343.45,
         "descuento": 4
+    },
+    {
+        "id": 26
+    },
+    {
+        "id": 30,
+        "imagen": "img-1663932241563.jpg",
+        "descripcion": "",
+        "precio": "",
+        "descuento": ""
     }
 ]
