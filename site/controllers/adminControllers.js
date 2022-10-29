@@ -113,21 +113,31 @@ module.exports = {
     },
 
     destroy: (req, res) => {
-        idParams = +req.params.id;
+       let idParams = +req.params.id;
+       db.Productos.destroy({
+        where : {
+            id: idParams
+        }
+       })
+       .then(producto => {
+        /* return res.send(producto) */
+        return res.redirect("/admin/listarProducts");
+       })
+       .catch(error => res.send(error))
 
-        let productoAEliminar = productos.find((elemento) => {
+        /* let productoAEliminar = productos.find((elemento) => {
             return elemento.id == idParams;
-        });
-
+        }); */
+/* 
         historial.push(productoAEliminar);
         guardarHistorial(historial);
-
-        let productosModificadoos = productos.filter(
+ */
+        /* let productosModificadoos = productos.filter(
             (producto) => producto.id !== idParams
         );
         guardar(productosModificadoos);
 
-        return res.redirect("/admin/listarProducts");
+        return res.redirect("/admin/listarProducts"); */
     },
     history: (req, res) => {
         return res.render("admin/listarProducts", {

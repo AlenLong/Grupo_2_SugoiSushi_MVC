@@ -16,7 +16,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       categoriasId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:{
+            tableName:'Categorias'
+          },
+          key:'id'
+        }
       },
       imagen: {
         type: Sequelize.STRING

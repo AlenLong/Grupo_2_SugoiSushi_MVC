@@ -1,7 +1,7 @@
 require('dotenv').config();
 /* Livereload */
-const livereload = require('livereload');
-const liveReloadServer = livereload.createServer();
+/* const livereload = require('livereload');
+const liveReloadServer = livereload.createServer(); */
 
 /* Entry point */
 const express = require('express')
@@ -26,8 +26,8 @@ const port = 3030
 app.use(express.static(path.resolve(__dirname,'public')))
 
 /* Archivos estaticos monitoreados */
-liveReloadServer.watch(path.join(__dirname, 'public'));
-app.use(connectLivereload());
+/* liveReloadServer.watch(path.join(__dirname, 'public'));
+app.use(connectLivereload()); */
 
 /* Requerir rutas*/
 let indexRouter = require('./routes/index')
@@ -63,12 +63,13 @@ app.use('/products', productsRouter);
 app.use('/admin',adminRouter);
 
 /* Funcion de actualizacion del servidor  */
-liveReloadServer.server.once("connection", () => {
+/* liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
       liveReloadServer.refresh("/");
     }, 100);
-  });
+  }); */
 
 app.listen(port,function(){
     return console.log(`Se levanta el servidor en http://localhost:${port}`)
 })
+console.log(process.env.DB_PASS);

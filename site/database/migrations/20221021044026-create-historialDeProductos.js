@@ -15,8 +15,15 @@ module.exports = {
       disponible: {
         type: Sequelize.INTEGER
       },
-      categoria: {
-        type: Sequelize.STRING
+      categoriasId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: {
+            tableName: 'Categorias'
+          },
+          key: 'id'
+        }
       },
       imagen: {
         type: Sequelize.STRING
