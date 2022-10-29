@@ -21,13 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Categorias.init({
-    veggies: DataTypes.INTEGER,
-    especiales: DataTypes.INTEGER,
-    combinados: DataTypes.INTEGER,
-    adicionales: DataTypes.INTEGER,
-    hots: DataTypes.INTEGER,
-    nigiris: DataTypes.INTEGER,
-    clasicos: DataTypes.INTEGER
+    nombre: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Categorias',
