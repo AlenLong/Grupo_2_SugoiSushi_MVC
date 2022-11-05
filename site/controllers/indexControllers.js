@@ -1,3 +1,5 @@
+const db = require("../database/models");
+const productos = require("../database/models/productos");
 
 module.exports = {
     index: (req,res)=>{
@@ -11,15 +13,18 @@ module.exports = {
     carrito: (req,res)=>{
         return res.render('carrito')
     },
-
-/*     register: (req,res)=>{
-        return res.render('register')
+    carta: (req,res)=>{
+        db.Productos.findAll({
+            include:[{
+                all:true
+            }]
+        })
+        .then(productos => {
+            /* return res.send(productos) */
+            return res.render('carta')
+        })
+        .catch(error => console.log(error))
     },
-
-    login: (req,res)=>{
-        return res.render('login')
-    }, */
-
     nosotros: (req,res)=>{
         return res.render('nosotros')
     }
