@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "nombreProducto": "Bubba",
+      "categoriasId": 2,
+      "disponible": null,
+      "imagen": "sushi2.jpg",
+      "descripcion": "neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
+      "precio": 3595,
+      "descuento": 24,
+      "createdAt": "2022-10-29T19:06:50.000Z",
+      "updatedAt": "2022-10-29T19:06:50.000Z",
+      "categorias": {
+        "id": 2,
+        "nombre": "especiales",
+        "createdAt": "2022-10-29T19:06:50.000Z",
+        "updatedAt": "2022-10-29T19:06:50.000Z"
+      }
+    } 
+]

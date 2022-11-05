@@ -21,5 +21,6 @@ module.exports = [
     .withMessage('Solo carácteres numericos'),
     /* Stock */
     check('disponible').trim().notEmpty()
+    .withMessage('Este campo es obligatorio')
     .isInt(),
 ]

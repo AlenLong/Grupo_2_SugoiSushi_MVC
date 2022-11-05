@@ -54,10 +54,10 @@ module.exports = {
                 imagen: req.file ? req.file.filename : "default-products.jpg",
             })
                 .then((productos) => {
-                    return res.redirect("/admin/listarProducts", {
+                    return res.redirect("/admin/listarProducts" /* {
                         productos,
-                        redirection: "listarProducts",
-                    });
+                        redirection: "listarProducts", */
+                    /* }) */)
                 })
                 .catch((error) => {
                     return console.log(error);
@@ -83,7 +83,7 @@ module.exports = {
     },
     storeEdit: (req, res) => {
         let idParams = +req.params.id;
-
+      /*  return send(req.body) */
         let errors = validationResult(req);
         if (req.fileValidationError) {
             let imagen = {
@@ -100,8 +100,12 @@ module.exports = {
                     disponible: req.body.disponible,
                     descripcion: req.body.descripcion,
                     precio: req.body.precio,
-                    descuento: req.body.precio,
+                    descuento: req.body.descuento,
                     imagen: req.file ? req.file.filename : "default-products.jpg",
+            },{
+                where:{
+                    id : +req.params.id
+                }
             })
 
             .then(producto =>{
