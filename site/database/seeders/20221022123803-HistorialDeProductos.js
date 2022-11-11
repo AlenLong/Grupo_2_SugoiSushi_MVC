@@ -4,7 +4,7 @@ let histoiralDeProductos = [
   {
     nombreProducto: "Sunshine",
     disponible: true,
-    categoria: "Clasico",
+    categoriasId: 1,
     imagen: "foto3.jpg",
     descripcion: "curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi",
     precio: 4930.3,
@@ -15,7 +15,7 @@ let histoiralDeProductos = [
 {
   nombreProducto: "California",
   disponible: true,
-  categoria: "Veggie",
+  categoriasId: 2,
   imagen: "foto1.jpg",
   descripcion: "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices",
   precio: 6409.34,

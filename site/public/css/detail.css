@@ -7,8 +7,8 @@
     width: 100%;
 }
 .detail{
-    background-color:var(--colorNegro);
-    color: var(--colorBlanco);
+     background-color:var(--colorNegro); 
+    color: var(--colorBlanc);
 }
 .detail main .imagenes .img-secundarias img{
     width: 24%;

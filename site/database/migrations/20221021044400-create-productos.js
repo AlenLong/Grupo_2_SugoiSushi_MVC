@@ -21,7 +21,7 @@ module.exports = {
           model:{
             tableName:'Categorias'
           },
-          key:"id"
+          key:'id'
         }
       },
       imagen: {

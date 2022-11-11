@@ -9,26 +9,20 @@
                 <h2>Edición y Detalle de Producto</h2>
                 <form action="/admin/editarProducts/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div class="product-box">
-                        <select class="form-select" name="categoria" id="categoria" aria-label="Floating label select example">
-                        <option selected hidden value="<%= producto.categoria %>"><%= producto.categoria %></option>
-                        <option value="Especiales">Especial</option>
-                        <option value="Clásicos">Clásicos</option>
-                        <option value="Combinados">Combinado</option>
-                        <option value="Adicional">Adicional</option>
-                        <option value="Hot">Hot</option>
-                        <option value="Nigiri">Nigiri</option>
-                        <option value="Veggie">Veggie</option>
+                        <select class="form-select" name="categoriasId" id="categoria" aria-label="Floating label select example">
+                        <option value ="2">Especiales</option>
+                        <option value="7">Clásicos</option>
+                        <option value="3">Combinados</option>
+                        <option value="4">Adicionales</option>
+                        <option value="5">Hots</option>
+                        <option value="6">Nigiris</option>
+                        <option value="1">Veggies</option>
                       </select>
                       <label for="categoria">Categoria</label>
                       <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="date" name="altaDeProducto" id="altaDeProducto" value="<%= producto.altaDeProducto %>">
-                        <label for="altaDeProducto">Alta de Producto</label>
-                        <small>Obligatorio</small>
-                    </div>
-                    <div class="product-box">
-                        <input type="text" name="nombreDeProducto" id="nombreDeProducto" value="<%= producto.nombreDeProducto %>">
+                        <input type="text" name="nombreProducto" id="nombreProducto" value="<%= producto.nombreProducto %>">
                         <label for="nombreDeProducto">Nombre</label>
                         <small>Obligatorio</small>
                     </div>

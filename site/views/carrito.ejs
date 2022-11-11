@@ -8,16 +8,12 @@
 		<section class="project">
 			<div class="shop">
 				<article class="card">
-					<img src="img/productos/combi5.jpg">
+					<img src="/img/productos/<%= product.imagenes[0] %>" alt="">
 					<div class="content">
-						<h3>Sugoi Sushi Product</h3>
+						<h3><%= producto.nombreDeProducto %></h3>
 						<div class="detail">
                             <div class="precio-descuento">
-                                <p class="precio-secundario">$1900</p>
-                                <span>50%</span>
-                            </div>
-                            <p>$950</p>
-						
+                                <small><%= producto.descuento %>%</small>			
                             <p class="unit">Cantidad : <input name="" value="1"></p>
 						<p class="btn"><i class="fa-solid fa-cart-circle-plus"></i> <span>Borrar</span></p>
 					</div>

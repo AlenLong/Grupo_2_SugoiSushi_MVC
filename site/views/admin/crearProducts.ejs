@@ -10,15 +10,16 @@
                         <h2>Creación de Producto</h2>
                         <form action="/admin/crearProducts" method="post" enctype="multipart/form-data">
                             <div class="product-box">
-                                <select class="form-select" name="categoriasId" id="categoriasId"
-                                    aria-label="Floating label select example">
-                                    <option selected hidden value="" >Selecciona una opción</option>
-                                    <option value="1">combinados</option>
-                                    <option value="2">Salsas</option>
-                                    <option value="3">Platos</option>
-                                </select>
-                                <label for="categoriasId">Categoria</label>
-                                <!-- <small>Obligatorio</small> -->
+                                <select class="form-select" name="categoriasId" id="categoria" aria-label="Floating label select example" >
+                                <option value ="2">Especiales</option>
+                                <option value="7">Clásicos</option>
+                                <option value="3">Combinados</option>
+                                <option value="4">Adicionales</option>
+                                <option value="5">Hots</option>
+                                <option value="6">Nigiris</option>
+                                <option value="1">Veggies</option>
+                              </select>
+                              <label for="categoria">Categoria</label>
                             </div>
                             <div class="product-box">
                                 <input type="text" id="nombreProducto" name="nombreProducto" required
@@ -72,9 +73,12 @@
                             </p> 
                                
                             <div class="product-box">
-                                <input type="checkbox" name="disponible" id="disponible" value="1"/>
+                                <input type="checkbox" name="disponible" id="disponible" value="1"
+                                value="<%= locals.old && old.disponible ? old.disponible : null %>">
                                 <label for="disponible">disponible</label>
-                            <small>Obligatorio</small>
+                                <p class="span text-danger">
+                                    <%= locals.errors && errors.disponible ? errors.disponible.msg : null %>
+                                </p>
                             </div>
 
                             <div class="btn-container">

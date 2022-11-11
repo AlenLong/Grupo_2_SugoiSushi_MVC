@@ -62,6 +62,7 @@ app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/admin',adminRouter);
 
+
 /* Funcion de actualizacion del servidor  */
 liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
@@ -72,3 +73,4 @@ liveReloadServer.server.once("connection", () => {
 app.listen(port,function(){
     return console.log(`Se levanta el servidor en http://localhost:${port}`)
 })
+console.log(process.env.DB_PASS);
