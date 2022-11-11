@@ -40,8 +40,12 @@ module.exports = {
                 imagen: req.file ? req.file.filename : "Avatar_por_Defecto.jpg",
                 roll: "User",
             }).then((usuario) => {
-                return res.redirect("/users/login");
-                /*  return res.send(usuario) */
+                req.session.userLogin = {
+                    id: usuario.id,
+                    nombre: usuario.nombre,
+                    imagen: usuario.imagen,
+                    roll: usuario.roll,
+                }
             });
         } else {
             // elimina la img de un registro mal creado
