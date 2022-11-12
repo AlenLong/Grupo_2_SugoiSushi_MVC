@@ -14,7 +14,7 @@
                         <div class="contentProductList">
                             <h3>Sugoi Sushi Product Admin</h3>
                             <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post">
-                                <button type="submit" class="btnn"><i class="fas fa-trash"></i></button>
+                                <button type="submit" id = "formulario"class="btnn"><i class="fas fa-trash"></i></button>
                                 </form>
                             <p class="btn"><a href="/admin/editarProducts/<%= producto.id%>"></i>Editar / Detalle </a>
                         </div>
@@ -32,6 +32,8 @@
 			</div>
 		</section>
     </main>
+    <script src="/javascripts/alertaEliminar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <footer class="footer">
         <div class="cont">
             <div class="info">
