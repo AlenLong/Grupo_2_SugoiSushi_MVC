@@ -10,13 +10,34 @@ window.addEventListener('load', ()=> {
     let inputPass = $('#password');
     let inputPass2 = $('#confirma');
     let imagen = $('#imagen');
+    let terminos = $('#checkContainer')
+
+
+    let  errors = []    //   en pg lo reliza con objeto literal de arr 
 
 
     nombre.addEventListener('change', () => {
         switch (true) {
             case !nombre.value:
-                $('#nameContainer').innerHTML = "<small>El campo Nombre es obligatorio</small>"
+                $('#nameContainer').innerHTML = "<small>El Nombre es obligatorio</small>"
                 nombre.style.border = "1px solid red"
+                
+                let error = {
+                    id: 1,
+                    elemento:'nombre',
+                    mensaje: 'El Nombre es obligatorio'
+                }
+                let errorCheck = true
+                errors.forEach(e => {
+                    if (e.id === 1){
+                        errorCheck = false
+                    }
+                });
+                if (errorCheck) {
+                    errors.push(error)
+                }
+                console.log(errors)
+
                 break;
         
             default:
@@ -25,11 +46,28 @@ window.addEventListener('load', ()=> {
         }
     })
 
+
     apellido.addEventListener('change', () => {
         switch (true) {
             case !apellido.value:
-                $('#apellidoContainer').innerHTML = "<small>El campo Apellido es obligatorio</small>"
+                $('#apellidoContainer').innerHTML = "<small>El Apellido es obligatorio</small>"
                 apellido.style.border = "1px solid red"
+
+                let error = {
+                    id: 2,
+                    elemento:'apellido',
+                    mensaje: 'El Apellido es obligatorio'
+                }
+                let errorCheck = true
+                errors.forEach(e => {
+                    if (e.id === 2){
+                        errorCheck = false
+                    }
+                });
+                if (errorCheck) {
+                    errors.push(error)
+                }
+                console.log(errors)
                 break;
         
             default:
@@ -38,11 +76,30 @@ window.addEventListener('load', ()=> {
         }
     })
 
+
     email.addEventListener('change', () => {
         switch (true) {
             case !email.value:
-                $('#emailContainer').innerHTML = "<small>El campo Email es obligatorio</small>"
+                $('#emailContainer').innerHTML = "<small>El Email es obligatorio</small>"
                 email.style.border = "1px solid red"
+
+                let error = {
+                    id: 3,
+                    elemento:'email',
+                    mensaje: 'El Email es obligatorio'
+                }
+                let errorCheck = true
+                errors.forEach(e => {
+                    if (e.id === 3){
+                        errorCheck = false
+                    }
+                });
+                if (errorCheck) {
+                    errors.push(error)
+                }
+                console.log(errors)
+                
+                
                 break;
         
             default:
@@ -51,11 +108,28 @@ window.addEventListener('load', ()=> {
         }
     })
 
+
     inputPass.addEventListener('change', () => {
         switch (true) {
             case !inputPass.value:
                 $('#passContainer').innerHTML = "<small>La Contraseña es obligatoria</small>"
                 inputPass.style.border = "1px solid red"
+
+                let error = {
+                    id: 4,
+                    elemento:'inputPass',
+                    mensaje: 'La Contraseña es obligatoria'
+                }
+                let errorCheck = true
+                errors.forEach(e => {
+                    if (e.id === 4){
+                        errorCheck = false
+                    }
+                });
+                if (errorCheck) {
+                    errors.push(error)
+                }
+                console.log(errors)
                 break;
         
             default:
@@ -64,19 +138,51 @@ window.addEventListener('load', ()=> {
         }
     })
 
+
     inputPass2.addEventListener('change', () => {
+
+        let error = {
+            id: 5,
+            elemento:'inputPass2',
+            mensaje: 'El Contraseña es obligatorio'
+        }
+        let errorCheck = true
+
         switch (true) {
             case !inputPass2.value:
                 $('#pass2Container').innerHTML = "<small>La confirmacion es obligatoria</small>"
                 inputPass2.style.border = "1px solid red"
+                error.mensaje = 'La confirmacion es obligatoria'
+                
+                errors.forEach(e => {
+                    if (e.id === 5){
+                        errorCheck = false
+                    }
+                });
+                if (errorCheck) {
+                    errors.push(error)
+                }
+                console.log(errors)
                 break;
             case inputPass2.value != inputPass.value:
                 $('#pass2Container').innerHTML = "<small>Las Contraseñas no coinciden </small>"
                 inputPass2.style.border = "1px solid red"
+                error.mensaje = 'Las Contraseñas no coinciden '
+                
+                errors.forEach(e => {
+                    if (e.id === 5){
+                        errorCheck = false
+                    }
+                });
+                if (errorCheck) {
+                    errors.push(error)
+                }
+                console.log(errors)
         
             default:
                 $('#pass2Container').innerHTML = ''
                 break;
         }
     })
+
 })
