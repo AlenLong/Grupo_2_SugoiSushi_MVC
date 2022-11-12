@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-const users = require("../data/users.json");
+/* const users = require("../data/users.json");
 const guardar = (dato) =>
     fs.writeFileSync(
         path.join(__dirname, "../data/users.json"),
         JSON.stringify(dato, null, 4),
         "utf-8"
-    );
+    ); */
 const { validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const db = require("../database/models");
