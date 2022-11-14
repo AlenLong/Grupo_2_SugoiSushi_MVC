@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 
     let form = $('#formulario')
     let email = $('#email')
-    let inputPass = $('#pass')
+    let inputPass = $('#password')
 
     let errores = [{
         id: 1,

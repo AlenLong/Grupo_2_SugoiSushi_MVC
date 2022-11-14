@@ -1,192 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',{title: 'Sugoi Sushi'}) %>
-    <body class="carta">
-         <%- include('./partials/header') %>
-         <main>
-            <h1>Carta</h1>
-                <section>
-                    <h2>HOT ROLLS</h2>
-                    <article>
-                        <h3>Bubba</h3>
-                        <p>(Langostinos, palta, queso
-                            rebozado en panko japonés)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/bubba.jpg" alt="">
-                        </div>
-                        <div class="detail"> 
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$3595</del></p>
-                                <span>24%</span>
-                            </div>
-                            <p class="precio-principal">$2732</p>
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>    
-                        </div>
-                    </article>
-                    <article>
-                        <h3>New York Phila</h3>
-                        <p>(Salmón, palta, queso
-                            rebozado en panko japonés)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/new york phila hot png.png" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1904</del></p>
-                                <span>30%</span>
-                            </div>
-                            <p class="precio-principal">$1333</p>
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <h2>langostinos en Panko</h2>
-                    <article>
-                        <h3>Clasico</h3>
-                        <p>(Langostino rebozado 
-                            en panko japonés)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/langos.jpg" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1563</del></p>
-                                <span>45%</span>
-                            </div>
-                            <p class="precio-principal">$860</p>
-                          
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Picante</h3>
-                        <p>(Langostino rebozado 
-                            en panko japonés con
-                            salsa asiatica picante)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/langos.jpg" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1563</del></p>
-                                <span>45%</span>
-                            </div>
-                            <p class="precio-principal">$860</p>
-                          
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <h2>ROLLS</h2>
-                    <article>
-                        <h3>CALIFORNIA</h3>
-                        <p>(Kanikama, palta, queso)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/new york phila hot png.png" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1904</del></p>
-                                <span>30%</span>
-                            </div>
-                            <p class="precio-principal">$1333</p>
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>dallas</h3>
-                        <p>(Salmón, palta, queso
-                            coronado con crocante de batata)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/langos.jpg" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1563</del></p>
-                                <span>45%</span>
-                            </div>
-                            <p class="precio-principal">$860</p>
-                          
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>KUBRICK</h3>
-                        <p>(Salmón rosado, palta y queso, 
-                            envuelto en salmón ahumado coronado 
-                            con crocante de batata y salsa agridulce)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/bubba.jpg" alt="">
-                        </div>
-                        <div class="detail"> 
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$3595</del></p>
-                                <span>24%</span>
-                            </div>
-                            <p class="precio-principal">$2732</p>
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>    
-                        </div>
-                    </article>
-                    <article>
-                        <h3>FLAMINGO</h3>
-                        <p>(Langostinos, palta, queso, envuelto en
-                            salmón ahumado coronado
-                            con salsa de maracuyá)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/new york phila hot png.png" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1904</del></p>
-                                <span>30%</span>
-                            </div>
-                            <p class="precio-principal">$1333</p>
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>KIBO AHUMADO</h3>
-                        <p>(Rúcula, queso, envuelto en
-                            finas laminas de salmón ahumado)</p>
-                        <div class="imagenes">
-                            <img src="/img/productos/langos.jpg" alt="">
-                        </div>
-                        <div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario"><del>$1563</del></p>
-                                <span>45%</span>
-                            </div>
-                            <p class="precio-principal">$860</p>
-                          
-                            <a href="/views/carrito">
-                                <button name="button">añadir carrito</button>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                    <h2>carta completa</h2>
-                    <iframe src="/public/CartaCompleta2022.pdf" frameborder="0"></iframe>
+<%- include('./partials/head',{title: 'Sugoi Sushi' }) %>
+    <body class="carta-sugoi">
+        <%- include('./partials/header') %>
+            <main class="menu-carta">
+                <div class="titulo-carta">
+                    <h1>Carta</h1>
+                    <p>(Los pedidos incluyen: salsa de soja, wasabi, palillos y gari)</p>
+                </div>
+                <section class="menu-productos">
+                    <div class="productos-uno">
+                        <h2>ROLLS</h2>
+                        <h3>CLÁSICOS</h3>
+                        <h5>URAMAKI ROLL</h5>
+                        <article>
+                           <h4>CALIFORNIA SUMMER</h4>
+                           <p>(Kanikama, mango, queso)</p>
+                            <!-- <div class="imagenes">
+                                <img src="/img/productos/bubba.jpg" alt="">
+                            </div> -->
+                        </article>
+                        <article>
+                            <h4>KODAMA</h4>
+                            <p>(Langostinos, pepino, queso)</p>
+                        </article>
+                        <article>
+                            <h4>BUBBA</h4>
+                            <p>(Langostinos, palta, queso)</p>
+                        </article>
+                        <article>
+                            <h4>HAWAII</h4>
+                            <p>(Langostinos, mango, queso)</p>
+                        </article>
+                        <article>
+                            <h4>PHILADELPHIA</h4>
+                            <p>(salmón rosado, queso)</p>
+                        </article>
+                        <article>
+                            <h4>NEW YORK</h4>
+                            <p>(Salmón rosado, Palta)</p>
+                        </article>
+                        <article>
+                            <h4>VINTAGE</h4>
+                            <p>(Salmón rosado, mango, queso)</p>
+                        </article>
+                        <article>
+                            <h4>KIBO</h4>
+                            <p>(Salmón rosado, rucula, queso)</p>
+                        </article>
+                        <article>
+                            <h4>TOKIO</h4>
+                            <p>(Salmón rosado, palta, queso, ciboulette)</p>
+                        </article>
+                        <article>
+                            <h4>CAPI</h4>
+                            <p>(Salmón rosado, palta, queso, verdeo)</p>
+                        </article>
+                        <article>
+                            <h4>GRANDMA</h4>
+                            <p>(Langostinos, palta, queso, albahaca)</p>
+                        </article>
+                        <article>
+                            <h4>SMOKE ROLL</h4>
+                            <p>(Salmón ahumado, rucula, palta, queso)</p>
+                        </article>
+                        <article>
+                            <h5>FUTOMAKI ROLL</h5>
+                            <p>(Rolls grandes con alga por afuera)</p>
+                        </article>
+                        <br>
+                        <br>
+                        <article>
+                            <h4>BIG BUBBA</h4>
+                            <p>(Langostinos, palta, queso)</p>
+                        </article>
+                        <article>
+                            <h4>BIG NEW YORK PHILA</h4>
+                            <p>(salmón rosado, palta, queso)</p>
+                        </article>
+                        <article>
+                            <h4>DOUBLE DRAGON</h4>
+                            <p>(Salmón rosado, Salmón ahumado, palta, queso)</p>
+                        </article>
+                        <h3>- VEGGIES</h3>
+                        <article>
+                            <h4>VEGGIE FRIENDLY</h4>
+                            <p>(Vegetales al wok en salsa teriyaki)</p>
+                        </article>
+                        <article>
+                            <h4>BORA BORA</h4>
+                            <p>(Palta, tomates secos y cebolla morada caramelizados en salsa teriyaki)</p>
+                        </article>
+                        <article>
+                            <h4>PARÍS</h4>
+                            <p>(Rucula, almendras, queso, coronado con salsa Sugoi)</p>
+                        </article>
+                        <article>
+                            <h4>HAPPY MONDAYS</h4>
+                            <p>(Zucchini, mango, palta, pepino, queso, coronado con salsa agridulce)</p>
+                        </article>
+                        <article>
+                            <h4>IBIZA</h4>
+                            <p>(Rucula, nueces, queso, envuelto en finas laminas de palta coronado con salsa asiática picante)</p>
+                        </article>
+                        <article>
+                            <h4>KONICHIWA</h4>
+                            <p>(Tomates secos salteados en teriyaki, palta, ciboulette, coronado con salsa Sugoi)</p>
+                        </article>
+                        <article>
+                            <h4>OSAKA</h4>
+                            <p>(Pimientos asados en salsa teriyaki, palta, mango, envuelto en pepino, coronado con salsa tártara)</p>
+                        </article>
+                        <article>
+                            <h4>VEGGIE MEX</h4>
+                            <p>(Pepino, zucchini, queso, verdeo, coronado con salsa guacamole y tabasco)</p>
+                        </article>
+                        <article>
+                            <h4>VEGGIE BEE</h4>
+                            <p>(Vegetales al wok en salsa teriyaki, envuelto en palta, coronado con crocante de batata, salsa de miel y mostaza de dijon)</p>
+                        </article>
+                        <article>
+                            <h4>AUTUMN</h4>
+                            <p>(Champiñones salteados, almendras fritas, palta, envuelto en pepino, coronado con salsa agridulce)</p>
+                        </article>
+                        <article>
+                            <h4>MIZUKI</h4>
+                            <p>(Champiñones y tomates secos salteados estilo sugoi, palta y albahaca, envuelto en pepino, coronado con salsa asiática picante)</p>
+                        </article>
+                            <h4>FUTOMAKI ROLL</h4>
+                        <article>
+                            <h4>GINZA</h4>
+                            <p>(Pepino, palta, mango, queso, albahaca)</p>
+                        </article>
+                        <article>
+                            <h4>SHINJUKU</h4>
+                            <p>(Rucula, palta, ciboulette, zucchini coronado con salsa de maracuyá)</p>
+                        </article>
+                       
+                        <h3>- ESPECIALES</h3>
+                        <article>
+                            <h4>CALIFORNIA HOT</h4>
+                            <p>(Kanikama, palta, queso, coronado con salsa asiática picante)</p>
+                        </article>
+                        <article>
+                            <h4>CALIFORNIA PARTY</h4>
+                            <p>(kanikama palta, queso, coronado con salsa tártara)</p>
+                        </article>
+                        <article>
+                            <h4>CALIFORNIA MEX</h4>
+                            <p>(Kanikama, queso, coronado con salsa guacamole y tabasco)</p>
+                        </article>
+                        <article>
+                            <h4>KIBO AHUMADO</h4>
+                            <p>(Rúcula, queso, envuelto en finas laminas de salmón ahumado)</p>
+                        </article>
+                        <article>
+                            <h4>BRUCE LEE</h4>
+                            <p>(Salmón palta, queso, coronado con salsa sugoi)</p>
+                        </article>
+                        <article>
+                            <h4>RETRO ROLL</h4>
+                            <p>(Salmón rosado sellado y caramelizado en salsa teriyaki con pimientos y queso)</p>
+                        </article>
+                        <article>
+                            <h4>TEXAS</h4>
+                            <p>(Langostinos, palta, queso, coronado con crocante de batata)</p>
+                        </article>
+                        <article>
+                            <h4>DALLAS</h4>
+                            <p>(Salmón rosado, palta, queso, coronado con crocante de batata)</p>
+                        </article>
+                        <article>
+                            <h4>MAROCCO</h4>
+                            <p>(Langostinos, palta,queso,envuelto en salmón rosado y salsa agridulce)</p>
+                        </article>
+                        <article>
+                            <h4>MEXICO</h4>
+                            <p>(Salmón rosado, queso, coronado con salsa guacamole y tabasco)</p>
+                        </article>
+                        <article>
+                            <h4>FLAMINGO</h4>
+                            <p>(Langostino, palta, queso, envuelto en finas laminas de salmón ahumado, coronado con salsa de maracuyá)</p>
+                        </article>
+                        <article>
+                            <h4>SUN SHINE</h4>
+                            <p>(Salmón rosado rebosado en Panko Japones, palta, queso, envuelto en finas laminas de mango)</p>
+                        </article>
+                        <article>
+                            <h4>GREEN HILLS</h4>
+                            <p>(Salmón rosado, queso, ciboullette, envuelto en finas laminas de palta)</p>
+                        </article>
+                        <article>
+                            <h4>MINMEI</h4>
+                            <p>(Langostinos palta, queso, envuelto en finas laminas de salmón rosado, coronado con crocante de batata y salsa de maracuyá)</p>
+                        </article>
+                        <article>
+                            <h4>KUBRICK</h4>
+                            <p>(Salmón rosado, palta y queso, envuelto en salmón ahumado coronado con crocante de batata y salsa agridulce)</p>
+                        </article>
+                        <article>
+                            <h4>HATSUBOKU</h4>
+                            <p>(Langostinos tempura en panko japones, palta, queso, envuelto en salmón rosado y lluvia de especias)</p>
+                        </article>
+                        <article>
+                            <h4></h4>KAWA
+                            <p></p>(Salmón rosado rebozado en panko japones, palta, queso,
+                            envuelto en salmón ahumado, coronado con salsa agridulce)</article>
+                        <article>
+                            <h4>VALHALLA</h4>
+                            <p>(Langostinos rebozados en panko japones, mango, queso, envuelto en finas laminas de salmón rosado, coronado con salsa tártara y ciboulette)</p>
+                        </article>
+                        <article>
+                            <h4>MACHU PICA</h4>
+                            <p>(Salmón rosado, queso, verdeo, envuelto en palta coronado con crocante de batata, lluvia de especias, salsa asiática picante y tabasco)</p>
+                        </article>
+                        <article>
+                            <h4>HONEYBEE</h4>
+                            <p>(Langostinos rebozados en panko japones, mango, queso, envuelto en salmón rosado, coronado con crocante de batata y salsa de miel y mostaza de dijon)</p>
+                        </article>
+                        <article>
+                            <h4>BEREZINO</h4>
+                            <p>(Salmón rosado, palta, queso, almendras envuelto en salmón ahumado, coronado con salsa sugoi)</p>
+                        </article>
+                        <article>
+                            <h4>MALIBÚ</h4>
+                            <p>(Langostinos rebozados en panko japones, palta y ciboulette, envuelto en tamago) sin arroz x 6 unidades</p>
+                        </article>
+                        <article>
+                            <h4>ASHITAKA</h4>
+                            <p>(Salmón rosado, palta, queso, verdeo, envuelto en tamago) sin arroz, x 6 unidades</p>
+                        </article>
+                        <article>
+                            <h4>KAHORI</h4>
+                            <p>(Langostinos rebozados en panko japones, palta, queso, envuelto en salmón ahumado, salsa de miel y mostaza de dijon, coronado con alcaparras fritas)</p>
+                        </article>
+                        <article>
+                            <h4>PICASSO</h4>
+                            <p>(Piel de salmón sellada y caramelizada en salsa teriyaki, palta, queso, almendras, envuelto en salmón rosado, coronado con salsa asiática picante y verdeo)</p>
+                        </article>
+                        <article>
+                            <h4>BUBBA GUMP</h4>
+                            <p>(Langostinos tempura en panko japones, salmón ahumado, mango, queso, envuelto en palta, crocante de salmón rosado y salsa asiática picante)</p>
+                        </article>
+                        <article>
+                            <h4>CHILI PALMER</h4>
+                            <p>(Langostinos al ajillo, palta,queso, envuelto en salmón ahumado, coronado con salsa asiática picante y perejil fresco)</p>
+                        </article>
+
+
+
+                    </div>
+                    <div class="productos-dos">
+                        <h2>hot roll & tempuras</h2>
+                        <article>
+                            <h4>NEW YORK PHILA HOT x8u</h4>
+                            <p>(Salmón, palta, queso, rebozado en panko japonés)</p>
+                        </article>
+                        <article>
+                            <h4>BUBBA HOT x8u</h4>
+                            <p>(Langostinos, palta, queso, rebozado en panko japonés)</p>
+                        </article>
+                        <article>
+                            <h4>VEGGIE SUN x8u</h4>
+                            <p>(Palta, pepino, zanahoria, queso, rebozado en panko japones)</p>
+                        </article>
+                        <article>
+                            <h4>YASAI x8u</h4>
+                            <p>(Vegetales asados en teriyaki, mango, queso, rebozado en panko japones)</p>
+                        </article>
+                        <article>
+                            <h4>HONNEYBEE HOT x8u</h4>
+                            <p>(Langostinos, palta, queso, coronado con salsa de miel y mostaza de dijon)</p>
+                        </article>
+                        <article>
+                            <h4>DOUBLE DRAGON DELUXE x8u</h4>
+                            <p>(Salmón rosado, Salmón ahumado, palta, queso, rebozado en panko japones, coronado con salsa asiática picante)</p>
+                        </article>
+                        <article>
+                            <h4></h4>LANGOSTINOS CLÁSICO x6u
+                            <p></p>(Langostino rebozado en panko japonés)</article>
+                        <article>
+                            <h4>LANGOSTINOS PICANTE x6u</h4>
+                            <p>(Langostino rebozado en panko japonés con salsa asiática picante)</p>
+                        </article>
+                        <article>
+                            <h4>SUMO x8u</h4>
+                            <p>(arroz, langostinos, palta queso, rebozado en panko japones)</p>
+                        </article>
+                        <article>
+                            <h4>SUMO x8u</h4>
+                            <p>(arroz, salmón rosado, palta queso, rebozado en panko japones)</p>
+                        </article>
+                        <article>
+                            <h4>SUMO VEGGIE x8u</h4>
+                            <p>(Palta, mango, rucula, crocante de almendras, queso, rebozado en panko japones.)</p>
+                        </article>
+                    </div>
+
+                    <div class="productos-tres">
+                        <h2>GEISHAS</h2>
+                        <article>GEISHA DE SALMÓN
+                            (Queso, palta, envuelto en salmón rosado)</article>
+                        <article>GEISHA DE SALMÓN AHUMADO
+                            (Queso, palta, envuelto en salmón ahumado)</article>
+                        <article>DOMINICANA
+                            (Queso, mango, envuelto en salmón rosado,
+                            coronado con crocante de batatas y salsa de maracuyá)</article>
+                        <article>SHIBUYA
+                            (Queso, palta, envuelto en salmón ahumado
+                            coronado con crocante de batata y salsa agridulce)</article>
+                        <article>KATSUMI
+                            (Queso, palta, envueto en salmón rosado,
+                            coronado con crocante de batatas y salsa de miel y
+                            mostaza de dijon)</article>
+                    </div>
+                    <div class="productos-cinco">
+                        <h2>NIGIRI</h2>
+                        <article>NIGIRI SALMÓN
+                            (Salmón rosado, arroz)
+                        </article>
+                        <article>NIGIRI SALMÓN SMOKE
+                            (Salmón ahumado, arroz)</article>
+                        <article>NAUSICAA
+                            (salmón rosado, arroz, wasabi, lluvia de especias
+                             y salsa asiática picante)</article>
+                        <article>TOGUSA
+                            (salmón rosado, arroz y tartar de salmón ahumado)</article>
+                       
+                    </div>
+                    <div class="productos-siete">
+                        <h2>ADICIONALES</h2>
+                        <article>
+                            ガリ Gari (Pickle de Jengibre) Extra
+                        </article>
+                        <article>Salsa Teriyaki</article>
+                        <article>Godzilla</article>
+                        <article>Salsa Sugoi</article>
+                        <article>Salsa Agridulce</article>
+                        <article>Salsa Guacamole y tabasco</article>
+                    </div>
                 </section>
-        </main>
+            </main>      
+    <%- include('./partials/footer') %>
     </body>
 </html>

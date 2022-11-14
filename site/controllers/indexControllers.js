@@ -27,5 +27,8 @@ module.exports = {
     },
     nosotros: (req,res)=>{
         return res.render('nosotros')
-    }
+    },
+    promociones: (req,res)=>{
+        return res.render('promociones')
+    },
 }

@@ -3,7 +3,6 @@
     background: linear-gradient(206deg, var(--colorRojo), var(--colorNegro));
 }
 .index .cartilla{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +10,7 @@
     flex-direction: column;
     height: 90vh;
     color: white;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100%;
@@ -18,7 +18,7 @@
     url(/img/02.jpg);
 }
 
-.index .cartilla button{ 
+.index .cartilla .button{ 
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 15px;
@@ -27,6 +27,10 @@
     box-shadow: 2px 2 px 10px rgba(0,0, 0, 6);
     color: rgb(199, 62, 38);
     background-color: rgb(75, 10, 10);
+}
+
+.index .cartilla .button a{
+    color:#fff;
 }
 
 .index .cartilla button:hover{

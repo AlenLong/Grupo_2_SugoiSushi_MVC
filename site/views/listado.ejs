@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head',{title: 'Sugoi Sushi' }) %>
-
     <body class="contenedor-listado">
         <%- include('./partials/header') %>
             <main class="listado">
@@ -15,15 +14,17 @@
                             <div class="content">
                                 <h3> <%= producto.nombreProducto %>  </h3>
                                 <div class="detail">
-                                    <p>(Langostinos, palta, queso
-                                        rebozado en panko japonés)</p>
+                                    <p><%= producto.descripcion %> </p>
                                     <div class="precio-descuento">
                                         <p class="precio-secundario"><del><%= producto.precio %> </del><small><%= producto.descuento %> </small></p>
                                         <p class="precio-principal"><%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
                                     </div>
                                 </div>
+                                <div class="cantidad-pieza">
+                                    
+                                </div>
                                 <a href="/views/carrito">
-                                    <button name="button"><i class="fas fa-shopping-cart"></i>    añadir carrito</button>
+                                    <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
                                 </a>
                             </div>
                         </article>
@@ -32,5 +33,4 @@
             </main>
             <%- include('./partials/footer') %>
     </body>
-
 </html>

@@ -36,7 +36,9 @@
 
 .contenedor-listado .listado .project .card img {
     width: 100%;
+    background-position: 10px;
 }
+
 
 .contenedor-listado .listado .project .card .content .detail{
     padding: 15px;
