@@ -3,16 +3,27 @@
 
         <%- include('../partials/head') %>
 
-    <body class="profile">
+<body class="profile">
 
         <%- include('../partials/header',{title: locals.userLogin.nombre }) %>
+
     <main>
-        <img class="imgProfile" src="/img/users/<%= locals.userLogin.imagen %>" alt="">
-        <h1> Hola <%= locals.userLogin.roll %> <%= locals.userLogin.nombre %></h1>
+        <div class="center">
+            <section class="sec1">
+                <img class="imgProfile" src="/img/users/<%= locals.userLogin.imagen %>" alt="">
+            </section>
+            <section class="editProfile">
+                <h3>Nombre: <%= locals.userLogin.nombre %></h3>
+                <h3>Apellido: <%= locals.userLogin.apellido %></h3>
+                <h3>Email: <%= locals.userLogin.email %></h3>
+
+            </section>
+        </div>
+
 
         <form action="/users/logout?_method=DELETE" method="post">
         <button type="submit"><i class="fas fa-power-off"></i> Cerrar sesion</button>
-    </form>
+        </form>
     </main>
 </body>
 </html>

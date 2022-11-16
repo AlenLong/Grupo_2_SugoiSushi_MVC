@@ -5,6 +5,15 @@
     <%- include('../partials/header') %>
     <main class="cartProduct">
 		<h1>Administrador de Productos</h1>
+        <div class="planillas">
+            <a href="/admin/crearProducts"></i>Crear Producto</a>
+        <hr>
+        <a href="/admin/history/">
+            <button type="button"></button>Historial de Productos</a>
+        <hr>
+        <a href="#"></i>Planilla de ventas</a>
+        <hr>
+        </div>
 		<section class="projectProduct">
 			<div class="shopProduct">
 				<% productos.forEach(producto => { %>
@@ -13,25 +22,23 @@
                         <img src="/img/productos/combi1.jpg">
                         <div class="contentProductList">
                             <h3>Sugoi Sushi Product Admin</h3>
-                            <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post">
-                                <button type="submit" class="btnn"><i class="fas fa-trash"></i></button>
+                            <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post" class="buttoms">
+                                
+                                <button type="submit" id = "formulario"class="btnn"><i class="fas fa-trash"></i></button>
+                                
+                                <p class="btn"><a class = "btn-edit" href="/admin/editarProducts/<%= producto.id%>"></i> Editar </a>
+                            
                                 </form>
-                            <p class="btn"><a href="/admin/editarProducts/<%= producto.id%>"></i>Editar / Detalle </a>
+                            
                         </div>
                     </article>
                 <% }) %>
 			</div>
-			<div class="planillas">
-                <a href="/admin/crearProducts"></i>Crear Producto</a>
-            <hr>
-            <a href="/admin/history/">
-                <button type="button"></button>Historial de Productos</a>
-            <hr>
-            <a href="#"></i>Planilla de ventas</a>
-            <hr>
-			</div>
+			
 		</section>
     </main>
+    <script src="/javascripts/alertaEliminar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <footer class="footer">
         <div class="cont">
             <div class="info">
