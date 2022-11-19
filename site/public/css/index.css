@@ -15,16 +15,25 @@
     width: 100%;
     background-size: 100%;
     background-image: 
-    url(/img/02.jpg);
+    url("/img/02.jpg");
 }
-
+.index .cartilla:hover {
+    filter: grayscale(80%);
+}
+.index .cartilla:hover h2  {
+    color: rgb(94, 248, 164);
+}   
+.index .cartilla:hover .button  {
+    color:black;
+    background-color: white;
+} 
 .index .cartilla .button{ 
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 30px;
     border: 3px solid rgba(0,0,0,3);
-    box-shadow: 2px 2 px 10px rgba(0,0, 0, 6);
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 6);
     color: rgb(199, 62, 38);
     background-color: rgb(75, 10, 10);
 }
@@ -41,7 +50,7 @@
     background-color: rgb(73, 68, 68);
     background-repeat: no-repeat;
     text-align: center;
-    background-image: url(/img/10917-marmol.jpg);
+    background-image: url("/img/10917-marmol.jpg");
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -53,24 +62,23 @@
 
 .index .Datos img {
     width: 60px;
-    height: 60px;
-    
+    height: 60px;   
 }
+
+
 .index .index-main .inicio{
-    background-image: url("/img/productos/combi.jpg");
+    background-image: url("/img/Logo\ Sugoi.jpg");
     background-position: top;
     background-size: contain;
     font-family: var(--colorBlanco);
     margin: 0 auto;
     color: red;
-    -webkit-text-stroke: 5px rgb(63, 57, 57);
     font-size: 35px;
 }
-.index .index-main .inicio{
+.index .index-main .inicio a{
     justify-content: center;
-    
+    background-color: #fff;
 }
-
 .index .index-main .inicio section article .image{
     display: flex;
     align-content: center;
@@ -172,7 +180,7 @@
 }
 
 /*boton flotante*/
-.container-boton{
+.index .container-boton{
     background-color: #075E54;
     border: 1px solid #fff;
     position: fixed;
@@ -185,12 +193,12 @@
     animation: efecto 1.2s infinite;
 }
 
-.container-boton:hover{
+.index .container-boton:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-.boton{
+.index .boton{
     width: 50px;
     transition: ease 1s;
 }

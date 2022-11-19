@@ -6,8 +6,8 @@ let productos = [
     categoriasId: "2",
     imagen: "bubba.jpg",
     descripcion: "neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
-    precio: "3595",
-    descuento: "24",
+    precio: 3595,
+    descuento: 24,
     createdAt : new Date,
     updatedAt : new Date
 },

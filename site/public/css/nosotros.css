@@ -1,4 +1,4 @@
-.historia
+.nosotros .historia
     {
         text-align: center;
         padding: 20px;
@@ -16,16 +16,21 @@
         100% {background-position: 0% 50%;}
     }
 
-.contenedor-sobre-nosotro{
+.nosotros .contenedor-sobre-nosotro{
     text-decoration: none;
     color: aliceblue;
 
 }
-.contenedor-sobre-nosotro img{
+.nosotros .contenedor-sobre-nosotro img{
     width: 300px;
     height: auto;
 }
-.historia .sushi-arg{
+
+.nosotros .contenedor-sobre-nosotro img:hover {
+    filter: grayscale(80%);
+}
+
+.nosotros .historia .sushi-arg{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

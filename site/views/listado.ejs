@@ -16,12 +16,9 @@
                                 <div class="detail">
                                     <p><%= producto.descripcion %> </p>
                                     <div class="precio-descuento">
-                                        <p class="precio-secundario"><del><%= producto.precio %> </del><small><%= producto.descuento %> </small></p>
-                                        <p class="precio-principal"><%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
+                                        <p class="precio-secundario">$<del><%=  producto.precio %> </del><small><%= producto.descuento %> %</small></p>
+                                        <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
                                     </div>
-                                </div>
-                                <div class="cantidad-pieza">
-                                    
                                 </div>
                                 <a href="/views/carrito">
                                     <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>

@@ -5,3 +5,37 @@
 .promociones h2{
     color: rgb(243, 243, 247);
 }
+.promociones .promociones-sugoi{
+    background-color: #ea5455;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+}
+.promociones .promociones-sugoi .promo{
+    width: 600px;
+    background-color: #f1f1f1;
+	margin: auto;
+	box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+}
+
+.promociones .promociones-sugoi .promo .articulos{
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    background: #e4e4e4;
+    transition: all 0.2s ease-in;
+}
+.promociones .promociones-sugoi .promo a{
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  background-color: #d91515;
+  border-bottom: 2px solid gray;
+  color: white;
+}
+section:target .articulos {
+    max-height: 120px;
+    padding: 10px;
+  }

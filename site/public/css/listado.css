@@ -1,32 +1,39 @@
-.contenedor-listado{
+.contenedor-listado {
     background-color: brown;
 }
-.contenedor-listado .listado{
+
+.contenedor-listado .listado {
     width: 90%;
     margin: 0 auto;
 }
-.contenedor-listado .listado .project{
+
+.contenedor-listado .listado .project {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
-.contenedor-listado h1{
+
+.contenedor-listado h1 {
     color: black;
     text-align: center;
     margin: 0 auto;
 }
-.contenedor-listado h3{
+
+.contenedor-listado h3 {
     text-transform: uppercase;
+    color: rgb(245, 241, 241);
 }
+
 .contenedor-listado .listado .project .card {
     margin: 10px;
     border: 3px solid rgb(210, 186, 186);
-    width: 100%;
+    width: 30%;
     text-align: center;
     background-color: rgb(247, 247, 239);
     border-radius: 7px;
-    transition:all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    position: relative;
 }
 
 .contenedor-listado .listado .project .card:hover {
@@ -36,11 +43,25 @@
 
 .contenedor-listado .listado .project .card img {
     width: 100%;
-    background-position: 10px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
+.contenedor-listado .listado .project .card .content{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.contenedor-listado .listado .project .card:hover .content{
+    opacity: 1;
+}
 
-.contenedor-listado .listado .project .card .content .detail{
+.contenedor-listado .listado .project .card .content .detail {
     padding: 15px;
     text-align: center;
     font-size: 14px;
@@ -48,60 +69,66 @@
     background-color: aliceblue;
 }
 
-.contenedor-listado .listado .project .card .content .detail .precio-descuento{
+.contenedor-listado .listado .project .card .content .detail .precio-descuento {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2px;
 }
 
-.contenedor-listado .listado .project .card .content .detail .precio-descuento p{
+.contenedor-listado .listado .project .card .content .detail .precio-descuento p {
     color: brown;
     font-size: 20px;
 }
 
 
-.contenedor-listado .listado .project .card .content a button{
+.contenedor-listado .listado .project .card .content a button {
     background-color: rgb(17, 17, 17);
     color: rgb(238, 228, 228);
     padding: 10px;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-.contenedor-listado .listado .project .card .content a button:hover{ 
+
+.contenedor-listado .listado .project .card .content a button:hover {
     background-color: rgb(86, 86, 86);
 }
 
 /* Tablet */
-@media (min-width:500px){
+@media (min-width:500px) {
     .contenedor-listado .listado .project .card {
         width: 45%;
     }
-    .contenedor-listado .carrito .project .card .detail{
+
+    .contenedor-listado .carrito .project .card .detail {
         text-align: center;
         flex-direction: column;
         justify-content: space-evenly;
     }
 }
- /* Desktop */
-@media (min-width:769px){
+
+/* Desktop */
+@media (min-width:769px) {
     .contenedor-listado .listado .project .card {
         width: 30%;
         max-width: 250px;
     }
-    .contenedor-listado .carrito .listado{
+
+    .contenedor-listado .carrito .listado {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .contenedor-listado .carrito .listado h1{
+
+    .contenedor-listado .carrito .listado h1 {
         width: 100%;
     }
-    .contenedor-listado .carrito .listado .project{
+
+    .contenedor-listado .carrito .listado .project {
         padding-top: 20px;
     }
 }
 
-@media (min-width:1023px){
+@media (min-width:1023px) {
     .contenedor-listado .listado .project .card {
         width: 20%;
     }
