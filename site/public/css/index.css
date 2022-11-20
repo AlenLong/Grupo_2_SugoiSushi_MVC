@@ -10,18 +10,36 @@
     flex-direction: column;
     height: 90vh;
     color: white;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100%;
     background-image: 
     url("/img/02.jpg");
 }
+.index .cartilla h1 {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    padding: 5px;
+}
+.index .cartilla h2 {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    padding: 5px;
+}
 .index .cartilla:hover {
     filter: grayscale(80%);
 }
-.index .cartilla:hover h2  {
-    color: rgb(94, 248, 164);
+.index .cartilla:hover h1 {
+    color: rgb(13, 12, 12);
+    background: rgba(251, 250, 250, 0.571);
+    font-size: 40px;
+    padding: 5px;
+}   
+.index .cartilla:hover h2 {
+    color: rgb(13, 12, 12);
+    background: rgba(251, 250, 250, 0.571);
+    font-size: 30px;
+    padding: 5px;
 }   
 .index .cartilla:hover .button  {
     color:black;
@@ -67,14 +85,18 @@
 
 
 .index .index-main .inicio{
-    background-image: url("/img/Logo\ Sugoi.jpg");
+    background-image: url("/img/logo-negro-png.png"),
+                    url("/img/fondo-prod1.png");
     background-position: top;
     background-size: contain;
     font-family: var(--colorBlanco);
     margin: 0 auto;
-    color: red;
+    color: rgb(21, 20, 20);
     font-size: 35px;
 }
+
+.index .index-main .inicio h1{
+    background: rgba(251, 250, 250, 0.571);}
 .index .index-main .inicio a{
     justify-content: center;
     background-color: #fff;
