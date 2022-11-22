@@ -87,24 +87,26 @@
 .index .index-main .inicio{
     background-image: url("/img/logo-negro-png.png"),
                     url("/img/fondo-prod1.png");
-    background-position: top;
-    background-size: contain;
-    font-family: var(--colorBlanco);
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* margin: 0 auto;
     color: rgb(21, 20, 20);
-    font-size: 35px;
+    font-size: 35px; */
 }
 
 .index .index-main .inicio h1{
-    background: rgba(251, 250, 250, 0.571);}
+    background: rgba(251, 250, 250, 0.571);
+    font-size: 60px;
+}
+
 .index .index-main .inicio a{
     justify-content: center;
     background-color: #fff;
 }
+
 .index .index-main .inicio section article .image{
     display: flex;
     align-content: center;
-    
 }
 
 .index .index-main .inicio article{
