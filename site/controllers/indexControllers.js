@@ -3,7 +3,31 @@ const productos = require("../database/models/productos");
 
 module.exports = {
     index: (req,res)=>{
-        
+        db.Productos.findAll({
+            include:[{
+                all:true
+            }]
+        })
+        .then(producto => {
+            db.Productos.findAll({
+                where: {
+                    categoriasId: producto.categoriasId
+                },
+                limit: 3,
+                order: [[Sequelize.literal("RAND()")]],
+                include: [{
+                    all: true
+                }]
+            })
+                .then(productos => {
+                    /* return res.send(productos) */
+                    return res.render('index', {
+                        producto,
+                        productos
+                    })
+                })
+        })
+        .catch(error => console.log(error))
         return res.render('index')
     },
 

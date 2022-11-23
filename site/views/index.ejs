@@ -32,6 +32,28 @@
             </section>
             <section class="inicio">
                 <h1>Descuentos!!</h1>
+                <section class="project">
+                    <% productos.forEach(producto => { %>
+                        <article class="card">
+                            <div class="imagen">
+                                <img src="/img/productos/<%= producto.imagen %>" alt="">
+                            </div>
+                            <div class="content">
+                                <h3> <%= producto.nombreProducto %>  </h3>
+                                <div class="detail">
+                                    <p><%= producto.descripcion %> </p>
+                                    <div class="precio-descuento">
+                                        <p class="precio-secundario">$<del><%=  producto.precio %> </del><small><%= producto.descuento %> %</small></p>
+                                        <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
+                                    </div>
+                                </div>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
+                                </a>
+                            </div>
+                        </article>
+                    <% }) %>
+                </section>
                 <article>
                     <div class="image">
                         <a class="grad" href="/detail"><img class="producto" src="/img/productos/nyphot.jpg" alt=""></a>

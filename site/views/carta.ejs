@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head',{title: 'Sugoi Sushi' }) %>
+
     <body class="carta-sugoi">
         <%- include('./partials/header') %>
             <main class="menu-carta">
@@ -14,9 +15,12 @@
                         <h3>CLÁSICOS</h3>
                         <h5>URAMAKI ROLL</h5>
                         <article>
-                           <h4>CALIFORNIA SUMMER</h4>
-                           <p>(Kanikama, mango, queso)</p>
-                           <span>$300</span>
+                            <h4>CALIFORNIA SUMMER</h4>
+                            <p>(Kanikama, mango, queso)</p>
+                            <span>$650</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                             <!-- <div class="imagenes">
                                 <img src="/img/productos/bubba.jpg" alt="">
                             </div> -->
@@ -24,228 +28,462 @@
                         <article>
                             <h4>KODAMA</h4>
                             <p>(Langostinos, pepino, queso)</p>
+                            <span>$650</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BUBBA</h4>
                             <p>(Langostinos, palta, queso)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>HAWAII</h4>
                             <p>(Langostinos, mango, queso)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>PHILADELPHIA</h4>
                             <p>(salmón rosado, queso)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>NEW YORK</h4>
                             <p>(Salmón rosado, Palta)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>VINTAGE</h4>
                             <p>(Salmón rosado, mango, queso)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>KIBO</h4>
                             <p>(Salmón rosado, rucula, queso)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>TOKIO</h4>
                             <p>(Salmón rosado, palta, queso, ciboulette)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>CAPI</h4>
                             <p>(Salmón rosado, palta, queso, verdeo)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>GRANDMA</h4>
                             <p>(Langostinos, palta, queso, albahaca)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>SMOKE ROLL</h4>
                             <p>(Salmón ahumado, rucula, palta, queso)</p>
+                            <span>$950</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h5>FUTOMAKI ROLL</h5>
                             <p>(Rolls grandes con alga por afuera)</p>
                         </article>
-                        <br>
-                        <br>
                         <article>
                             <h4>BIG BUBBA</h4>
                             <p>(Langostinos, palta, queso)</p>
+                            <span>$1500</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BIG NEW YORK PHILA</h4>
                             <p>(salmón rosado, palta, queso)</p>
+                            <span>$1800</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>DOUBLE DRAGON</h4>
                             <p>(Salmón rosado, Salmón ahumado, palta, queso)</p>
+                            <span>$2000</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <h3>- VEGGIES</h3>
                         <article>
                             <h4>VEGGIE FRIENDLY</h4>
                             <p>(Vegetales al wok en salsa teriyaki)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BORA BORA</h4>
                             <p>(Palta, tomates secos y cebolla morada caramelizados en salsa teriyaki)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>PARÍS</h4>
                             <p>(Rucula, almendras, queso, coronado con salsa Sugoi)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>HAPPY MONDAYS</h4>
                             <p>(Zucchini, mango, palta, pepino, queso, coronado con salsa agridulce)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>IBIZA</h4>
-                            <p>(Rucula, nueces, queso, envuelto en finas laminas de palta coronado con salsa asiática picante)</p>
+                            <p>(Rucula, nueces, queso, envuelto en finas laminas de palta coronado con salsa asiática
+                                picante)</p>
+                                <span>$750</span>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                                </a>
                         </article>
                         <article>
                             <h4>KONICHIWA</h4>
                             <p>(Tomates secos salteados en teriyaki, palta, ciboulette, coronado con salsa Sugoi)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>OSAKA</h4>
-                            <p>(Pimientos asados en salsa teriyaki, palta, mango, envuelto en pepino, coronado con salsa tártara)</p>
+                            <p>(Pimientos asados en salsa teriyaki, palta, mango, envuelto en pepino, coronado con salsa
+                                tártara)</p>
+                                <span>$1200</span>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                                </a>
                         </article>
                         <article>
                             <h4>VEGGIE MEX</h4>
                             <p>(Pepino, zucchini, queso, verdeo, coronado con salsa guacamole y tabasco)</p>
+                            <span>$900</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>VEGGIE BEE</h4>
-                            <p>(Vegetales al wok en salsa teriyaki, envuelto en palta, coronado con crocante de batata, salsa de miel y mostaza de dijon)</p>
+                            <p>(Vegetales al wok en salsa teriyaki, envuelto en palta, coronado con crocante de batata,
+                                salsa de miel y mostaza de dijon)</p>
+                                <span>$1500</span>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                                </a>
                         </article>
                         <article>
                             <h4>AUTUMN</h4>
-                            <p>(Champiñones salteados, almendras fritas, palta, envuelto en pepino, coronado con salsa agridulce)</p>
+                            <p>(Champiñones salteados, almendras fritas, palta, envuelto en pepino, coronado con salsa
+                                agridulce)</p>
+                                <span>$1600</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>MIZUKI</h4>
-                            <p>(Champiñones y tomates secos salteados estilo sugoi, palta y albahaca, envuelto en pepino, coronado con salsa asiática picante)</p>
+                            <p>(Champiñones y tomates secos salteados estilo sugoi, palta y albahaca, envuelto en
+                                pepino, coronado con salsa asiática picante)</p>
+                                <span>$1600</span>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                                </a>
                         </article>
-                            <h4>FUTOMAKI ROLL</h4>
+                        <h4>FUTOMAKI ROLL</h4>
                         <article>
                             <h4>GINZA</h4>
                             <p>(Pepino, palta, mango, queso, albahaca)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>SHINJUKU</h4>
                             <p>(Rucula, palta, ciboulette, zucchini coronado con salsa de maracuyá)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
-                       
+
                         <h3>- ESPECIALES</h3>
                         <article>
                             <h4>CALIFORNIA HOT</h4>
                             <p>(Kanikama, palta, queso, coronado con salsa asiática picante)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>CALIFORNIA PARTY</h4>
                             <p>(kanikama palta, queso, coronado con salsa tártara)</p>
+                            <span>$750</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>CALIFORNIA MEX</h4>
                             <p>(Kanikama, queso, coronado con salsa guacamole y tabasco)</p>
+                            <span>$900</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>KIBO AHUMADO</h4>
                             <p>(Rúcula, queso, envuelto en finas laminas de salmón ahumado)</p>
+                            <span>$1000</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BRUCE LEE</h4>
                             <p>(Salmón palta, queso, coronado con salsa sugoi)</p>
+                            <span>$1000</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>RETRO ROLL</h4>
                             <p>(Salmón rosado sellado y caramelizado en salsa teriyaki con pimientos y queso)</p>
+                            <span>$1000</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>TEXAS</h4>
                             <p>(Langostinos, palta, queso, coronado con crocante de batata)</p>
+                            <span>$850</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>DALLAS</h4>
                             <p>(Salmón rosado, palta, queso, coronado con crocante de batata)</p>
+                            <span>$950</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>MAROCCO</h4>
                             <p>(Langostinos, palta,queso,envuelto en salmón rosado y salsa agridulce)</p>
+                            <span>$1100</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>MEXICO</h4>
                             <p>(Salmón rosado, queso, coronado con salsa guacamole y tabasco)</p>
+                            <span>$1100</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>FLAMINGO</h4>
-                            <p>(Langostino, palta, queso, envuelto en finas laminas de salmón ahumado, coronado con salsa de maracuyá)</p>
+                            <p>(Langostino, palta, queso, envuelto en finas laminas de salmón ahumado, coronado con
+                                salsa de maracuyá)</p>
+                                <span>$1100</span>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                                </a>
                         </article>
                         <article>
                             <h4>SUN SHINE</h4>
-                            <p>(Salmón rosado rebosado en Panko Japones, palta, queso, envuelto en finas laminas de mango)</p>
+                            <p>(Salmón rosado rebosado en Panko Japones, palta, queso, envuelto en finas laminas de
+                                mango)</p>
+                                <span>$1100</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>GREEN HILLS</h4>
                             <p>(Salmón rosado, queso, ciboullette, envuelto en finas laminas de palta)</p>
+                            <span>$1100</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>MINMEI</h4>
-                            <p>(Langostinos palta, queso, envuelto en finas laminas de salmón rosado, coronado con crocante de batata y salsa de maracuyá)</p>
+                            <p>(Langostinos palta, queso, envuelto en finas laminas de salmón rosado, coronado con
+                                crocante de batata y salsa de maracuyá)</p>
+                                <span>$1100</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>KUBRICK</h4>
-                            <p>(Salmón rosado, palta y queso, envuelto en salmón ahumado coronado con crocante de batata y salsa agridulce)</p>
+                            <p>(Salmón rosado, palta y queso, envuelto en salmón ahumado coronado con crocante de batata
+                                y salsa agridulce)</p>
+                                <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>HATSUBOKU</h4>
-                            <p>(Langostinos tempura en panko japones, palta, queso, envuelto en salmón rosado y lluvia de especias)</p>
+                            <p>(Langostinos tempura en panko japones, palta, queso, envuelto en salmón rosado y lluvia
+                                de especias)</p>
+                                <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
-                            <h4></h4>KAWA
-                            <p></p>(Salmón rosado rebozado en panko japones, palta, queso,
-                            envuelto en salmón ahumado, coronado con salsa agridulce)</article>
+                            <h4>KAWA</h4>
+                            <p>(Salmón rosado rebozado en panko japones, palta, queso,
+                                envuelto en salmón ahumado, coronado con salsa agridulce)</p>
+                                <span>$1300</span>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                                </a> 
+                        </article>
                         <article>
                             <h4>VALHALLA</h4>
-                            <p>(Langostinos rebozados en panko japones, mango, queso, envuelto en finas laminas de salmón rosado, coronado con salsa tártara y ciboulette)</p>
+                            <p>(Langostinos rebozados en panko japones, mango, queso, envuelto en finas laminas de
+                                salmón rosado, coronado con salsa tártara y ciboulette)</p>
+                                <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>MACHU PICA</h4>
-                            <p>(Salmón rosado, queso, verdeo, envuelto en palta coronado con crocante de batata, lluvia de especias, salsa asiática picante y tabasco)</p>
+                            <p>(Salmón rosado, queso, verdeo, envuelto en palta coronado con crocante de batata, lluvia
+                                de especias, salsa asiática picante y tabasco)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>HONEYBEE</h4>
-                            <p>(Langostinos rebozados en panko japones, mango, queso, envuelto en salmón rosado, coronado con crocante de batata y salsa de miel y mostaza de dijon)</p>
+                            <p>(Langostinos rebozados en panko japones, mango, queso, envuelto en salmón rosado,
+                                coronado con crocante de batata y salsa de miel y mostaza de dijon)</p>
+                                <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BEREZINO</h4>
-                            <p>(Salmón rosado, palta, queso, almendras envuelto en salmón ahumado, coronado con salsa sugoi)</p>
+                            <p>(Salmón rosado, palta, queso, almendras envuelto en salmón ahumado, coronado con salsa
+                                sugoi)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>MALIBÚ</h4>
-                            <p>(Langostinos rebozados en panko japones, palta y ciboulette, envuelto en tamago) sin arroz x 6 unidades</p>
+                            <p>(Langostinos rebozados en panko japones, palta y ciboulette, envuelto en tamago) sin
+                                arroz x 6 unidades</p>
+                                <span>$1600</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>ASHITAKA</h4>
                             <p>(Salmón rosado, palta, queso, verdeo, envuelto en tamago) sin arroz, x 6 unidades</p>
+                            <span>$1800</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>KAHORI</h4>
-                            <p>(Langostinos rebozados en panko japones, palta, queso, envuelto en salmón ahumado, salsa de miel y mostaza de dijon, coronado con alcaparras fritas)</p>
+                            <p>(Langostinos rebozados en panko japones, palta, queso, envuelto en salmón ahumado, salsa
+                                de miel y mostaza de dijon, coronado con alcaparras fritas)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>PICASSO</h4>
-                            <p>(Piel de salmón sellada y caramelizada en salsa teriyaki, palta, queso, almendras, envuelto en salmón rosado, coronado con salsa asiática picante y verdeo)</p>
+                            <p>(Piel de salmón sellada y caramelizada en salsa teriyaki, palta, queso, almendras,
+                                envuelto en salmón rosado, coronado con salsa asiática picante y verdeo)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BUBBA GUMP</h4>
-                            <p>(Langostinos tempura en panko japones, salmón ahumado, mango, queso, envuelto en palta, crocante de salmón rosado y salsa asiática picante)</p>
+                            <p>(Langostinos tempura en panko japones, salmón ahumado, mango, queso, envuelto en palta,
+                                crocante de salmón rosado y salsa asiática picante)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>CHILI PALMER</h4>
-                            <p>(Langostinos al ajillo, palta,queso, envuelto en salmón ahumado, coronado con salsa asiática picante y perejil fresco)</p>
+                            <p>(Langostinos al ajillo, palta,queso, envuelto en salmón ahumado, coronado con salsa
+                                asiática picante y perejil fresco)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
 
 
@@ -256,92 +494,208 @@
                         <article>
                             <h4>NEW YORK PHILA HOT x8u</h4>
                             <p>(Salmón, palta, queso, rebozado en panko japonés)</p>
+                            <span>$1800</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>BUBBA HOT x8u</h4>
                             <p>(Langostinos, palta, queso, rebozado en panko japonés)</p>
+                            <span>$1600</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>VEGGIE SUN x8u</h4>
                             <p>(Palta, pepino, zanahoria, queso, rebozado en panko japones)</p>
+                            <span>$1400</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>YASAI x8u</h4>
                             <p>(Vegetales asados en teriyaki, mango, queso, rebozado en panko japones)</p>
+                            <span>$1500</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>HONNEYBEE HOT x8u</h4>
                             <p>(Langostinos, palta, queso, coronado con salsa de miel y mostaza de dijon)</p>
+                            <span>$1700</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>DOUBLE DRAGON DELUXE x8u</h4>
-                            <p>(Salmón rosado, Salmón ahumado, palta, queso, rebozado en panko japones, coronado con salsa asiática picante)</p>
+                            <p>(Salmón rosado, Salmón ahumado, palta, queso, rebozado en panko japones, coronado con
+                                salsa asiática picante)</p>
+                                <span>$2200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
-                            <h4></h4>LANGOSTINOS CLÁSICO x6u
-                            <p></p>(Langostino rebozado en panko japonés)</article>
+                            <h4>LANGOSTINOS CLÁSICO x6u</h4>
+                            <p>(Langostino rebozado en panko japonés)</p>
+                            <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
                         <article>
                             <h4>LANGOSTINOS PICANTE x6u</h4>
                             <p>(Langostino rebozado en panko japonés con salsa asiática picante)</p>
+                            <span>$1400</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>SUMO x8u</h4>
                             <p>(arroz, langostinos, palta queso, rebozado en panko japones)</p>
+                            <span>$1900</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>SUMO x8u</h4>
                             <p>(arroz, salmón rosado, palta queso, rebozado en panko japones)</p>
+                            <span>$2300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                         <article>
                             <h4>SUMO VEGGIE x8u</h4>
                             <p>(Palta, mango, rucula, crocante de almendras, queso, rebozado en panko japones.)</p>
+                            <span>$1800</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
                     </div>
 
                     <div class="productos-tres">
                         <h2>GEISHAS</h2>
-                        <article>GEISHA DE SALMÓN
-                            (Queso, palta, envuelto en salmón rosado)</article>
-                        <article>GEISHA DE SALMÓN AHUMADO
-                            (Queso, palta, envuelto en salmón ahumado)</article>
-                        <article>DOMINICANA
-                            (Queso, mango, envuelto en salmón rosado,
-                            coronado con crocante de batatas y salsa de maracuyá)</article>
-                        <article>SHIBUYA
-                            (Queso, palta, envuelto en salmón ahumado
-                            coronado con crocante de batata y salsa agridulce)</article>
-                        <article>KATSUMI
-                            (Queso, palta, envueto en salmón rosado,
-                            coronado con crocante de batatas y salsa de miel y
-                            mostaza de dijon)</article>
+                        <article>
+                            <h4>GEISHA DE SALMÓN</h4>
+                            <p>(Queso, palta, envuelto en salmón rosado)</p>
+                            <span>$1000</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+                        <article>
+                            <h4>GEISHA DE SALMÓN AHUMADO</h4>
+                            <p>(Queso, palta, envuelto en salmón ahumado)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+                        <article>
+                            <h4>DOMINICANA</h4>
+                            <p>(Queso, mango, envuelto en salmón rosado,
+                                coronado con crocante de batatas y salsa de maracuyá)</p>
+                                <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+                        <article>
+                            <h4>SHIBUYA</h4>
+                            <p>(Queso, palta, envuelto en salmón ahumado
+                                coronado con crocante de batata y salsa agridulce)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+                        <article>
+                            <h4>KATSUMI</h4>
+                            <p>(Queso, palta, envueto en salmón rosado,
+                                coronado con crocante de batatas y salsa de miel y
+                                mostaza de dijon)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
                     </div>
                     <div class="productos-cinco">
                         <h2>NIGIRI</h2>
-                        <article>NIGIRI SALMÓN
-                            (Salmón rosado, arroz)
+                        <article>
+                            <h4>NIGIRI SALMÓN</h4>
+                            <p>(Salmón rosado, arroz)</p>
+                            <span>$1200</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
                         </article>
-                        <article>NIGIRI SALMÓN SMOKE
-                            (Salmón ahumado, arroz)</article>
-                        <article>NAUSICAA
-                            (salmón rosado, arroz, wasabi, lluvia de especias
-                             y salsa asiática picante)</article>
-                        <article>TOGUSA
-                            (salmón rosado, arroz y tartar de salmón ahumado)</article>
-                       
+                        <article>
+                            <h4>NIGIRI SALMÓN SMOKE</h4>
+                            <p>(Salmón ahumado, arroz)</p>
+                            <span>$1500</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+                        <article>
+                            <h4>NAUSICAA</h4>
+                            <p>(salmón rosado, arroz, wasabi, lluvia de especias
+                                y salsa asiática picante)</p>
+                                <span>$1300</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+                        <article>
+                            <h4>TOGUSA</h4>
+                            <p>(salmón rosado, arroz y tartar de salmón ahumado)</p>
+                            <span>$1600</span>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i></button>
+                            </a>
+                        </article>
+
                     </div>
                     <div class="productos-siete">
                         <h2>ADICIONALES</h2>
                         <article>
-                            ガリ Gari (Pickle de Jengibre) Extra
+                            <h4>ガリ Gari (Pickle de Jengibre) Extra</h4>
+                            <span>$100</span>
                         </article>
-                        <article>Salsa Teriyaki</article>
-                        <article>Godzilla</article>
-                        <article>Salsa Sugoi</article>
-                        <article>Salsa Agridulce</article>
-                        <article>Salsa Guacamole y tabasco</article>
+                        <article>
+                            <h4>Salsa Teriyaki</h4>
+                            <span>$400</span>
+                        </article>
+                        <article>
+                            <h4>Godzilla</h4>
+                            <span>$600</span>
+                        </article>
+                        <article>
+                            <h4>Salsa Sugoi</h4>
+                            <span>$600</span>
+                        </article>
+                        <article>
+                            <h4>Salsa Agridulce</h4>
+                            <span>$400</span>
+                        </article>
+                        <article>
+                            <h4>Salsa Guacamole y tabasco</h4>
+                            <span>$650</span>
+                        </article>
                     </div>
                 </section>
-            </main>      
-    <%- include('./partials/footer') %>
+            </main>
+            <%- include('./partials/footer') %>
     </body>
+
 </html>
