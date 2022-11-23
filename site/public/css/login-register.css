@@ -145,7 +145,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s ;
 }
- @keyframes btn-anim2 {
+@keyframes btn-anim2 {
     0%{
         top: -100%;
     }
@@ -164,7 +164,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     margin-top: 1em;
     display: flex;
     justify-content: center;
-    font-size: ;
+    
 }
 
 #recordarme{

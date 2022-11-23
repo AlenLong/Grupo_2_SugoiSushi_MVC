@@ -46,6 +46,7 @@ module.exports = {
                     imagen: usuario.imagen,
                     roll: usuario.roll,
                 }
+                return res.redirect('/users/profile')
             });
         } else {
             // elimina la img de un registro mal creado
@@ -98,6 +99,8 @@ module.exports = {
                 req.session.userLogin = {
                     id: usuario.id,
                     nombre: usuario.nombre,
+                    apellido: usuario.apellido,
+                    email: usuario.email,
                     imagen: usuario.imagen,
                     roll: usuario.roll,
                 };
@@ -107,7 +110,7 @@ module.exports = {
                     });
                 }
     
-                return res.redirect("/users/profileUser");
+                return res.redirect("/users/profile");
                 /* return res.send(req.body) */
             })
         } else {
