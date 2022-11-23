@@ -44,6 +44,11 @@
                         </small>
                     </div>
 
+                    <div class="news-check">
+                        <input id="newscheck" type="checkbox" name="" >
+                        <label class="news-check">Recibir ofertas y promociones.</label>
+                    </div>
+
                     <div class="user-box">
                         <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Contraseña">
                         <!-- <label>password</label> -->
@@ -70,33 +75,32 @@
                             <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
                         </small>
                     </div>
-
-                    <div class="btn-container">
-                        <button type="submit">R E G I S T R A R S E</button>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div>
                         
-                    </div>
 
-                    <div class="submit-container">
-                        <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Registrarse
-                        </a>
-                    </div>
-
-                    <div class="user-box newsletter-checkbox">
-                        <input id="newscheck" type="checkbox" name="" >
-                        <small>Deseo recibir ofertas y promociones a mi correo.</small>
-                    </div>
+                        <div class="news-check">
+                            <input id="newscheck" type="checkbox" name="" >
+                            <label class="news-check">Acepto terminos y condiciones.</label>
+                            <div id="checkContainer"></div>
+                            <small>
+                                <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
+                            </small>
+                        </div>
+                        
+                        <div class="submit-container">
+                            <button id="buttonRegister" type="submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                REGISTRARSE</button>
+                            </div>
+                        </div>
+                        
 
                 </form>
                 <div class="signup_link">
                     <p class="cuenta">¿ Ya tienes una cuenta ?</p>                 
-                    <a href="/login">Ingresa Aquí</a>
+                    <a href="/users/login">Ingresa Aquí</a>
                     </div>
         </div>
 

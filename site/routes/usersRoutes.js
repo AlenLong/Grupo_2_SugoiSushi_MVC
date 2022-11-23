@@ -12,7 +12,7 @@ router.post('/register', upload.single('imagen'), registerValidator, registerPos
 router.get('/login',login);
 router.post('/login',loginValidator, loginPost);
 
-router.get('/profileUser',userAccessCheck, profileUser);
+router.get('/profile',userAccessCheck, profileUser);
 router.delete('/logout', logout);
 module.exports = router;
 
