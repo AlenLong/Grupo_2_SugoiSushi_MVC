@@ -22,6 +22,7 @@ module.exports = {
     list: (req, res) => {
         db.Productos.findAll()
             .then((productos) => {
+                /* return res.send(productos) */ 
                 return res.render("admin/listarProducts", {
                     productos,
                     redirection: "listarProducts",
@@ -32,7 +33,17 @@ module.exports = {
             });
     },
     create: (req, res) => {
-        return res.render("admin/crearProducts");
+        /* return res.render("admin/crearProducts") */
+        db.Categorias.findAll()
+        .then((Categorias) => {
+            /* return res.send(productos) */ 
+            return res.render("admin/crearProducts", {
+                Categorias,
+            });
+        })
+        .catch((error) => {
+            return console.log(error);
+        });
     },
     store: (req, res) => {
         let errors = validationResult(req);
@@ -50,7 +61,7 @@ module.exports = {
                 disponible: req.body.disponible,
                 descripcion: req.body.descripcion,
                 precio: req.body.precio,
-                descuento: req.body.precio,
+                descuento: req.body.descuento,
                 imagen: req.file ? req.file.filename : "default-products.jpg",
             })
                 .then((productos) => {

@@ -12,13 +12,9 @@
                             <div class="product-box">
                                 <select class="form-select" name="categoriasId" id="categoria" aria-label="Floating label select example" value="<%= locals.old && old.categoriasId ? old.categoriasId : null %> ">
                                 <option value ="" selected hidden>Selecciona una categoria</option>
-                                <option value ="2">Especiales</option>
-                                <option value="7">Clásicos</option>
-                                <option value="3">Combinados</option>
-                                <option value="4">Adicionales</option>
-                                <option value="5">Hots</option>
-                                <option value="6">Nigiris</option>
-                                <option value="1">Veggies</option>
+                                <% Categorias.forEach(categoria => { %>
+                                    <option value=<%= categoria.id%>><%=categoria.nombre%></option>
+                                <% }) %> 
                               </select>
                               <label for="categoria">Categoria</label>
                               <p class="span text-danger" id="errorCategorias">

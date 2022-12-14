@@ -23,13 +23,14 @@ window.addEventListener('load', () => {
                         'Borrado!',
                         'Su producto fue eliminado correctamente.',
                         'success'
-                    )
-                }
-            }).then(result => {
-                if (result.isConfirmed) {
-                    forms[i].submit()
-                }
-            })
+                    ).then(result => {
+                        if (result.isConfirmed) {
+                            forms[i].submit()
+                        }
+                    })
+                        .catch(error => console.log(error))
+                    
+                }})
                 .catch(error => console.log(error))
         })
 
