@@ -36,7 +36,7 @@
             <h2>Tambien puede interesarte</h2>
             <% productosRelacionado.forEach(element => { %>
                 <article>
-                    <a href="/products/detail/<%= element.id %> "><div class="related-img-0"></div></a>
+                    <a href="/img/productos/ <%= element.imagen %> "><div class="related-img-0"></div></a>
                     <p>$<%= element.precio %></p>
                     <h4><%= element.nombreDeProducto %></h4>
                     <button>añadir al carrito</button>

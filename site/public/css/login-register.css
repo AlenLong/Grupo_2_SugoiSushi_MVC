@@ -51,6 +51,24 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     pointer-events: none;
     transition: .5s;
 }
+.user-box-img input{
+    display: none;
+}
+.user-box-img button{
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid rgb(9, 8, 8);
+    margin-bottom: 15px;
+    color: var(--colorNegro);
+    margin: 4% 33.33%;
+    display: inline-block;
+    justify-content: center;
+}
+.user-box-img button:hover{
+    background-color: var(--colorRojo);
+    border: 1px solid black;
+    color: var(--colorNegro);
+}
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label{
     top: -20px;
@@ -62,6 +80,12 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     display: flex;
     justify-content: center;
 }
+.submit-container button{
+   background-color: var(--colorNegro)(--colorRojo);
+   color: #fff;
+   border: 10px;
+
+} 
 #olvido {
     
     color: #2691d9;

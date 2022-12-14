@@ -4,10 +4,14 @@ let productos = [
   {
     nombreProducto: "Bubba",
     categoriasId: "2",
+<<<<<<< HEAD
     imagen: "cali.jpg",
+=======
+    imagen: "bubba.jpg",
+>>>>>>> d7407497faedefb387e8b5fef8c35be375e48bda
     descripcion: "neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
-    precio: "3595",
-    descuento: "24",
+    precio: 3595,
+    descuento: 24,
     createdAt : new Date,
     updatedAt : new Date
 },
@@ -26,7 +30,11 @@ let productos = [
   nombreProducto: "New York Phila Hot",
   categoriasId: "3",
   disponible: true,
+<<<<<<< HEAD
   imagen: "nyphot.jpg",
+=======
+  imagen: "new york phila hot png.png",
+>>>>>>> d7407497faedefb387e8b5fef8c35be375e48bda
   descripcion: "nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede",
   precio: 1904,
   descuento: 30,
@@ -34,7 +42,6 @@ let productos = [
   updatedAt : new Date
 },
 {
-  id: 4,
   nombreProducto: "Veggie Friendly",
   categoriasId: "4",
   disponible: false,
@@ -49,7 +56,11 @@ let productos = [
   nombreProducto: "SalsaGodzilla",
   categoriasId: "5",
   disponible: false,
+<<<<<<< HEAD
   imagen: "combi5.jpg",
+=======
+  imagen: "combi1.jpg",
+>>>>>>> d7407497faedefb387e8b5fef8c35be375e48bda
   descripcion: "vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque",
   precio: 1293,
   descuento: 27,
@@ -57,7 +68,6 @@ let productos = [
   updatedAt : new Date
 },
 {
-  id: 6,
   nombreProducto: "Bubba",
   categoriasId: "3",
   disponible: true,

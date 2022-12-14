@@ -15,14 +15,14 @@
                 <form method="post">
                     <div class="user-box">
                         <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Ingrese su Email">
-                        <small>
+                        <small id="error-email">
                             <%= locals.errors && errors.email ? errors.email.msg : null %> 
                         </small>
                     </div>
 
                     <div class="user-box">
                         <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Ingrese su contraseña">
-                        <small>
+                        <small id="error-password">
                             <%= locals.errors && errors.password ? errors.password.msg : null %> 
                         </small>
                         <!-- <a id="olvido" href=""><small id="olvido">¿ Has olvidado la contraseña ?</small></a> -->
@@ -52,7 +52,7 @@
             </div>
         </div>
     </main>
+    <script src="/javascripts/login.js"></script>
     <%- include('../partials/footer') %>
-
 </body>
 </html>

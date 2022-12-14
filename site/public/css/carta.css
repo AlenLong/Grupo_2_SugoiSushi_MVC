@@ -1,0 +1,41 @@
+.carta-sugoi{
+    background-color: rgb(238, 142, 142);
+    font-family: 'Raleway', sans-serif;
+    /* background: linear-gradient(206deg, var(--colorRojo), var(--colorNegro)); */
+}
+.carta-sugoi .menu-carta{
+    width: 90%;
+    margin: 0 auto;
+}
+.carta-sugoi .menu-carta .titulo-carta{
+    text-align:center;
+}
+.carta-sugoi h2{
+    font-size: 30px;
+    color: #a52a2a;
+}
+
+.carta-sugoi .menu-carta .menu-productos{
+  /*   display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    gap: 0; */
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    -webkit-columns: 150px 3;
+    -moz-columns: 150px 3;
+    columns: 150px 3;
+    column-fill: auto;
+    column-gap: 20px;
+    column-rule: solid 1px #666;
+    background: #eee;
+    border-radius: 5px;
+    /*font: normal 14px Verdana, Arial, Helvetica, sans-serif;*/
+    font-size: 16px;
+    
+}
+
+.carta-sugoi .menu-carta .menu-productos span{
+    background: rgba(211, 24, 24, 0.571);
+}
