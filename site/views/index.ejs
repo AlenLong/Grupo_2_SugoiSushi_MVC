@@ -14,7 +14,7 @@
                         <a class="grad" href="/promociones#productos-descuento"><img class="d-block w-100" src="/img/banner1.jpg" alt="carrusel 1"></a>
                     </div>
                     <div class="carousel-item">
-                        <a class="grad" href="/promociones#productos-convi"><img class="d-block w-100" src="/img/banner2.png" alt="carrusel 2"></a>
+                        <a class="grad" href="/promociones#productos-convi"><img class="d-block w-100" src="/img/baner.png" alt="carrusel 2"></a>
                     </div>
                     <div class="carousel-item">
                         <a class="grad" href="/promociones#productos-navidad"><img class="d-block w-100" src="/img/banner5.png" alt="carrusel 3"></a>
@@ -31,9 +31,9 @@
                 </div>
             </section>
             <section class="inicio">
-                <h1>Descuentos!!</h1>
-                <section class="project">
-                    <% productos.forEach(producto => { %>
+                <div class="project">
+                    <h1>Descuentos!!</h1>
+                    <% productoDescuentos.forEach(producto => { %>
                         <article class="card">
                             <div class="imagen">
                                 <img src="/img/productos/<%= producto.imagen %>" alt="">
@@ -53,25 +53,7 @@
                             </div>
                         </article>
                     <% }) %>
-                </section>
-                <article>
-                    <div class="image">
-                        <a class="grad" href="/detail"><img class="producto" src="/img/productos/nyphot.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-descuento.png" alt="">
                     </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a class="grad" href="/detail"><img class="producto" src="/img/productos/nyphot.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-descuento.png" alt="">
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a class="grad" href="/detail"><img class="producto" src="/img/productos/nyphot.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-descuento.png" alt="">
-                    </div>
-                </article>
               <!--   <h1>Para la familia!!</h1> -->
                 <!-- <h3>COMBINADO LARUSSO</h3>
                             <article>
@@ -142,44 +124,58 @@
                         <img class="etiqueta" src="/img/img-tablas1.png" alt="">
                     </div>
                 </article> -->
-                <h1>Lo nuevo!!</h1>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/malibu.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-nuevo.png" alt="">
+           
+                <div class="project">
+                <h1>Nuevo nuevo!!</h1>
+                <% productosNuevos.forEach(producto => { %>
+                    <article class="card">
+                        <div class="imagen">
+                            <img src="/img/productos/<%= producto.imagen %>" alt="">
+                        </div>
+                        <div class="content">
+                            <h3> <%= producto.nombreProducto %>  </h3>
+                            <div class="detail">
+                                <p><%= producto.descripcion %> </p>
+                                <div class="precio-descuento">
+                                    <p class="precio-secundario">$<del><%=  producto.precio %> </del><small><%= producto.descuento %> %</small></p>
+                                    <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
+                                </div>
+                            </div>
+                            <a href="/views/carrito">
+                                <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
+                            </a>
+                        </div>
+                    </article>
+                <% }) %>
+                <!-- <div class="item">
+                    <button>Ver mas
+                  <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i>
+                </button>
+                  </div> -->
+                </div>
+                <div class="project">
+                    <h1>Solo veggie!!</h1>
+                    <% productosVeggie.forEach(producto => { %>
+                        <article class="card">
+                            <div class="imagen">
+                                <img src="/img/productos/<%= producto.imagen %>" alt="">
+                            </div>
+                            <div class="content">
+                                <h3> <%= producto.nombreProducto %>  </h3>
+                                <div class="detail">
+                                    <p><%= producto.descripcion %> </p>
+                                    <div class="precio-descuento">
+                                        <p class="precio-secundario">$<del><%=  producto.precio %> </del><small><%= producto.descuento %> %</small></p>
+                                        <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
+                                    </div>
+                                </div>
+                                <a href="/views/carrito">
+                                    <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
+                                </a>
+                            </div>
+                        </article>
+                    <% }) %>
                     </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/malibu.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-nuevo.png" alt="">
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/malibu.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-nuevo.png" alt="">
-                    </div>
-                </article>
-                <h1>Solo Veggie!!</h1>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/combi3.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/combi3.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/combi3.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
-                    </div>
-                </article>
             </section>
             <section class="Datos">
                 <div class="filas">
@@ -229,15 +225,15 @@
                     <div class="imagenes-insta">
                         <div>
                             <a href="https://www.instagram.com/p/CeJMdogLcNX/" target="_blank" class="img-inst">
-                            <img src="/img/Logo Sugoi.jpg" alt=""></a>
+                            <img src="/img/productos/nigiri_skin.jpg" alt=""></a>
                         </div>
                         <div>
                             <a href="https://www.instagram.com/p/CeJMcpjLEZA/" target="_blank" class="img-inst">
-                            <img src="/img/Logo Sugoi.jpg" alt=""></a>
+                            <img src="/img/productos/vintage.jpg" alt=""></a>
                         </div>
                         <div>
                             <a href="https://www.instagram.com/p/CeJMacJrGCL/" target="_blank" class="img-inst">
-                            <img src="/img/Logo Sugoi.jpg" alt=""></a>
+                            <img src="/img/productos/sumos.jpg" alt=""></a>
                         </div>
                     </div>
                 </article>

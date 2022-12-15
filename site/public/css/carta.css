@@ -11,7 +11,7 @@
     text-align:center;
 }
 .carta-sugoi h2{
-    font-size: 30px;
+    font-size: 50px;
     color: #a52a2a;
 }
 
@@ -38,4 +38,8 @@
 
 .carta-sugoi .menu-carta .menu-productos span{
     background: rgba(211, 24, 24, 0.571);
+}
+
+.carta-sugoi .menu-carta .menu-productos img{
+    width: 50px;
 }
