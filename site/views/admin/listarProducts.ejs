@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
+<body class="listarProduct">
+    <%- include('../partials/header') %>
+    <main class="cartProduct">
+		<h1>Administrador de Productos</h1>
+        <div class="planillas">
+            <a href="/admin/crearProducts"></i>Crear Producto</a>
+        <hr>
+        <a href="/admin/history/">
+            <button type="button"></button>Historial de Productos</a>
+        <hr>
+        <a href="#"></i>Planilla de ventas</a>
+        <hr>
+        </div>
+		<section class="projectProduct">
+			<div class="shopProduct">
+				<% productos.forEach(producto => { %>
+
+                    <article class="cardProduct">
+                        <img src="/img/productos/<%= producto.imagen%>">
+                        <div class="contentProductList">
+                            <h3><%= producto.nombreProducto%></h3>
+                            <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post" class="buttoms">
+                                
+                                <button type="submit" id = "formulario"class="btnn"><i class="fas fa-trash"></i></button>
+                                
+                                <p class="btn"><a class = "btn-edit" href="/admin/editarProducts/<%= producto.id%>"></i> Editar </a>
+                            
+                                </form>
+                            
+                        </div>
+                    </article>
+                <% }) %>
+			</div>
+			
+		</section>
+    </main>
+    <script src="/javascripts/alertaEliminar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <%- include('../partials/footer') %>
+</body>
+</html>
