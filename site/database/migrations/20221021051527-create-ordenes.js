@@ -9,11 +9,18 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      carritosId: {
-        type: Sequelize.INTEGER
+      usuariosId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: {
+            tableName: 'Usuarios'
+          },
+          key: 'id'
+        },
       },
-      productosId: {
-        type: Sequelize.INTEGER
+      status: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
