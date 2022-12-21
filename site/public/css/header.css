@@ -168,6 +168,10 @@ header .burger nav a{
     header .burger nav ul li a{
         font-size: 16px;
     }
+    header .burger nav ul.user .cerrar1{
+        display: flex;
+        align-items: center;
+    }
 
 
 @media (min-width:1024px) {
