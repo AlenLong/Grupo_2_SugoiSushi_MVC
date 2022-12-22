@@ -22,7 +22,7 @@
 
 }
 .nosotros .contenedor-sobre-nosotro img{
-    width: 300px;
+    width: 600px;
     height: auto;
 }
 
@@ -38,4 +38,8 @@
     color: #000;
     background-image: 
     url(/img/81873.jpg);
+}
+
+.year{
+    font-size: 30px;
 }
