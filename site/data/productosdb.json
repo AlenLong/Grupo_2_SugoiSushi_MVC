@@ -1,20 +1,173 @@
 [
-    {
-      "id": 1,
-      "nombreProducto": "Bubba",
-      "categoriasId": 2,
-      "disponible": null,
-      "imagen": "sushi2.jpg",
-      "descripcion": "neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
-      "precio": 3595,
-      "descuento": 24,
-      "createdAt": "2022-10-29T19:06:50.000Z",
-      "updatedAt": "2022-10-29T19:06:50.000Z",
-      "categorias": {
-        "id": 2,
-        "nombre": "especiales",
-        "createdAt": "2022-10-29T19:06:50.000Z",
-        "updatedAt": "2022-10-29T19:06:50.000Z"
-      }
-    } 
+  {
+    "nombreProducto": "Bubba",
+    "categoriasId": 2,
+    "disponible": null,
+    "imagen": "bubba.jpg",
+    "descripcion": "neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
+    "precio": 3595,
+    "descuento": 24
+  },
+  {
+    "nombreProducto": "Langostinos en Panko",
+    "categoriasId": 1,
+    "disponible": 0,
+    "imagen": "langos.jpg",
+    "descripcion": "nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla",
+    "precio": 1563,
+    "descuento": 45
+  },
+  {
+    "nombreProducto": "New York Phila Hot",
+    "categoriasId": 3,
+    "disponible": 1,
+    "imagen": "new york phila hot png.png",
+    "descripcion": "nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede",
+    "precio": 1904,
+    "descuento": 30
+  },
+  {
+    "nombreProducto": "Veggie Friendly",
+    "categoriasId": 1,
+    "disponible": 0,
+    "imagen": "img-1669281299769.jpg",
+    "descripcion": "lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta",
+    "precio": 6916,
+    "descuento": 30
+  },
+  {
+    "nombreProducto": "SalsaGodzilla",
+    "categoriasId": 5,
+    "disponible": 0,
+    "imagen": "combi1.jpg",
+    "descripcion": "vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque",
+    "precio": 1293,
+    "descuento": 27
+  },
+  {
+    "nombreProducto": "Bubba",
+    "categoriasId": 3,
+    "disponible": 1,
+    "imagen": "bubba.jpg",
+    "descripcion": "turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+    "precio": 4416,
+    "descuento": 43
+  },
+  {
+    "nombreProducto": "CALIFORNIA",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197901711.jpg",
+    "descripcion": "(Kanikama, palta, queso)",
+    "precio": 650,
+    "descuento": 650
+  },
+  {
+    "nombreProducto": "California summer",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197969557.jpg",
+    "descripcion": "(Kanikama, mango, queso)",
+    "precio": 650,
+    "descuento": 650
+  },
+  {
+    "nombreProducto": "Komada",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669198011908.png",
+    "descripcion": "(Langostinos, pepino, queso)",
+    "precio": 750,
+    "descuento": 750
+  },
+  {
+    "nombreProducto": "Hawaii",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669198181065.png",
+    "descripcion": "(Langostinos, mango, queso)",
+    "precio": 750,
+    "descuento": 750
+  },
+  {
+    "nombreProducto": "Philadelphia",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669198215876.jpg",
+    "descripcion": "(salmón rosado, queso)",
+    "precio": 850,
+    "descuento": 850
+  },
+  {
+    "nombreProducto": "New york",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669198047130.png",
+    "descripcion": "(Salmón rosado, Palta)",
+    "precio": 850,
+    "descuento": 850
+  },
+  {
+    "nombreProducto": "New york phila",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669198118535.png",
+    "descripcion": "(salmón rosado, palta, queso)",
+    "precio": 850,
+    "descuento": 850
+  },
+  {
+    "nombreProducto": "Veggie friendly",
+    "categoriasId": 1,
+    "disponible": 1,
+    "imagen": "img-1669281393803.jpg",
+    "descripcion": "(Vegetales al wok en salsa teriyaki)",
+    "precio": 1200,
+    "descuento": 1200
+  },
+  {
+    "nombreProducto": "Bora bora",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197878695.jpg",
+    "descripcion": "(Palta, tomates secos y cebolla morada caramelizados en salsa teriyaki)",
+    "precio": 1200,
+    "descuento": 1200
+  },
+  {
+    "nombreProducto": "Nigiri Salmon",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197827579.jpg",
+    "descripcion": "(Salmón rosado, arroz)",
+    "precio": 1200,
+    "descuento": 1200
+  },
+  {
+    "nombreProducto": "Nigiri salmon smoke",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197788036.jpg",
+    "descripcion": "(Salmón ahumado, arroz)",
+    "precio": 1500,
+    "descuento": 1500
+  },
+  {
+    "nombreProducto": "California hot",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197737647.jpg",
+    "descripcion": "(Kanikama, palta, queso, coronado con salsa asiática picante)",
+    "precio": 750,
+    "descuento": 750
+  },
+  {
+    "nombreProducto": "Kibo ahumado",
+    "categoriasId": 2,
+    "disponible": 1,
+    "imagen": "img-1669197668216.jpg",
+    "descripcion": "(Rúcula, queso, envuelto en finas laminas de salmón ahumado)",
+    "precio": 1000,
+    "descuento": 0
+  }
 ]
