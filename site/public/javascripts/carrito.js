@@ -136,7 +136,7 @@ const cargarCarrito = (data) => {
         $('#Total').innerHTML = `$ ${toThousand(Math.round(totalCarrito))}`
 
     } else {
-        $('#Numeros').classList.add('none')
+        $('.totalidad').classList.add('none')
         carrito.innerHTML = `
         <article>
             <div>

@@ -169,9 +169,9 @@
                                         <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
                                     </div>
                                 </div>
-                                <a href="/views/carrito">
-                                    <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
-                                </a>
+                                <!--<a href="/views/carrito">-->
+                                    <button name="button" onclick="addItem('<%= producto.id %>')"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
+                                <!--</a>-->
                             </div>
                         </article>
                     <% }) %>
