@@ -14,7 +14,7 @@ const getVentanaCarrito = async () => {
         const result = await response.json()
 
         if (result.status === 200) {
-            cargarVentanaCarrito(result.data)
+            //cargarVentanaCarrito(result.data)
         }
 
     } catch (error) {
@@ -27,7 +27,7 @@ const getCarrito = async () => {
     try {
         const response = await fetch('/api/carrito')
         const result = await response.json()
-
+        console.log(result)
         if (result.status === 200) {
             cargarCarrito(result.data)
         }
@@ -47,7 +47,7 @@ const addItem = async (id) => {
         const result = await response.json()
 
         if (result.status === 200) {
-            cargarVentanaCarrito(result.data)
+            //cargarVentanaCarrito(result.data)
             cargarCarrito(result.data)
         }
 
@@ -66,7 +66,7 @@ const removeItem = async (id) => {
         const result = await response.json()
 
         if (result.status === 200) {
-            cargarVentanaCarrito(result.data)
+            //cargarVentanaCarrito(result.data)
             cargarCarrito(result.data)
         }
 
@@ -84,7 +84,7 @@ const modifyItem = async (id) => {
         const result = await response.json()
 
         if (result.status === 200) {
-            cargarVentanaCarrito(result.data)
+            //cargarVentanaCarrito(result.data)
             cargarCarrito(result.data)
         }
 
@@ -122,9 +122,9 @@ const cargarCarrito = (data) => {
 						<h3>${producto.nombre}</h3>
 						<p class="precio-principal">${producto.precio}</p>
                         <button class="restar" onClick="modifyItem('${producto.id}')">-</button>
-                            <p class="unit">Cantidad : <span>${producto.cantidad}</span></p>
-                            <button class="agregar" onClick="addItem('${producto.id}')">+</button>
-						<p class="btn"><i class="fa-solid fa-cart-circle-plus"></i> <span class="btn2">Borrar</span></p>
+                        <p class="unit">Cantidad : <span>${producto.cantidad}</span></p>
+                        <button class="agregar" onClick="addItem('${producto.id}')">+</button>
+						<p class="btn" onClick="removeItem('${producto.id}')"><i class="fa-solid fa-cart-circle-plus"></i> <span class="btn2">Borrar</span></p>
 				</div>
 				</article>
             `

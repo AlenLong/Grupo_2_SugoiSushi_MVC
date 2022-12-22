@@ -3,8 +3,20 @@ const { Op } = require("sequelize");
 const { register } = require('../userControllers');
 
 
-// addItem 
-// 
+const productVerify = (carrito, id) => {
+
+    let index = -1;
+
+    for (let i = 0; i < carrito.length; i++) {
+
+        if (carrito[i].id === +id) {
+            index = i;
+            break
+        }
+    }
+
+    return index
+}
 
 
 module.exports = {

@@ -34,6 +34,7 @@ let indexRouter = require('./routes/index')
 let adminRouter = require('./routes/admin')
 let productsRouter = require('./routes/products')
 let usersRouter = require('./routes/usersRoutes')
+let carritoRouter = require('./routes/api/apiCarrito')
 
 /* View engine setup*/
 app.set('views', path.join(__dirname, 'views'));
@@ -61,6 +62,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/admin',adminRouter);
+app.use('./api/carrito', carritoRouter)
 
 
 /* Funcion de actualizacion del servidor  */
