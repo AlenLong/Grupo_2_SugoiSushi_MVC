@@ -110,9 +110,57 @@ module.exports = {
                     });
                 }
     
-                return res.redirect("/users/profile");
+                //return res.redirect("/users/profile");
+                req.session.carrito = []
+
+                    db.Ordenes.findOne({
+                        usuariosId: req.session.userLogin.id,
+                        status: 'pending',
+                        include: [
+                            {
+                                association : 'carrito',
+                                attributes: ['productosId', 'cantidad'],
+                                include: [
+                                    {
+                                        association : 'producto',
+                                        attributes: ['id', 'nombreProducto', 'precio', 'descuento', 'disponible','imagen'],
+                                    }
+                                ]
+                            }
+                        ]
+                    })
+                    .then(orden => {
+
+                        if(!orden) {
+                            console.log("El usuario logueado no tiene una orden pendiente")
+                            return res.redirect('/users/profile')
+
+                        } else {
+                            console.log("El usuario logueado tiene una orden pendiente")
+                            orden.carrito.forEach(item => {
+
+                                let producto = {
+                                    id: item.producto.id,
+                                    nombre: item.producto.nombreProducto,
+                                    precio: item.producto.precio,
+                                    descuento: item.producto.descuento,
+                                    imagen: item.producto.imagen,
+                                    disponible: item.producto.disponible,
+                                    cantidad: +item.cantidad,
+                                    subtotal: (+item.producto.precio - (+item.producto.precio * +item.producto.descuento / 100)) * item.cantidad ,
+                                    ordenId: orden.id ,
+                                }
+                                req.session.carrito.push(producto)
+                                
+                            })
+                            console.log(req.session.carrito)
+                            return res.redirect('/users/profile')
+                        }
+                    })
+                    .catch(err => res.send(err))
+                })
+                .catch(err => res.send(err))
                 /* return res.send(req.body) */
-            })
         } else {
             /* return res.send(errors.mapped()) */
             return res.render("./users/login", {
