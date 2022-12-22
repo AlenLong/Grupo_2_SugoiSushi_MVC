@@ -121,7 +121,7 @@ module.exports = {
 
             .then(producto =>{
                 
-                res.redirect("/admin/listarProducts");
+                return res.redirect("/admin/listarProducts");
                 }
             )
         }  // enviar old
