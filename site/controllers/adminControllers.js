@@ -140,19 +140,20 @@ module.exports = {
        })
        .catch(error => res.send(error))
 
-        /* let productoAEliminar = productos.find((elemento) => {
+         /* let productoAEliminar = productos.find((elemento) => {
             return elemento.id == idParams;
-        }); */
-/* 
+        }); 
+
         historial.push(productoAEliminar);
         guardarHistorial(historial);
- */
-        /* let productosModificadoos = productos.filter(
+         
+        let productosModificados = productos.filter(
             (producto) => producto.id !== idParams
         );
-        guardar(productosModificadoos);
+        
+        guardar(productosModificados);
 
-        return res.redirect("/admin/listarProducts"); */
+        return res.redirect("/admin/listarProducts"); */ 
     },
     history: (req, res) => {
         return res.render("admin/listarProducts", {

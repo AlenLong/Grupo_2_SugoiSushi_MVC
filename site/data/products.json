@@ -76,17 +76,6 @@
         "descuento": 42
     },
     {
-        "id": 8,
-        "nombreDeProducto": "Itamae 16u",
-        "categoria": "Combinado",
-        "altaDeProducto": "02-03-2022",
-        "disponible": false,
-        "imagen": "combi3.jpg",
-        "descripcion": "est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
-        "precio": 5476,
-        "descuento": 18
-    },
-    {
         "id": 9,
         "nombreDeProducto": "Malibú",
         "categoria": "Nigiri",
