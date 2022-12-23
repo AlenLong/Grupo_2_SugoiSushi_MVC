@@ -85,8 +85,6 @@
 
 
 .index .index-main .inicio{
-    background-image: url("/img/logo-negro-png.png"),
-                    url("/img/fondo-prod1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     /* margin: 0 auto;

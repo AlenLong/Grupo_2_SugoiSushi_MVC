@@ -32,7 +32,7 @@
             </section>
             <section class="inicio">
                 <div class="project">
-                    <h1>Descuentos!!</h1>
+                    <h1>¡Descuentos!</h1>
                     <% productoDescuentos.forEach(producto => { %>
                         <article class="card">
                             <div class="imagen">
@@ -126,7 +126,7 @@
                 </article> -->
            
                 <div class="project">
-                <h1>Nuevo nuevo!!</h1>
+                <h1>¡Nuevo nuevo!</h1>
                 <% productosNuevos.forEach(producto => { %>
                     <article class="card">
                         <div class="imagen">
@@ -154,7 +154,7 @@
                   </div> -->
                 </div>
                 <div class="project">
-                    <h1>Solo veggie!!</h1>
+                    <h1>¡Solo veggie!</h1>
                     <% productosVeggie.forEach(producto => { %>
                         <article class="card">
                             <div class="imagen">
@@ -169,15 +169,9 @@
                                         <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
                                     </div>
                                 </div>
-<<<<<<< HEAD
                                 <!--<a href="/views/carrito">-->
                                     <button name="button" onclick="addItem('<%= producto.id %>')"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
                                 <!--</a>-->
-=======
-                                <a href="/views/carrito">
-                                    <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
-                                </a>
->>>>>>> develop
                             </div>
                         </article>
                     <% }) %>
