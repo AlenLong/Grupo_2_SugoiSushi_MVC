@@ -5,33 +5,39 @@ module.exports = [
     /* Categoria */
     
     check('categoriasId').trim().notEmpty().
-    withMessage('Debe seleccionar una categoria'),
+    withMessage("Debes seleccionar una categoria"),
     
     /* Nombre */
     
     check('nombreProducto').trim().notEmpty()
-    .withMessage('Debe darle un nombre al producto'),
+    .withMessage("Debes ingresar un nombre de producto").bail()
+    .isLength({min: 2, max:50})
+    .withMessage("El producto debe contener 2 letras min y max 50"),
     
     /* Descripcion */
     
     check('descripcion').trim()
-    .notEmpty().withMessage('Describa su producto').bail().isLength({min: 10}).withMessage('Minimo 10 carácteres'),
+    .notEmpty()
+    .withMessage("Debes ingresar una descripcion de tu producto")
+    .bail()
+    .isLength({min: 10, max:100})
+    .withMessage("La descripcion del producto debe contener 2 letras min y max 100"),
     
     /* Precio */
     
     check('precio').trim().notEmpty()
-    .withMessage('Este campo es obligatorio').bail()
+    .withMessage("Debes ingresar un precio a tu producto").bail()
     .isInt()
-    .withMessage('Solo carácteres numericos'),
+    .withMessage("Debe ingresar un precio valido"),
     
     /* Descuento */
     
     check('descuento').trim()
-    .isInt()
-    .withMessage('Solo carácteres numericos'),
-    
+    .isNumeric()
+    .withMessage("El descuento debe tener solo numeros"),
+        
     /* Disponibilidad */
     
     check('disponible').trim().notEmpty()
-    .withMessage('Este campo es obligatorio'),
+    .withMessage("Debe asegurar la disponibilidad del producto"),
 ]

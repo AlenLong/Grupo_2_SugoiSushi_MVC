@@ -46,7 +46,7 @@
 
                     <div class="news-check">
                         <input id="newscheck" type="checkbox" name="" >
-                        <label class="news-check">Recibir ofertas y promociones.</label>
+                        <label class="terminos">Recibir ofertas y promociones.</label>
                     </div>
 
                     <div class="user-box">
@@ -80,7 +80,7 @@
 
                         <div class="news-check">
                             <input id="newscheck" type="checkbox" name="" >
-                            <label class="news-check">Acepto terminos y condiciones.</label>
+                            <label class="terminos">Acepto terminos y condiciones.</label>
                             <div id="checkContainer"></div>
                             <small>
                                 <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
@@ -110,6 +110,6 @@
 
     <%- include('../partials/footer') %>
     
-    <script src="../../javascripts/register.js"></script>
+    
 </body>
 </html>

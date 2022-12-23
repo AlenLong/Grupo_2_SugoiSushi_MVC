@@ -106,6 +106,10 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     margin: 10px 0 20px ;
     color: var(--colorBlanco);
 }
+.terminos{
+    font-size: 12px;
+    color: var(--colorBlanco);
+}
 
 .news-check1{
     display: flex;
@@ -179,7 +183,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 }
 
 .login-box small {
-    color: var(--colorBlanco);
+    color: orange;
     display: block;
     text-align: center;
 }

@@ -19,7 +19,7 @@ module.exports = {
         
         Promise.all([productoDescuentos,productosNuevos,productosVeggie])
         .then(([productoDescuentos,productosNuevos,productosVeggie]) => {
-           /* return res.send(productosVeggie)   */   
+          /* return res.send(productosVeggie)  */  
                 return res.render('index', {
                     productoDescuentos,
                     productosNuevos,

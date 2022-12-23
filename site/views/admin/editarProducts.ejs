@@ -19,44 +19,68 @@
                         <option value="1">Veggies</option>
                       </select>
                       <label for="categoria">Categoria</label>
-                      <small>Obligatorio</small>
+                      <p class="span text-danger" id="errorCategorias">
+                        <%= locals.errors && errors.categoriasId ? errors.categoriasId.msg : null %>
+                    </p>
                     </div>
                     <div class="product-box">
-                        <input type="text" name="nombreProducto" id="nombreProducto" value="<%= producto.nombreProducto %>">
-                        <label for="nombreDeProducto">Nombre</label>
-                        <small>Obligatorio</small>
-                    </div>
-                    <div class="product-box">
-                        <input type="text" name="descripcion" id="descripcion" value="<%= producto.descripcion %>">
-                        <label for="descripcion">Descripcion</label>
-                        <small> Obligatorio </small>
-                    </div>
+                        <input type="text" id="nombreProducto" name="nombreProducto" required = ""
+                            value="<%= producto.nombreProducto %> ">
+                        <label for="nombreProducto">Nombre del plato</label>
+                        <!-- <small>Obligatorio</small> -->
+                        <p class="span text-danger" id="errorNombreProducto">
+                            <%= locals.errors && errors.nombreProducto ? errors.nombreProducto.msg : null %>
+                        </p>
 
-                    <div class="product-box">
-                        <input type="number" name="precio" id="precio" value="<%= producto.precio %>" >
-                        <label for="precio">Precio</label>
-                        <small>Obligatorio</small>
                     </div>
                     <div class="product-box">
-                        <input type="number" name="descuento" id="descuento" value="<%= producto.descuento %>">
-                        <label for="descuento">Descuento</label><br> <br>
+                        <input type="text" id="descripcion" name="descripcion" required=""
+                            value="<%= producto.descripcion %> ">
+                        <label for="descripcion" >Descripcion del plato</label>
+                        <!-- <small> Obligatorio </small> -->
+                            <p class="span text-danger" id="errorDescripcion">
+                                <%= locals.errors && errors.descripcion ? errors.descripcion.msg : null %>
+                            </p>
+                            
                     </div>
                     <div class="product-box">
-                        <input type="checkbox" name="disponible" id="disponible" value="<%= producto.disponible %>" <%= producto.disponible === undefined ? null : "checked" %>>
-                        <label for="disponible">disponible</label>
-                    <small>Obligatorio</small> <br>
+                        <input type="text" id = "precio" name="precio" required=""
+                            value="<%= producto.precio %> ">
+                        <label>Precio</label>
+                        <!-- <small>Obligatorio</small> -->
+                        <p class="span text-danger" id="errorPrecio">
+                            <%= locals.errors && errors.precio ? errors.precio.msg : null %>
+                        </p>
+                    </div>
+                    
+                    <div class="product-box">
+                        <input type="text" id="descuento" name="descuento" required=""
+                            value="<%= producto.descuento %>">
+                        <label>Descuento</label>
+                       <!--  <small>Opcional</small> -->
+                        <p class="span text-danger" id="errorDescuento">
+                            <%= locals.errors && errors.descuento ? errors.descuento.msg : null %>
+                        </p>
                     </div>
                     <!-- consultar como manipular img -->
-                    <div class="product-box">      
-                    <label for="imagen">imagen</label> <br> <br>
-                    <input type="file" id="imagen" name="imagen" src="/site/img/<%= producto.imagen %>">
+                    <div class="product-box">
+
+                        <input type="file" name="imagen" id="image" src="/site/img/<%= producto.imagen %>">
+                    </div>
+                    <p class="span text-danger" id="errorImagen">
+                        <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
+                    </p> 
+                    <div class="product-box">
+                        <input type="checkbox" name="disponible" id="disponible" value="1"
+                        value="<%= producto.disponible %>" <%= producto.disponible === undefined ? null : "checked" %>>
+                        <label for="disponible">disponible</label>
+                        <p class="span text-danger" id="errorDisponible">
+                            <%= locals.errors && errors.disponible ? errors.disponible.msg : null %>
+                        </p>
                     </div>
                     <div class="btn-container">
                         <button type="submit">Modificar Producto</button>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        
+                        <!-- <button type="submit"><a href="/admin/listarProducts">Modificar Producto</a></button> -->
                     </div>
                 </form>             
                 <div class="signup_link">
@@ -68,45 +92,7 @@
         </div>
     
     </main>
-    <footer class="footer">
-        <div class="cont">
-            <div class="info">
-                <div class="Nosotros">
-                    <h3>Sugoi Sushi</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam et est id sunt iusto earum molestiae praesentium.</p>
-                </div>
-                <div >
-                    <h4>Redes</h4>
-                    <div class="socialButton">
-                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
-                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.discord.com/"><i class='bx bxl-discord-alt'></i></a>
-                    </div> 
-                </div>
-                <div>
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Preguntas Frecuentes </a></li>
-                        <li><a href="#">Formá parte de Nosotros</a></li>
-                        <li><a href="#">Donde está mi pedido</a></li>
-                        <li><a href="#">Formas de pago</a></li>
-                    </ul>    
-                </div>
-                <div>
-                    <h4>Paginas</h4>
-                    <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Que ofrecemos</a></li>
-                        <li><a href="#">Recursos Humanos</a></li>
-                        <li><a href="#">Area de cobertura</a></li>
-                    </ul>  
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © 2022-2022 SugoiSushi - Todos los derechos Reservados - Términos y Condiciones - Politica de Privacidad - Legales   info@sugoi-sushi.com.ar</p>
-        </div>
-    </footer> 
+    <script src="/javascripts/validacionProductos.js"></script>
+    <%- include('../partials/footer') %>
 </body>
 </html>
