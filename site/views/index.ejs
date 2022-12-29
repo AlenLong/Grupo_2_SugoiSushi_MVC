@@ -11,7 +11,7 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a class="grad" href="/promociones#productos-descuento"><img class="d-block w-100" src="/img/banner1.jpg" alt="carrusel 1"></a>
+                        <a class="grad" href="/promociones#productos-descuento"><img class="d-block w-100" src="/img/bannerrr.png" alt="carrusel 1"></a>
                     </div>
                     <div class="carousel-item">
                         <a class="grad" href="/promociones#productos-convi"><img class="d-block w-100" src="/img/baner.png" alt="carrusel 2"></a>
@@ -32,7 +32,7 @@
             </section>
             <section class="inicio">
                 <div class="project">
-                    <h1>¡Descuentos!</h1>
+                    <p class="dev">¡Descuentos!</p>
                     <% productoDescuentos.forEach(producto => { %>
                         <article class="card">
                             <div class="imagen">
@@ -54,107 +54,9 @@
                         </article>
                     <% }) %>
                     </div>
-              <!--   <h1>Para la familia!!</h1> -->
-                <!-- <h3>COMBINADO LARUSSO</h3>
-                            <article>
-                                <h4>48u </h4>
-                                <p>4u BUBBA
-                                    4u CALIFORNIA HOT
-                                    4u DALLAS
-                                    4u KODAMA
-                                    4u PHILADELPHIA
-                                    4u BRUCE LEE
-                                    4u GRANDMA
-                                    4u KIBO
-                                    4u FLAMINGO
-                                    4U KIBO AHUMADO
-                                    4u NEW YORK PHILA HOT
-                                    4u BUBBA HOT</p>
-                            </article>
-                            <h3>COMBINADO VEGGIE</h3>
-                            <article>
-                                <h4>48u</h4>
-                                <p>4u VEGGIE FRIENDLY
-                                    4u BORA BORA
-                                    4u PARIS
-                                    4u HAPPY MONDAYS
-                                    4u IBIZA
-                                    4u VEGGIE MEX
-                                    4u VEGGIE SUN (hot)
-                                    4u YASAI (hot)
-                                    4u KONICHIWA
-                                    4u OSAKA
-                                    4u GINZA
-                                    4u SHINJUKU</p>
-                            </article>
-                            <h3>COMBINADO DELUXE</h3>
-                            <article>
-                                <h4>48u</h4>
-                                <p>2u NIGIRIS DE SALMÓN ROSADO
-                                    2u NIGIRIS DE SALMÓN SMOKE
-                                    2u GEISHAS DE SALMÓN ROSADO
-                                    2u GEISHAS DE SALMÓN SMOKE
-                                    2u GEISHAS SHIBUYA
-                                    2u NIGIRI NAUSICAA
-                                    4u BEREZINO
-                                    4u KIBO AHUMADO
-                                    4u VALHALLA
-                                    4u HONEYBEE
-                                    4u NEW YORK PHILA HOT
-                                    4u BUBBA HOT
-                                    4u CALIFORNIA PARTY
-                                    4u BRUCE LEE
-                                    4u TEXAS</p>
-                            </article> -->
-               <!--  <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/combi3.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/combi3.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-                        <a href="/detail"><img class="producto" src="/img/productos/combi3.jpg" alt=""></a>
-                        <img class="etiqueta" src="/img/img-tablas1.png" alt="">
-                    </div>
-                </article> -->
-           
+
                 <div class="project">
-                <h1>¡Nuevo nuevo!</h1>
-                <% productosNuevos.forEach(producto => { %>
-                    <article class="card">
-                        <div class="imagen">
-                            <img src="/img/productos/<%= producto.imagen %>" alt="">
-                        </div>
-                        <div class="content">
-                            <h3> <%= producto.nombreProducto %>  </h3>
-                            <div class="detail">
-                                <p><%= producto.descripcion %> </p>
-                                <div class="precio-descuento">
-                                    <p class="precio-secundario">$<del><%=  producto.precio %> </del><small><%= producto.descuento %> %</small></p>
-                                    <p class="precio-principal">$<%- toThousand(Math.round(producto.precio - ( producto.precio * producto.descuento / 100))) %></p>
-                                </div>
-                            </div>
-                            <a href="/views/carrito">
-                                <button name="button"><i class="fas fa-shopping-cart"></i>añadir carrito</button>
-                            </a>
-                        </div>
-                    </article>
-                <% }) %>
-                <!-- <div class="item">
-                    <button>Ver mas
-                  <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i>
-                </button>
-                  </div> -->
-                </div>
-                <div class="project">
-                    <h1>¡Solo veggie!</h1>
+                    <p class="dev">¡Solo veggie!</p>
                     <% productosVeggie.forEach(producto => { %>
                         <article class="card">
                             <div class="imagen">
