@@ -20,7 +20,9 @@
 ## **` TEMA :`** 
 ## ● E-COMMERCE DE SUSHI 
 
-## **`NOSOTROS :`**
+## [*DOCUMENTACION*](https://github.com/AlenLong/Grupo_2_SugoiSushi/tree/master/Documentacion%20de%20Proyecto "Enlace")
+
+# **` NOSOTROS : `**
 *En **Sugoi Sushi** buscamos constantemente la más precisa fusión entre tradición y modernidad, respetando los métodos milenarios de China y de Japón; y explorando las más innovadoras tendencias culinarias de Europa y América. 
 **Sugoi Sushi** ofrece de manera profesional un producto buscado y perfeccionando durante mucho tiempo por medio de cursos y degustaciones. Con mucho trabajo, pasión y amor por lo que se hace. Porque la Gastronomía también es arte.* 
 
@@ -49,37 +51,3 @@
 *El supercarrito de compras. *
 ##
 
-##
-### **`HERRAMIENTAS ADICIONALES :`**
->[*FIGMA*](https://www.figma.com/ "Enlace") >[*APP.DIAGRAMS*](https://app.diagrams.net/ "Enlace") >[*DISCORD*](https://discord.com/ "Enlace") >[*ADOBE ILL & PS*](https://www.adobe.com/ "Enlace")
-## 
-
-##
-## [*DOCUMENTACION*](https://github.com/AlenLong/Grupo_2_SugoiSushi/tree/master/Documentacion%20de%20Proyecto "Enlace")
-
-##
-### **` TABLERO DE TRABAJO :`**
->[*TRELLO*](https://trello.com/b/CgjlIcHH/grupo2sugoisushi "Enlace")
-##
-
-### **` RETROSPECTIVA :`**
-<<<<<<< HEAD
->[*SPRINT_1*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint1.md "Enlace")
-
->[*SPRINT_2*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint2.md "Enlace")
-
->[*SPRINT_3*](https://github.com/AlenLong/Grupo_2_SugoiSushi/tree/master/Documentacion%20de%20Proyecto/retroSprint3.md "Enlace")
-
->[*SPRINT_4*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint4.md "Enlace")
-##
-
-
-
-
-
-=======
->[*SPRINT1*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint1.md "Enlace")
-
->[*SPRINT2*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint2.md "Enlace")
-##
->>>>>>> long
