@@ -185,4 +185,38 @@ window.addEventListener('load', ()=> {
         }
     })
 
+
+    let eyePass = $('#password')
+    let eyePass2 = $('#confirma')
+
+    let eye = $('#eye-pass')
+    let eye2 = $('#eye-pass2')
+
+    eye.addEventListener('click', (e) => {
+        eyePass.type === 'password' ?  eyePass.type = 'text' :  eyePass.type = 'password'
+        console.log(eye.classList.contains('fa-eye-slash'))
+        if(eye.classList.contains('fa-eye-slash')){
+            eye.classList.toggle('fa-eye-slash')
+            eye.classList.toggle('fa-eye')
+        }else{
+            eye.classList.toggle('fa-eye-slash')
+            eye.classList.toggle('fa-eye')
+        }
+
+    })
+
+    eye2.addEventListener('click', (e) => {
+        eyePass2.type === 'password' ?  eyePass2.type = 'text' :  eyePass2.type = 'password'
+        console.log(eye2.classList.contains('fa-eye-slash'))
+        if(eye2.classList.contains('fa-eye-slash')){
+            eye2.classList.toggle('fa-eye-slash')
+            eye2.classList.toggle('fa-eye')
+        }else{
+            eye2.classList.toggle('fa-eye-slash')
+            eye2.classList.toggle('fa-eye')
+        }
+
+    })
+
+
 })

@@ -50,7 +50,10 @@
                     </div>
 
                     <div class="user-box">
+                        <div class="eye">
                         <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Contraseña">
+                        <i class="fas fa-eye-slash" id="eye-pass"></i>
+                        </div>
                         <!-- <label>password</label> -->
                         <div id="passContainer"></div>
                         <small>
@@ -59,7 +62,10 @@
                     </div>
                     
                     <div class="user-box">
+                        <div class="eye">
                         <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>" placeholder="Confirmar contraseña">  <!-- mismo nombre para la validacion ? -->
+                        <i class="fas fa-eye-slash" id="eye-pass2"></i>
+                    </div>
                         <!-- <label>Confirmar</label> -->
                         <div id="pass2Container"></div>
                         <small>

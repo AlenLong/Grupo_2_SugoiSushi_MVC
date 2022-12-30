@@ -31,6 +31,11 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 .login-box .user-box{
     position: relative;
 }
+.login-box .user-box .eye{
+    display: flex;
+    color: white;
+    align-items: center;
+}
 .login-box .user-box input{
     width: 100%;
     padding: 10px 0;
@@ -231,3 +236,4 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     color: var(--colorBlanco);
     
 }
+
