@@ -134,6 +134,15 @@
 }
 .listarProduct .planillas a:hover {
 	background-color: var(--colorRojo);
+	color: black;	
+	font-size: 25px;
+	transition: 1s;
+}
+.img_producto{
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
 }
  /* Mobile */
  @media (max-width :700px)

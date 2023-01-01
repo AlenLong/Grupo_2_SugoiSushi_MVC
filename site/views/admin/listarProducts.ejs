@@ -19,8 +19,8 @@
 				<% productos.forEach(producto => { %>
 
                     <article class="cardProduct">
-                        <!-- <div style="background-image: url('/img/productos/<=producto.imagen%>')" ></div> -->
-                          <img src="/img/productos/<%= producto.imagen%>"> 
+                        <div class="img_producto" style="background-image:url('/img/productos/<%= producto.imagen%>')"></div>
+
                         <div class="contentProductList">
                             <h3><%= producto.nombreProducto%></h3>
                             <form action="/admin/destroy/<%= producto.id%>?_method=DELETE" method="post" class="buttoms">
