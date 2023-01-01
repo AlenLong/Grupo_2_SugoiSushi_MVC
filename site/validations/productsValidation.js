@@ -20,7 +20,7 @@ module.exports = [
     .notEmpty()
     .withMessage("Debes ingresar una descripcion de tu producto")
     .bail()
-    .isLength({min: 10, max:100})
+    .isLength({min: 2, max:100})
     .withMessage("La descripcion del producto debe contener 2 letras min y max 100"),
     
     /* Precio */

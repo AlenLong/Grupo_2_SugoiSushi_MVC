@@ -87,7 +87,7 @@ window.addEventListener('load', () => {
                 this.classList.add('is-invalid')
                 validate.descripcion = false
                 break;
-            case !(this.value.trim().length > 2 && this.value.trim().length < 100):
+            case !(this.value.trim().length >= 2 && this.value.trim().length < 100):
                 $('#errorDescripcion').innerHTML = "La descripcion del producto debe contener 2 letras min y max 100"
                 this.classList.add('is-invalid')
                 validate.descripcion = false
@@ -117,6 +117,11 @@ window.addEventListener('load', () => {
                 this.classList.add('is-invalid')
                 validate.precio = false
                 break;
+                case (this.value.trim() < 1 ):
+                    $('#errorPrecio').innerHTML = "El debe ser mayor a 1"
+                    this.classList.add('is-invalid')
+                    validate.precio = false
+                    break;
             default:
                 $('#errorPrecio').innerHTML = null
                 this.classList.remove('is-invalid')
@@ -137,7 +142,7 @@ window.addEventListener('load', () => {
                 validate.descuento = false
                 break;
                 case (this.value.trim() > 70 ):
-                $('#errorDescuento').innerHTML = "El descuento no puede ser mayor al 70%"
+                $('#errorDescuento').innerHTML = "El descuento no puede ser mayor al 50%"
                 this.classList.add('is-invalid')
                 validate.descuento = false
                 break;
