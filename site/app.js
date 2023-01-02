@@ -1,6 +1,7 @@
+ require('dotenv').config();
 /* Livereload */
 const livereload = require('livereload');
-const liveReloadServer = livereload.createServer();
+const liveReloadServer = livereload.createServer(); 
 
 /* Entry point */
 const express = require('express')
@@ -9,12 +10,13 @@ const path = require('path')
 const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override')
 const morgan = require('morgan')
-
+const cookieCheck = require('./middlewares/cookieCheck')
 const session = require('express-session')
-
+const userLoginCheck = require('./middlewares/userLoginCheck')
 
 /* Implementamos locals dentro de la app */
 const userLogin = require('./middlewares/userLoginCheck')
+const dbConnectionTest = require('./middlewares/dbConnectionTest')
 
 
 const app = express()
@@ -32,6 +34,7 @@ let indexRouter = require('./routes/index')
 let adminRouter = require('./routes/admin')
 let productsRouter = require('./routes/products')
 let usersRouter = require('./routes/usersRoutes')
+let carritoRouter = require('./routes/api/apiCarrito')
 
 /* View engine setup*/
 app.set('views', path.join(__dirname, 'views'));
@@ -42,7 +45,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname,'public')));
 app.use(morgan('dev'));
-
+dbConnectionTest()
 
 /* Trabajar con PUT y DELETE */
 app.use(methodOverride('_method'))
@@ -51,12 +54,16 @@ app.use(methodOverride('_method'))
 app.use(session({secret:"mensaje ultra mega archi super re secreto SUGOI SUSHI"}))
 app.use(userLogin)
 app.use(cookieParser());
+app.use(cookieCheck)
+app.use(userLoginCheck)
 app.use(express.static(path.join(__dirname,'..', 'public')));
 /*Rutas*/
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/admin',adminRouter);
+app.use('./api/carrito', carritoRouter)
+
 
 /* Funcion de actualizacion del servidor  */
 liveReloadServer.server.once("connection", () => {
@@ -68,3 +75,4 @@ liveReloadServer.server.once("connection", () => {
 app.listen(port,function(){
     return console.log(`Se levanta el servidor en http://localhost:${port}`)
 })
+console.log(process.env.DB_PASS);

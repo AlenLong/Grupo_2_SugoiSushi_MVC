@@ -1,97 +1,164 @@
-const fs = require('fs')
-const path = require('path')
-const productos = require('../data/products.json')
-const historial = require('../data/historial.json')
-const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/products.json')
-,JSON.stringify(dato,null,4),'utf-8')
-const guardarHistorial = (dato) => fs.writeFileSync(path.join(__dirname, '../data/historial.json')
-,JSON.stringify(dato,null,4),'utf-8')
+const fs = require("fs");
+const path = require("path");
+const productos = require("../data/products.json");
+const historial = require("../data/historial.json");
+const { validationResult } = require("express-validator");
 
+const guardar = (dato) =>
+    fs.writeFileSync(
+        path.join(__dirname, "../data/products.json"),
+        JSON.stringify(dato, null, 4),
+        "utf-8"
+    );
+const guardarHistorial = (dato) =>
+    fs.writeFileSync(
+        path.join(__dirname, "../data/historial.json"),
+        JSON.stringify(dato, null, 4),
+        "utf-8"
+    );
+const db = require("../database/models");
 
-
-module.exports={
-    list: (req,res) =>{
-        return res.render('admin/listarProducts',{
-            productos,
-            redirection: 'listarProducts'
+module.exports = {
+    list: (req, res) => {
+        db.Productos.findAll()
+            .then((productos) => {
+                /* return res.send(productos) */ 
+                return res.render("admin/listarProducts", {
+                    productos,
+                    redirection: "listarProducts",
+                });
+            })
+            .catch((error) => {
+                return console.log(error);
+            });
+    },
+    create: (req, res) => {
+        /* return res.render("admin/crearProducts") */
+        db.Categorias.findAll()
+        .then((Categorias) => {
+            /* return res.send(Categorias)  */
+            return res.render("admin/crearProducts", {
+                Categorias,
+            });
         })
+        .catch((error) => {
+            return console.log(error);
+        });
     },
-    create:(req,res) => {
-        return res.render('admin/crearProducts')
+    store: (req, res) => {
+        let errors = validationResult(req);
+        if (req.fileValidationError) {
+            let imagen = {
+                param: "imagen",
+                msg: req.fileValidationError,
+            };
+            errors.errors.push(imagen);
+        }
+        if (errors.isEmpty()) {
+            db.Productos.create({
+                nombreProducto: req.body.nombreProducto,
+                categoriasId: req.body.categoriasId,
+                disponible: req.body.disponible,
+                descripcion: req.body.descripcion,
+                precio: req.body.precio,
+                descuento: req.body.descuento,
+                imagen: req.file ? req.file.filename : "default-products.jpg",
+            })
+                .then((productos) => {
+                    return res.redirect("/admin/listarProducts" /* {
+                        productos,
+                        redirection: "listarProducts", */
+                    /* }) */)
+                })
+                .catch((error) => {
+                    return console.log(error);
+                });
+        } else {
+            return res.render("admin/crearProducts", {
+                errors: errors.mapped(),
+                old: req.body,
+            });
+        }
     },
-    store:(req,res) => {
-        let{Categoria,nombre,Descripcion,precio,descuento,stock} = (req.body)
-        let productoNuevo = {
-        id: productos[productos.length - 1].id + 1,
-        Categoria: Categoria,
-        nombre: nombre, 
-        Descripcion: Descripcion,
-        precio: precio ,
-        descuento: descuento, 
-        stock: stock,
-        imagen: 'foto3.jpg',
-    }
-    productos.push(productoNuevo)
-    guardar(productos)
 
-    res.redirect('/admin/listarProducts')
-    },
-
-
-    edit: (req,res) =>{
-        id = +req.params.id
-        console.log(id)
-        let producto = productos.find((elemento)=>{
-            return elemento.id == id
-        })
-        console.log(producto)
-        return res.render('admin/editarProducts', {producto})
-    },
-    storeEdit: (req,res) =>{
-        console.log('editando')
-        console.log(req.body)
-        id = +req.params.id
-        let { nombreDeProducto, categoria, altaDeProducto, disponible, imagen, descripcion, precio, descuento } = req.body
-        /* console.log(id) */
-        console.log(disponible)
-
-        productos.forEach(producto => {
-            if (producto.id === id) {
-                producto.nombreDeProducto = nombreDeProducto
-                producto.categoria = categoria
-                producto.altaDeProducto = altaDeProducto
-                producto.disponible = disponible
-                producto.imagen = imagen
-                producto.descripcion = descripcion
-                producto.precio = precio
-                producto.descuento = descuento
+    edit: (req, res) => {
+        let idParams = +req.params.id;
+        db.Productos.findOne({
+            where : {
+                id : idParams
             }
-        }) 
-        guardar(productos)
-        res.redirect('../listarProducts')
+        })
+        .then((producto) => {
+            return res.render("admin/editarProducts", { producto });
+        })
+    },
+    storeEdit: (req, res) => {
+        let idParams = +req.params.id;
+      /*  return send(req.body) */
+        let errors = validationResult(req);
+        if (req.fileValidationError) {
+            let imagen = {
+                param: "imagen",
+                msg: req.fileValidationError,
+            };
+            errors.errors.push(imagen);
+        }
+        if (errors.isEmpty()){
+            
+            db.Productos.update({
+                    nombreProducto: req.body.nombreProducto,
+                    categoriasId: req.body.categoriasId,
+                    disponible: req.body.disponible,
+                    descripcion: req.body.descripcion,
+                    precio: req.body.precio,
+                    descuento: req.body.descuento,
+                    imagen: req.file ? req.file.filename : "default-products.jpg",
+            },{
+                where:{
+                    id : +req.params.id
+                }
+            })
+
+            .then(producto =>{
+                
+                return res.redirect("/admin/listarProducts");
+                }
+            )
+        }  // enviar old
     },
 
+    destroy: (req, res) => {
+       let idParams = +req.params.id;
+       db.Productos.destroy({
+        where : {
+            id: idParams
+        }
+       })
+       .then(producto => {
+        /* return res.send(producto) */
+        return res.redirect("/admin/listarProducts");
+       })
+       .catch(error => res.send(error))
 
-    destroy: (req,res) => {
-idParams = +req.params.id
-    
-let productoAEliminar = productos.find((elemento) => {
-    return elemento.id == idParams
-})
+         /* let productoAEliminar = productos.find((elemento) => {
+            return elemento.id == idParams;
+        }); 
 
-historial.push(productoAEliminar)
-guardarHistorial(historial)
+        historial.push(productoAEliminar);
+        guardarHistorial(historial);
+         
+        let productosModificados = productos.filter(
+            (producto) => producto.id !== idParams
+        );
+        
+        guardar(productosModificados);
 
-let productosModificadoos = productos.filter(producto => producto.id !== idParams)
-guardar(productosModificadoos)
-
-return res.redirect('/admin/listarProducts')
-
-},
-history : (req,res) =>{
-    return res.render('admin/listarProducts',{
-        productos : historial,
-        redirection : "history"
-    })
-}
-}
+        return res.redirect("/admin/listarProducts"); */ 
+    },
+    history: (req, res) => {
+        return res.render("admin/listarProducts", {
+            productos: historial,
+            redirection: "history",
+        });
+    },
+};

@@ -1,103 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head',{title: 'Sugoi Sushi'}) %>
-<body>
-    <%- include('../partials/header') %>
-    <main class="ProdCreate-Edit">
-        <div class="create-edit-container">
-            <div class="create-edit-box">
-                <h2>Creación de Producto</h2>
-                <form action="/admin/crearProducts" method="post">
-                    <div class="product-box">
-                        <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected hidden>Selecciona una opción</option>
-                        <option value="Entradas">Entradas</option>
-                        <option value="Salsas">Salsas</option>
-                        <option value="Platos">Platos</option>
-                      </select>
-                      <label for="floatingSelect">Categoria</label>
-                      <small>Obligatorio</small>
-                    </div>
-                    <div class="product-box">
-                        <input type="text" name="nombre" required="">
-                        <label>Nombre del plato</label>
-                        <small>Obligatorio</small>
-                    </div>
-                    <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Descripcion del plato</label>
-                        <small> Obligatorio </small>
-                    </div>
+<%- include('../partials/head',{title: 'Sugoi Sushi' }) %>
 
-                    <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Precio</label>
-                        <small>Obligatorio</small>
-                    </div>
-                    <div class="product-box">
-                        <input type="text" name="" required="">
-                        <label>Descuento</label>
-                        <small>Opcional</small>
-                    </div>
-                    <div class="product-box">
-                        <input type="number" name="" class="form-control" id="Stock" placeholder="Stock">
-                    
-                    <small>Obligatorio</small>
-                    </div>
-                   
-                        <div class="btn-container">
-                            <button type="submit">Crear Producto</button>
+    <body>
+        <%- include('../partials/header') %>
+            <main class="ProdCreate-Edit">
+                <div class="create-edit-container">
+                    <div class="create-edit-box">
+                        <h2>Creación de Producto</h2>
+                        <form action="/admin/crearProducts" method="post" enctype="multipart/form-data">
+                            <div class="product-box">
+                                <select class="form-select" name="categoriasId" id="categoria" aria-label="Floating label select example" value="<%= locals.old && old.categoriasId ? old.categoriasId : null %> ">
+                                <option value ="" selected hidden>Selecciona una categoria</option>
+                                <% Categorias.forEach(categoria => { %>
+                                    <option value=<%= categoria.id%>><%=categoria.nombre%></option>
+                                <% }) %> 
+                              </select>
+                              <label for="categoria">Categoria</label>
+                              <p class="span text-danger" id="errorCategorias">
+                                <%= locals.errors && errors.categoriasId ? errors.categoriasId.msg : null %>
+                            </p>
+                            </div>
+                            <div class="product-box">
+                                <input type="text" id="nombreProducto" name="nombreProducto" required = ""
+                                    value="<%= locals.old && old.nombreProducto ? old.nombreProducto : null %> ">
+                                <label for="nombreProducto">Nombre del plato</label>
+                                <!-- <small>Obligatorio</small> -->
+                                <p class="span text-danger" id="errorNombreProducto">
+                                    <%= locals.errors && errors.nombreProducto ? errors.nombreProducto.msg : null %>
+                                </p>
+
+                            </div>
+                            <div class="product-box">
+                                <input type="text" id="descripcion" name="descripcion" required=""
+                                    value="<%= locals.old && old.descripcion ? old.descripcion : null %> ">
+                                <label for="descripcion" >Descripcion del plato</label>
+                                <!-- <small> Obligatorio </small> -->
+                                    <p class="span text-danger" id="errorDescripcion">
+                                        <%= locals.errors && errors.descripcion ? errors.descripcion.msg : null %>
+                                    </p>
+                                    
+                            </div>
+
+                            <div class="product-box">
+                                <input type="text" id = "precio" name="precio" required=""
+                                    value="<%= locals.old && old.precio ? old.precio : null %> ">
+                                <label>Precio</label>
+                                <!-- <small>Obligatorio</small> -->
+                                <p class="span text-danger" id="errorPrecio">
+                                    <%= locals.errors && errors.precio ? errors.precio.msg : null %>
+                                </p>
+                            </div>
+                            <div class="product-box">
+                                <input type="text" id="descuento" name="descuento" required=""
+                                    value="<%= locals.old && old.descuento ? old.descuento : null %> ">
+                                <label>Descuento</label>
+                               <!--  <small>Opcional</small> -->
+                                <p class="span text-danger" id="errorDescuento">
+                                    <%= locals.errors && errors.descuento ? errors.descuento.msg : null %>
+                                </p>
+                            </div>
+                           
+
+                               <!--  <small>Obligatorio</small> -->
+                               <div class="product-box">
+
+                                <input type="file" name="imagen" id="image" accept="image/*">
+                            </div>
+                            <p class="span text-danger" id="errorImagen">
+                                <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
+                            </p> 
+                               
+                            <div class="product-box">
+                                <input type="checkbox" name="disponible" id="disponible" value="1"
+                                value="<%= locals.old && old.disponible ? old.disponible : null %>">
+                                <label for="disponible">disponible</label>
+                                <p class="span text-danger" id="errorDisponible">
+                                    <%= locals.errors && errors.disponible ? errors.disponible.msg : null %>
+                                </p>
+                            </div>
+
+                            <div class="btn-container">
+                                <button type="submit" id="btn-submit" >Crear Producto</button>
+                            </div>
+
+                        </form>
+                        <div class="signup_link">
+                            <p class="cuenta">¿ Queres editar un Producto ?</p>
+                            <a href="/admin/listarProducts">Clickeá acá</a>
                         </div>
-    
-                </form>
-                <div class="signup_link">
-                    <p class="cuenta">¿ Queres editar un Producto ?</p>                 
-                    <a href="/admin/listarProducts">Clickeá acá</a>
                     </div>
-        </div>
 
-        </div>
-    
-    </main>
-    <footer class="footer">
-        <div class="cont">
-            <div class="info">
-                <div class="Nosotros">
-                    <h3>Sugoi Sushi</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam et est id sunt iusto earum molestiae praesentium.</p>
                 </div>
-                <div >
-                    <h4>Redes</h4>
-                    <div class="socialButton">
-                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
-                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.discord.com/"><i class='bx bxl-discord-alt'></i></a>
-                    </div> 
-                </div>
-                <div>
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Preguntas Frecuentes </a></li>
-                        <li><a href="#">Formá parte de Nosotros</a></li>
-                        <li><a href="#">Donde está mi pedido</a></li>
-                        <li><a href="#">Formas de pago</a></li>
-                    </ul>    
-                </div>
-                <div>
-                    <h4>Paginas</h4>
-                    <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Que ofrecemos</a></li>
-                        <li><a href="#">Recursos Humanos</a></li>
-                        <li><a href="#">Area de cobertura</a></li>
-                    </ul>  
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © 2022-2022 SugoiSushi - Todos los derechos Reservados - Términos y Condiciones - Politica de Privacidad - Legales   info@sugoi-sushi.com.ar</p>
-        </div>
-    </footer> 
-</body>
+
+            </main>
+            <script src="/javascripts/validacionProductos.js"></script>
+            <%- include('../partials/footer') %>
+    </body>
+
 </html>

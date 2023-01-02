@@ -31,6 +31,11 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 .login-box .user-box{
     position: relative;
 }
+.login-box .user-box .eye{
+    display: flex;
+    color: white;
+    align-items: center;
+}
 .login-box .user-box input{
     width: 100%;
     padding: 10px 0;
@@ -51,6 +56,24 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     pointer-events: none;
     transition: .5s;
 }
+.user-box-img input{
+    display: none;
+}
+.user-box-img button{
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid rgb(9, 8, 8);
+    margin-bottom: 15px;
+    color: var(--colorNegro);
+    margin: 4% 33.33%;
+    display: inline-block;
+    justify-content: center;
+}
+.user-box-img button:hover{
+    background-color: var(--colorRojo);
+    border: 1px solid black;
+    color: var(--colorNegro);
+}
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label{
     top: -20px;
@@ -62,6 +85,12 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     display: flex;
     justify-content: center;
 }
+.submit-container button{
+   background-color: var(--colorNegro)(--colorRojo);
+   color: #fff;
+   border: 10px;
+
+} 
 #olvido {
     
     color: #2691d9;
@@ -76,12 +105,30 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 #olvido:hover{
     background: none;
     box-shadow: none;
+} */
+
+.news-check{
+    margin: 10px 0 20px ;
+    color: var(--colorBlanco);
 }
-.login-box form a {
+.terminos{
+    font-size: 12px;
+    color: var(--colorBlanco);
+}
+
+.news-check1{
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px 5px ;
+    color: var(--colorBlanco);
+    
+}
+
+.login-box form #buttonRegister {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color:var(--colorBlanco);
+    color:var(--colorRojo);
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -90,7 +137,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     margin-top: 40px;
     letter-spacing: 4px;
 }
-.login-box a:hover{
+.login-box #buttonRegister:hover{
     background:var(--colorRojo);
     color: var(--colorBlanco);
     border-radius: 5px;
@@ -99,11 +146,11 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
                 0 0 50px var(--colorRojo),
                 0 0 100px var(--colorRojo);
 }
-.login-box a span{
+.login-box #buttonRegister span{
     position: absolute;
     display: block;
 }
-.login-box a span:nth-child(1){
+.login-box #buttonRegister span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
@@ -111,6 +158,9 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     background: linear-gradient(90deg, transparent, var(--colorRojo));
     animation: btn-anim1 1s linear infinite;
 }
+
+
+
 @keyframes btn-anim1 {
     0% {
         left: -100%;
@@ -119,7 +169,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
         left:100%;
     }
 }
-.login-box a span:nth-child(2){
+.login-box #buttonRegister span:nth-child(2){
     top: -100%;
     right: 0;
     width: 2px;
@@ -128,7 +178,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s ;
 }
- @keyframes btn-anim2 {
+@keyframes btn-anim2 {
     0%{
         top: -100%;
     }
@@ -138,7 +188,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
 }
 
 .login-box small {
-    color: var(--colorBlanco);
+    color: orange;
     display: block;
     text-align: center;
 }
@@ -147,6 +197,7 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     margin-top: 1em;
     display: flex;
     justify-content: center;
+    
 }
 
 #recordarme{
@@ -185,3 +236,4 @@ background: linear-gradient(120deg, var(--colorNegro), var(--colorRojo));
     color: var(--colorBlanco);
     
 }
+

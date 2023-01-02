@@ -1,60 +1,33 @@
 .index{
-    background-image: url("/img/combi.jpg");
-    background-position: top;
-    background-size: contain;
-    font-family: var(--fuente);
-    margin: 0 auto;
-}
-.index .index-main .inicio{
-    justify-content: center;
-    
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(206deg,  var(--colorNegro), var(--colorRojo));
 }
 
-.index .index-main section article .image{
+
+.index .Datos{
+    background-color: rgb(73, 68, 68);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url("/img/10917-marmol.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 5%;
+    border-radius: 10px;
     display: flex;
-    align-content: center;
-    
+    justify-content: center
 }
 
-.index .index-main .inicio article{
-margin: 40px auto;
-}
-
-.index .index-main section .image{
-        position: relative;
-    
-}
-
-.index .index-main section .producto{
-    border: 5px solid var(--colorBlanco);
-    width: 200px;
-
-    
-
-}
-
-.index .index-main section .producto{
-    width: 100%;
-}
-.index .index-main section .etiqueta{
-    position: absolute;
-    top: 35px;
-    right: 10px;
+.index .Datos img {
     width: 60px;
-    margin: -30px 0 0 ;
+    height: 60px;   
+}
 
-}
-.index .index-main section .image:hover .producto{
-    transform: scale(1.2);
-    position: relative;
-    transition: all 0.5s;
-    z-index: 10;
-}
-.index .index-main section .image:hover .etiqueta{
-    z-index: 10;
-    transform: translateX(30px) translateY(-20px) scale(1.1);
-    transition: all 0.5s;
-}
+
+
+
+
+
 
 
 @media (max-width:769px) {
@@ -67,11 +40,12 @@ margin: 40px auto;
     .index .index-main{
         height: 100%;
     }
-    .index .index-main .inicio {
-        display: flex;
-        flex-direction: row;
+/*     .index .index-main .inicio {
+        display: grid;
+        grid-gap: 1em;
+        padding: 3%;
         
-    }
+    } */
     .index .index-main .inicio article{
                 margin: auto;
                 width: 250px;
@@ -81,7 +55,228 @@ margin: 40px auto;
 @media (min-width:1024px){
 
     }
-.index .index-main{
+    /*.index .index-main{
     margin: 200px;
       
+    }*/
+
+
+.index .index-main .red-social .instagram{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.index .index-main .red-social a{
+    color: aliceblue;
+    font-size: 25px;
+}
+.index .index-main .red-social .imagenes-insta{
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.index .index-main .red-social .imagenes-insta img{
+    width: 290px;
+    height: 290px;
+    padding: 10px;
+}
+
+/*boton flotante*/
+.index .container-boton{
+    background-color: #075E54;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 15px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.index .container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.index .boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+
+
+
+/* inicio de */
+.inicio .project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+.inicio .project .card {
+    position: relative;
+    margin: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    height: 250;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    transition: all 0.5s ease-in;
+
+}
+
+.inicio .project .card:hover {
+    box-shadow: 5px 5px 10px rgb(16, 16, 16);
+    transform: scale(1.1);
+}
+
+.inicio .project .card img {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.inicio .project .card h3{
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+
+
+/* card hover */
+.inicio .project .card .content{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.inicio .project .card:hover .content{
+    opacity: 1;
+}
+
+.inicio .project .card .content .detail {
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    background-color: aliceblue;
+}
+
+.inicio .project .card .content .detail .precio-descuento {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+}
+
+.inicio .project .card .content .detail .precio-descuento p {
+    color: rgb(27, 25, 25);
+    font-size: 20px;
+}
+
+.inicio .project .card .content .detail .precio-descuento p small{
+    color: rgb(254, 247, 247);
+    background-color: brown;
+}
+
+
+.inicio .project .card .content a button {
+    background-color: rgb(17, 17, 17);
+    color: rgb(238, 228, 228);
+    padding: 10px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.inicio .project .card .content a button:hover {
+    background-color: rgb(86, 86, 86);
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
     }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+.inicio .destacados {
+    height: 40px;
+	text-align: center;
+    align-items: center;
+	text-transform: uppercase;
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+    border-radius: 100px;
+}
+
+/* @media (min-width:360px){
+.inicio .project .card {
+    margin: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    height: 250px;
+    text-align: center;
+    background-color: rgb(247, 247, 239);
+    border-radius: 7px;
+    transition: all 0.5s ease-in;
+
+}
+
+.inicio .project .card:hover {
+    box-shadow: 5px 5px 10px rgb(16, 16, 16);
+    transform: scale(1.1);
+}
+
+.inicio .project .card img {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.index .container-boton{
+    background-color: #075E54;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 15px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+.inicio .destacados {
+    height: 25px;
+    font-size: 20px;
+	text-align: center;
+    align-items: center;
+	text-transform: uppercase;
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+    border-radius: 100px;
+}
+
+
+
+}
+ */

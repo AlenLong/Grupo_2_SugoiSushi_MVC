@@ -13,7 +13,6 @@
     }
     .create-edit-box{
         margin-top: 10px;
-        width: 400px;
         padding: 40px;
         background: rgba(0, 0, 0,.5);
         box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -27,6 +26,7 @@
     }
     .create-edit-box .product-box{
         position: relative;
+        margin-bottom: 20px
     }
     .create-edit-box .product-box .form-select{
         margin: 7px 25px 12px 81px;
@@ -98,6 +98,9 @@
         height: 2px;
         background: linear-gradient(90deg, transparent, var(--colorRojo));
         animation: btn-anim1 1s linear infinite;
+    }
+    .create-edit-box .span.text-danger{
+color : orange; 
     }
     @keyframes btn-anim1 {
         0% {

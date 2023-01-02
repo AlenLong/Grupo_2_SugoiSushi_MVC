@@ -11,8 +11,8 @@
         <label for="burger"><i class="fas fa-ellipsis-v"></i></label>
         <nav>
             <ul class="menu">
-                <li><a href="/detail">Carta</a></li>
-                <li><a href="/">Promociones</a></li>
+                <li><a href="/carta">Carta</a></li>
+                <li><a href="/Promociones">Promociones</a></li>
                 <li><a href="/nosotros">Conocenos</a></li>
                                 
             <% if (locals.userLogin && locals.userLogin.roll === 'Admin') { %>
@@ -21,9 +21,17 @@
 
             </ul>
             <ul class="user">
-                <li><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></li>
+                
                 <% if (locals.userLogin) { %>
-                        <li><a href="/users/profileUser">Bienvenido <%= locals.userLogin.roll %>: <%= locals.userLogin.nombre %> </a></li>
+                    <!-- <div class="card-img-background" style="background-image: url('/images/productos/<=imagen%>')"></div>      % -->
+                    <a href="/users/profile"><img class="imgProfile_header" src="/img/users/<%= locals.userLogin.imagen %>" alt=""></a>
+                    <li><a href="/users/profile"><%= locals.userLogin.roll %>: <%= locals.userLogin.nombre %> </a></li>
+                    <li><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><div>
+                        <form action="/users/logout?_method=DELETE" method="post">
+                            <button type="submit"><i class="fas fa-power-off"></i></button>
+                        </form>
+                        </div></li>
                     <% } else { %>
                         <li><a href="/users/login">Login</a></li>
                         <li><a href="/users/register">Registrate</a></li>

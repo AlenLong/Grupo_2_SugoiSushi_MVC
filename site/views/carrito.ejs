@@ -4,40 +4,20 @@
 <body class="Carrito">
     <%- include('./partials/header') %>
     <main class="cart">
-		<h1>Tienda Sugoi</h1>
+		<h1>bienvenido a tu carrito</h1>
 		<section class="project">
-			<div class="shop">
-				<article class="card">
-					<img src="img/combi5.jpg">
+			<div class="shop" id='carrito'>
+				<!--<article class="card">
+					<img src="/img/productos/combi1.jpg">
 					<div class="content">
 						<h3>Sugoi Sushi Product</h3>
-						<div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario">$1900</p>
-                                <span>50%</span>
-                            </div>
-                            <p>$950</p>
-						
+						<p class="precio-principal">$2500</p>
                             <p class="unit">Cantidad : <input name="" value="1"></p>
-						<p class="btn"><i class="fa-solid fa-cart-circle-plus"></i> <span>Borrar</span></p>
-					</div>
-				</article>
-				<article class="card">
-					<img src="/img/combi1.jpg">
-					<div class="content">
-						<h3>Sugoi Sushi Product</h3>
-						<div class="detail">
-                            <div class="precio-descuento">
-                                <p class="precio-secundario">$2000</p>
-                                <span>30%</span>
-                            </div>
-                            <p>$1400</p>
-						<p class="unit">Cantidad : <input name="" value="1"></p>
 						<p class="btn"><i class="fa-solid fa-cart-circle-plus"></i> <span class="btn2">Borrar</span></p>
-					</div>
+				</div>
 				</article>
 				<article class="card">
-					<img src="/img/combi4.jpg">
+					<img src="/img/productos/combi4.jpg">
                     <div class="content">
 						<h3>Sugoi Sushi Product</h3>
                             <p class="precio-principal">$2500</p>
@@ -46,23 +26,23 @@
 				</div>
 				</article>
                 <article class="card">
-					<img src="/img/combi3.jpg">
+					<img src="/img/productos/combi3.jpg">
                     <div class="content">
 						<h3>Sugoi Sushi Product</h3>
                             <p class="precio-principal">$2100</p>
                             <p class="unit">Cantidad : <input name="" value="1"></p>
 						<p class="btn"><i class="fa-solid fa-cart-circle-plus"></i> <span class="btn2">Borrar</span></p>
 				</div>
-				</article>
+				</article>-->
 			</div>
 			<div class="totalidad">
-				<p><span>Subtotal</span> <span>$6950</span></p>
+				<p><span>Subtotal</span> <span Id="Subtotal"></span></p>
 				<hr>
-				<p><span>IVA (30%)</span> <span>$2085</span></p>
+				<p><span>IVA (30%)</span> <span></span></p>
 				<hr>
-				<p><span>Delivery</span> <span>$300</span></p>
+				<p><span>Delivery</span> <span></span></p>
 				<hr>
-				<p><span>Total a pagar</span> <span>$9335</span></p><a href="/detail"><i class="fa fa-shopping-cart"></i>Comprar</a>
+				<p><span>Total a pagar</span> <span Id="Total"></span></p><a href="/detail"><i class="fa fa-shopping-cart"></i>Comprar</a>
 			</div>
 		</section>
     </main>

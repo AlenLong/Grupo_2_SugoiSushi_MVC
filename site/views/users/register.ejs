@@ -14,78 +14,108 @@
                 <h2>Regístrate</h2>
 
                         <!-- form method post y multer -->
-                <form method="post" enctype="multipart/form-data"> 
+                <form method="post" enctype="multipart/form-data" id="formulario"> 
+
+
                     <div class="user-box">
                         <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null%>" placeholder="Nombre">
                         <!-- <label>Nombre</label> -->
-                        <small>
-                            <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
-                        </small>
+                            <div id="nameContainer"></div>
+                            <small>
+                                <%= locals.errors && errors.nombre ? errors.nombre.msg : null %> 
+                            </small>
                     </div>
+
                     <div class="user-box">
                         <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null%>" placeholder="Apellido">
                         <!-- <label>Apellido</label> -->
+                        <div id="apellidoContainer"></div>
                         <small>
                             <%= locals.errors && errors.apellido ? errors.apellido.msg : null %> 
                         </small>
                     </div>
+
                     <div class="user-box">
                         <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>" placeholder="Email">
                         <!-- <label>Email</label> -->
+                        <div id="emailContainer"></div>
                         <small>
                             <%= locals.errors && errors.email ? errors.email.msg : null %> 
                         </small>
                     </div>
+
+                    <div class="news-check">
+                        <input id="newscheck" type="checkbox" name="" >
+                        <label class="terminos">Recibir ofertas y promociones.</label>
+                    </div>
+
                     <div class="user-box">
+                        <div class="eye">
                         <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null%>" placeholder="Contraseña">
+                        <i class="fas fa-eye-slash" id="eye-pass"></i>
+                        </div>
                         <!-- <label>password</label> -->
+                        <div id="passContainer"></div>
                         <small>
                             <%= locals.errors && errors.password ? errors.password.msg : null %> 
                         </small>
                     </div>
+                    
                     <div class="user-box">
+                        <div class="eye">
                         <input type="password" name="confirma" id="confirma" value="<%= locals.old && old.confirma ? old.confirma : null%>" placeholder="Confirmar contraseña">  <!-- mismo nombre para la validacion ? -->
+                        <i class="fas fa-eye-slash" id="eye-pass2"></i>
+                    </div>
                         <!-- <label>Confirmar</label> -->
+                        <div id="pass2Container"></div>
                         <small>
                             <%= locals.errors && errors.confirma ? errors.confirma.msg : null %> 
                         </small>
                     </div>
+
                     <div class="user-box">
                         <input type="file" name="imagen" id="imagen" value="<%= locals.old && old.imagen ? old.imagen : null%>">  <!-- multer -->
                         <!-- <label>Subí una imagen</label>  -->
+                        <div id="imageContainer"></div>
                         <small>
                             <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
                         </small>
                     </div>
-                    <div class="btn-container">
-                        <button type="submit">R E G I S T R A R S E</button>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div>
                         
-                    </div>
-                    <div class="submit-container">
-                        <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Registrarse
-                        </a>
-                    </div>
-                    <div class="user-box newsletter-checkbox">
-                        <input id="newscheck" type="checkbox" name="" >
-                        <small>Deseo recibir ofertas y promociones a mi correo.</small>
-                    </div>
+
+                        <div class="news-check">
+                            <input id="newscheck" type="checkbox" name="" >
+                            <label class="terminos">Acepto terminos y condiciones.</label>
+                            <div id="checkContainer"></div>
+                            <small>
+                                <%= locals.errors && errors.imagen ? errors.imagen.msg : null %> 
+                            </small>
+                        </div>
+                        
+                        <div class="submit-container">
+                            <button id="buttonRegister" type="submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                REGISTRARSE</button>
+                            </div>
+                        </div>
+                        
+
                 </form>
                 <div class="signup_link">
                     <p class="cuenta">¿ Ya tienes una cuenta ?</p>                 
-                    <a href="/login">Ingresa Aquí</a>
+                    <a href="/users/login">Ingresa Aquí</a>
                     </div>
         </div>
 
         </div>
     
     </main>
+
     <%- include('../partials/footer') %>
+    
+    
 </body>
 </html>

@@ -3,16 +3,28 @@
 
         <%- include('../partials/head') %>
 
-    <body class="profile">
+<body class="profile" id="blurry-filter">
 
         <%- include('../partials/header',{title: locals.userLogin.nombre }) %>
-    <main>
-        <img class="imgProfile" src="/img/users/<%= locals.userLogin.imagen %>" alt="">
-        <h1> Hola <%= locals.userLogin.roll %> <%= locals.userLogin.nombre %></h1>
 
-        <form action="/users/logout?_method=DELETE" method="post">
-        <button type="submit"><i class="fas fa-power-off"></i> Cerrar sesion</button>
-    </form>
+    <main>
+        <div class="center" >
+            <section class="sec1">
+                <img class="imgProfile" src="/img/users/<%= locals.userLogin.imagen %>" alt="">
+            </section>
+            <section class="editProfile">
+                <h1 class="perfilUsuario">Perfil de Usuario</h1>
+                <h3 class="perfilH3">Nombre: <%= locals.userLogin.nombre %></h3>
+                <h3 class="perfilH3">Apellido: <%= locals.userLogin.apellido %></h3>
+                <h3 class="perfilH3">Email: <%= locals.userLogin.email %></h3>
+                <div class="cerrar">
+                <form action="/users/logout?_method=DELETE" method="post">
+                    <button type="submit"><i class="fas fa-power-off"></i> Cerrar sesion</button>
+                </form>
+                </div>
+            </section>
+        </div>
+
     </main>
 </body>
 </html>
