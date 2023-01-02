@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
 <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 <%- include('./partials/head',{title: 'Sugoi Sushi' }) %>
 
@@ -130,10 +129,10 @@
                                                     producto.precio * producto.descuento / 100))) %></p>
                                         </div>
                                     </div>
-                                    <!--<a href="/views/carrito">-->
+                                    <a href="/views/carrito">
                                     <button name="button" onclick="addItem('<%= producto.id %>')"><i
                                             class="fas fa-shopping-cart"></i>añadir carrito</button>
-                                    <!--</a>-->
+                                    </a>
                                 </div>
                             </article>
                             <% }) %>
