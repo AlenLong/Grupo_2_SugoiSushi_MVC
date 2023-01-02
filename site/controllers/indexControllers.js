@@ -5,15 +5,15 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 module.exports = {
     index: (req,res)=>{
         let productoDescuentos = db.Productos.findAll({
-            limit: 3,
+            limit: 4,
             order: [["descuento", "desc"]],
         })
         let productosNuevos = db.Productos.findAll({
-            limit:3,
+            limit:4,
             order: [["createdAt", "desc"]],
         })
         let productosVeggie = db.Productos.findAll({
-            limit:3,
+            limit:4,
             where: {categoriasId: 1}
         })
         

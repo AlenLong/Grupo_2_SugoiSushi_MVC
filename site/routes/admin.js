@@ -17,6 +17,6 @@ router.get('/editarProducts/:id', adminCheck, edit)
 router.put('/editarProducts/:id',upload.single('imagen'),productValidator, adminCheck, storeEdit)
 
 /* Eliminación de producto */
-router.delete('/destroy/:id',/* adminCheck */destroy);
+router.delete('/destroy/:id', adminCheck, destroy);
 
 module.exports = router
