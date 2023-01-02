@@ -50,38 +50,3 @@
 
 *El supercarrito de compras. *
 ##
-
-##
-### **`HERRAMIENTAS ADICIONALES :`**
->[*FIGMA*](https://www.figma.com/ "Enlace") >[*APP.DIAGRAMS*](https://app.diagrams.net/ "Enlace") >[*DISCORD*](https://discord.com/ "Enlace") >[*ADOBE ILL & PS*](https://www.adobe.com/ "Enlace")
-## 
-
-##
-## [*DOCUMENTACION*](https://github.com/AlenLong/Grupo_2_SugoiSushi/tree/master/Documentacion%20de%20Proyecto "Enlace")
-
-##
-### **` TABLERO DE TRABAJO :`**
->[*TRELLO*](https://trello.com/b/CgjlIcHH/grupo2sugoisushi "Enlace")
-##
-
-### **` RETROSPECTIVA :`**
-<<<<<<< HEAD
->[*SPRINT_1*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint1.md "Enlace")
-
->[*SPRINT_2*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint2.md "Enlace")
-
->[*SPRINT_3*](https://github.com/AlenLong/Grupo_2_SugoiSushi/tree/master/Documentacion%20de%20Proyecto/retroSprint3.md "Enlace")
-
->[*SPRINT_4*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint4.md "Enlace")
-##
-
-
-
-
-
-=======
->[*SPRINT1*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint1.md "Enlace")
-
->[*SPRINT2*](https://github.com/AlenLong/Grupo_2_SugoiSushi/blob/master/Documentacion%20de%20Proyecto/retroSprint2.md "Enlace")
-##
->>>>>>> long
